@@ -1,5 +1,7 @@
 {
   "resources": [
+    {"id":{"name":"s_cog_0","path":"sprites/s_cog_0/s_cog_0.yy",},"order":0,},
+    {"id":{"name":"o_cog_0","path":"objects/o_cog_0/o_cog_0.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
