@@ -1,6 +1,8 @@
 //Si clickeo o estaba clikeando antes
-if (mouse_check_button(mb_left) && position_meeting(mouse_x, mouse_y, id)) 
-or (mouse_check_button(mb_left) && ever_clicked_clicking == true)
+if ((mouse_check_button(mb_left) && position_meeting(mouse_x, mouse_y, id)) 
+or (mouse_check_button(mb_left) && ever_clicked_clicking == true)) 
+//And NOT hovering window commands
+&& (!position_meeting(mouse_x, mouse_y, o_wdg_min) && !position_meeting(mouse_x, mouse_y, o_wdg_cross))
 {
 
 ever_clicked_clicking = true;

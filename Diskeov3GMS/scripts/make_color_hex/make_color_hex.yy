@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Edge Engine",
-    "path": "folders/Scripts/Edge Engine.yy",
+    "name": "Diskeov3GMS",
+    "path": "Diskeov3GMS.yyp",
   },
   "resourceVersion": "1.0",
   "name": "make_color_hex",
