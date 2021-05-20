@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_cog_0",
-    "path": "sprites/s_cog_0/s_cog_0.yy",
+    "name": "s_wdg_min",
+    "path": "sprites/s_wdg_min/s_wdg_min.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "BottomQS",
-    "path": "folders/BottomQS.yy",
+    "name": "DragBar",
+    "path": "folders/DragBar.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_cog_0",
+  "name": "o_wdg_min",
   "tags": [],
   "resourceType": "GMObject",
 }

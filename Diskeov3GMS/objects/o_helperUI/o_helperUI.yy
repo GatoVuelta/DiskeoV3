@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "s_cog_0",
-    "path": "sprites/s_cog_0/s_cog_0.yy",
+    "name": "s_uihelper",
+    "path": "sprites/s_uihelper/s_uihelper.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -24,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "BottomQS",
-    "path": "folders/BottomQS.yy",
+    "name": "DragBar",
+    "path": "folders/DragBar.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_cog_0",
+  "name": "o_helperUI",
   "tags": [],
   "resourceType": "GMObject",
 }
