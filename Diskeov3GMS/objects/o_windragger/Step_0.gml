@@ -1,4 +1,4 @@
-//Si clickeo o estaba clikeando antes
+//Si clickeo o estaba clikeando ante
 if ((mouse_check_button(mb_left) && position_meeting(mouse_x, mouse_y, id)) 
 or (mouse_check_button(mb_left) && ever_clicked_clicking == true)) 
 //And NOT hovering window commands
