@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6fb3c8c6-ec1f-426c-9e4d-4275d9574024","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sounds/DragBar/Sprites.yy",
+    "name": "DragBar",
+    "path": "folders/Sprites/DragBar.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_uihelper",

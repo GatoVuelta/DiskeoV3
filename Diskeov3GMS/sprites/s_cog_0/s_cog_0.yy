@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Sprites",
-    "path": "folders/UI/BottomQS/Sprites.yy",
+    "path": "folders/BottomQS/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_cog_0",

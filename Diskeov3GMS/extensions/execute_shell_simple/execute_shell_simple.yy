@@ -23,7 +23,9 @@
             1,
             2,
           ],"resourceVersion":"1.0","name":"execute_shell_simple_raw","tags":[],"resourceType":"GMExtensionFunction",},
-      ],"constants":[],"ProxyFiles":[],"copyToTargets":9223372036854775807,"order":[],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
+      ],"constants":[],"ProxyFiles":[],"copyToTargets":9223372036854775807,"order":[
+        {"name":"execute_shell_simple_raw","path":"extensions/execute_shell_simple/execute_shell_simple.yy",},
+      ],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
     {"filename":"execute_shell_simple.gml","origname":"extensions\\gml.gml","init":"","final":"","kind":2,"uncompress":false,"functions":[
         {"externalName":"execute_shell_simple","kind":2,"help":"execute_shell_simple(path, args = \"\", action = \"open\", showCmd = 5/*SW_OPEN*/)","hidden":false,"returnType":2,"argCount":-1,"args":[],"resourceVersion":"1.0","name":"execute_shell_simple","tags":[],"resourceType":"GMExtensionFunction",},
       ],"constants":[],"ProxyFiles":[],"copyToTargets":9223372036854775807,"order":[

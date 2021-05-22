@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e02833cd-fb04-47e0-932e-55a5c7038b76","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sounds/DragBar/Sprites.yy",
+    "name": "DragBar",
+    "path": "folders/Sprites/DragBar.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_wdg_bar",

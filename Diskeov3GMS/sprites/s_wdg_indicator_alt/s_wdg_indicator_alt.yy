@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"77e57214-4ec8-40cc-ba48-154ec10de49e","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sounds/DragBar/Sprites.yy",
+    "name": "DragBar",
+    "path": "folders/Sprites/DragBar.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_wdg_indicator_alt",
