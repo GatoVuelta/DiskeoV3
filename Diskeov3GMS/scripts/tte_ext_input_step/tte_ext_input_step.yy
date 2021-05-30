@@ -1,5 +1,5 @@
 {
-  "isDnD": true,
+  "isDnD": false,
   "isCompatibility": false,
   "parent": {
     "name": "Object",

@@ -2,11 +2,30 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_UI_init(){
 	
+	//Interruptions
+	global.interruption0 = false;
+	
+	//General
+	global.UI_general_primary = make_color_hex("5865f2");
+	global.UI_general_secondary = make_color_hex("18191c");
+	global.UI_general_terciary = make_color_hex("71757c");
+	
+	//Left menu
+	global.UI_element_leftmenu_bg = global.UI_general_secondary;
+	global.UI_element_leftmenu_container = make_color_hex("292b2f");
+	global.UI_element_leftmenu_section = global.UI_general_terciary;
+	
 	//Window dragger
-	global.UI_windragger_focused = make_color_hex("202225");
+	global.UI_windragger_focused = global.UI_general_secondary;
 	global.UI_windragger_unfocused = make_color_hex("52585f");
 	global.UI_windragger_element_focus_indicator = make_color_hex("36393f");
 	global.UI_windragger_element_focus_indicator_alt = make_color_hex("ed4245");
+	
+	//Text boxes
+	global.UI_txtbx_textsel = global.UI_general_primary;
+	global.UI_txtbx_bg_focused = make_color_hex("40444b");
+	global.UI_txtbx_bg_unfocused = make_color_hex("40444b");
+	global.UI_txtbx_bd = global.UI_general_primary;
 	
 	//UI Elements
 	global.UI_element_regular = make_color_hex("52585f"); //NO

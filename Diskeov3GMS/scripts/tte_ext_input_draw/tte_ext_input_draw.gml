@@ -7,12 +7,12 @@ function tte_ext_input_draw() {
 	    mx = ( mouse_x - x - padding_left ) + scrollx;
 	    my = ( mouse_y - y - padding_top ) + scrolly;
     
-	    surface_set_target( tte_surface );
-	        draw_clear_alpha( 0,0 );
+	    surface_set_target(tte_surface);
+	        draw_clear_alpha(0,0);
         
-	        draw_set_font( font );
-	        draw_set_color( fg );
-	        draw_set_alpha( fg_alpha );
+	        draw_set_font(f_input);
+	        draw_set_color(fg);
+	        draw_set_alpha(fg_alpha-init_alpha);
         
 	        mh = string_height(string_hash_to_newline("|"));
         
@@ -31,8 +31,8 @@ function tte_ext_input_draw() {
 	        for( l=0; l<ds_list_size( lines ); l++ ) {
         
 	            if( selVisible ) {
-	                draw_set_color( sel );
-	                draw_set_alpha( sel_alpha );
+	                draw_set_color(global.UI_txtbx_textsel);
+	                draw_set_alpha(sel_alpha-init_alpha);
 	                if( l >= selStartLine && l <= selEndLine ) {
 	                    if( l == selStartLine && l == selEndLine ) draw_rectangle(
 	                        string_width( string_hash_to_newline(string_copy( lines[| l], 1, selStartCol-1) ) ) -scrollx,
@@ -64,7 +64,7 @@ function tte_ext_input_draw() {
 	                    );
 	                }
 	                draw_set_color(c_white);
-	                draw_set_alpha(1);
+	                draw_set_alpha(1-init_alpha);
 	            }
             
 	            if( l == line && caretVisible ) {
@@ -82,11 +82,12 @@ function tte_ext_input_draw() {
 
 	}
 
-	if( surface_exists( tte_surface ) ) draw_surface( tte_surface, x+padding_left, y+padding_top+8);
-	
+	if (surface_exists(tte_surface))
+	{
+		draw_surface_ext(tte_surface, (x+padding_left)-x_threshold, y+padding_top+8, 1, 1, 0, c_white, 1-init_alpha);
+	}
+
 	draw_set_color(c_white);
 	draw_set_alpha(1);
-
-
 
 }
