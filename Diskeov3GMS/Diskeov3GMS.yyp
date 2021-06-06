@@ -42,7 +42,7 @@
     {"id":{"name":"o_reference0","path":"objects/o_reference0/o_reference0.yy",},"order":6,},
     {"id":{"name":"__tte_ext_input_handle_caret","path":"scripts/__tte_ext_input_handle_caret/__tte_ext_input_handle_caret.yy",},"order":4,},
     {"id":{"name":"tte_ext_input_create","path":"scripts/tte_ext_input_create/tte_ext_input_create.yy",},"order":0,},
-    {"id":{"name":"oInput","path":"objects/oInput/oInput.yy",},"order":3,},
+    {"id":{"name":"oInput","path":"objects/oInput/oInput.yy",},"order":0,},
     {"id":{"name":"TTE_Extension___Input","path":"extensions/TTE_Extension___Input/TTE_Extension___Input.yy",},"order":4,},
     {"id":{"name":"tte_ext_input_set_on_changed","path":"scripts/tte_ext_input_set_on_changed/tte_ext_input_set_on_changed.yy",},"order":6,},
     {"id":{"name":"discord_init_app","path":"scripts/discord_init_app/discord_init_app.yy",},"order":2,},
@@ -136,6 +136,7 @@
     {"folderPath":"folders/Sprites/LeftMenu.yy","order":3,"resourceVersion":"1.0","name":"LeftMenu","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/TextBoxes.yy","order":4,"resourceVersion":"1.0","name":"TextBoxes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Tabs.yy","order":5,"resourceVersion":"1.0","name":"Tabs","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/TextBoxes.yy","order":5,"resourceVersion":"1.0","name":"TextBoxes","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},

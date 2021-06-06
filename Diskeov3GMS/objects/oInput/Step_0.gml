@@ -9,17 +9,22 @@ if (keyboard_check_pressed(vk_escape))
 fade_out = true
 init_x_threshold = -500
 }
+//Overlay test
+if (keyboard_check_pressed(vk_enter))
+{
+global.overlay = true;
+}
 
 //Slow border fading
 if (focus)
 {
-	if (border_alpha <= 0.95)
+	if (border_alpha <= 0.9)
 	{
-		border_alpha += 0.05;	
+		border_alpha += 0.1;	
 	}
-} else if (border_alpha >= 0.05)
+} else if (border_alpha >= 0.1)
 	{
-		border_alpha -= 0.05;
+		border_alpha -= 0.1;
 	}
 
 //Fade in effect
@@ -42,3 +47,11 @@ if (fade_out)
 	} else fade_out = false;
 }
 
+//Output text
+show_debug_message(tte_ext_input_get_text());
+
+//If overlay
+if (global.overlay)
+{
+	element_enable = false;
+} else {element_enable = true}
