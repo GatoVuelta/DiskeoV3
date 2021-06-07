@@ -1,4 +1,4 @@
-if (element_enable) && (!global.interruption0)
+if (element_enable) && (!global.overlay)
 {
 	script_execute(tte_ext_input_step,0,0,0,0,0);
 }
@@ -6,13 +6,9 @@ if (element_enable) && (!global.interruption0)
 //Fade out commander
 if (keyboard_check_pressed(vk_escape))
 {
-fade_out = true
-init_x_threshold = -500
-}
-//Overlay test
-if (keyboard_check_pressed(vk_enter))
-{
-global.overlay = true;
+scr_open_url("https://google.com/", true);	
+fade_out = true;
+init_x_threshold = -500;
 }
 
 //Slow border fading
@@ -48,10 +44,19 @@ if (fade_out)
 }
 
 //Output text
-show_debug_message(tte_ext_input_get_text());
+global.input_fline_text = tte_ext_input_get_text();
 
 //If overlay
 if (global.overlay)
 {
 	element_enable = false;
 } else {element_enable = true}
+
+//Maxium handler
+if (focus)
+{
+	if (string_length(global.input_fline_text) > maxium_length)
+	{
+		tte_ext_input_set_text(string_copy(global.input_fline_text, 1, maxium_length));
+	}
+}

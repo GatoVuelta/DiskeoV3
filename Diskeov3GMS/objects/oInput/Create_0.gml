@@ -2,6 +2,7 @@
 focus = false;
 element_enable = true;
 border_alpha = 0;
+maxium_length = 200;
 
 //Create input
 tte_ext_input_create(654, 54, false);
@@ -20,3 +21,6 @@ x_threshold = init_x_threshold;
 //AnimationState
 fade_in = true;
 fade_out = false;
+
+//Output text
+global.input_fline_text = "";
