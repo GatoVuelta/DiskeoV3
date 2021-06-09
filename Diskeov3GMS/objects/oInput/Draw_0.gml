@@ -36,6 +36,20 @@ draw_sprite_ext(s_txtbx_bd0, 0, x-x_threshold, y, 1, 1, 0, global.UI_general_pri
 	draw_set_font(f_UniSans_TabTtle);
 	draw_set_alpha(1-init_alpha);
 	draw_text((x+175)-x_threshold, y-16, tab_text);
+	
+	if (soon_availability) && (position_meeting(mouse_x, mouse_y, id))
+	{
+		//Cuadro
+		draw_set_color(global.UI_general_secondary);
+		draw_set_alpha(0.5);
+		var width = (string_length(soon_text)*10) + 15;
+		draw_roundrect_ext(mouse_x, mouse_y, mouse_x+width, mouse_y+30, 20, 20, false);
+		//Texto
+		draw_set_color(global.UI_element_focused);
+		draw_set_font(f_input);
+		draw_set_alpha(1);
+		draw_text(mouse_x+(width/2), mouse_y+15, soon_text);
+	}
 }
 
 //Reset

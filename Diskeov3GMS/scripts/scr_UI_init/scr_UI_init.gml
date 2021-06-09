@@ -15,6 +15,12 @@ function scr_UI_init(){
 	global.UI_element_leftmenu_container = make_color_hex("292b2f");
 	global.UI_element_leftmenu_section = global.UI_general_terciary;
 	
+	//LMButtons
+	global.UI_LMbtn_unfocused_bg = make_color_hex("40444b");
+	global.UI_LMbtn_focused_bg = make_color_hex("5865f2");
+	global.UI_LMbtn_active_bg = make_color_hex("5865f2");
+	
+	
 	//Window dragger
 	global.UI_windragger_focused = global.UI_general_secondary;
 	global.UI_windragger_unfocused = make_color_hex("52585f");

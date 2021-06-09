@@ -1,8 +1,16 @@
 //Basic stuff
 focus = false;
-element_enable = true;
 border_alpha = 0;
 maxium_length = 200;
+
+//Enable comander
+element_default_enable = true;
+element_enable = true;
+
+//Beta
+soon_availability = true;
+soon_text = "Soon™";
+//beta = true;
 
 //Create input
 tte_ext_input_create(654, 54, false);
