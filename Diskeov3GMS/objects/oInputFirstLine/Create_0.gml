@@ -2,6 +2,7 @@
 focus = false;
 border_alpha = 0;
 maxium_length = 200;
+minium_lenght = 3;
 
 //Enable comander
 element_default_enable = true;

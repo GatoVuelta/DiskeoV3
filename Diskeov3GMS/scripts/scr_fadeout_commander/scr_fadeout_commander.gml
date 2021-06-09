@@ -6,12 +6,13 @@ global.fade_in = false;
 global.fade_out = true;
 
 //Text inputs
-with (oInput){fade_out = true; init_x_threshold = -500}
+with (oInputFirstLine){fade_out = true; init_x_threshold = -500}
 
 //LM Items
-with (oButtonTXTST){fade_out = true; init_x_threshold = -500}
-with (oButtonPICST){fade_out = true; init_x_threshold = -500}
+with (oButtonTXTST){fade_out = true; init_x_threshold = -300}
+with (oButtonPICST){fade_out = true; init_x_threshold = -300}
 
-
+//ACtionButtons
+with (oButtonUpdateDRP){fade_out = true; init_x_threshold = -500}
 
 }

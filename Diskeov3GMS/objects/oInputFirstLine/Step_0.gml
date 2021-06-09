@@ -47,11 +47,8 @@ if ((global.overlay) && (element_enable))
 	element_enable = true;
 }
 
-//Maxium handler
-if (focus)
+//Maxium and minium handler
+if (focus) && (string_length(global.input_fline_text) > maxium_length)
 {
-	if (string_length(global.input_fline_text) > maxium_length)
-	{
-		tte_ext_input_set_text(string_copy(global.input_fline_text, 1, maxium_length));
-	}
+	tte_ext_input_set_text(string_copy(global.input_fline_text, 1, maxium_length));
 }
