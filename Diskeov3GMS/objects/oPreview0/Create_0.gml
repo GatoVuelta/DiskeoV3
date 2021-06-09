@@ -13,9 +13,6 @@ soon_availability = true;
 soon_text = "Soon™";
 //beta = true;
 
-//Create input
-tte_ext_input_create(654, 54, false);
-
 //tte_ext_input_set_on_changed(example_on_changed);
 
 tab_text = "First Text Line";

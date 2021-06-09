@@ -2,7 +2,7 @@
 image_blend = global.UI_windragger_element_focus_indicator_alt;
 
 //Show if activated
-image_alpha = 0.7 - global.fade_alpha;
+image_alpha = 1 - global.fade_alpha;
 
 
 if (show_warning) 
@@ -14,7 +14,6 @@ draw_sprite_ext(s_txtbx_warn_sy, 0, x, y, 1, 1, 0, global.UI_element_focused, 1-
 
 if (position_meeting(mouse_x, mouse_y, id))
 	{
-		image_alpha = 1 - global.fade_alpha;
 		//Cuadro
 		draw_set_color(global.UI_general_secondary);
 		draw_set_alpha(0.5-global.fade_alpha);

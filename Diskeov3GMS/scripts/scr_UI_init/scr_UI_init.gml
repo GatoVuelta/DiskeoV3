@@ -20,6 +20,8 @@ function scr_UI_init(){
 	global.UI_LMbtn_focused_bg = make_color_hex("5865f2");
 	global.UI_LMbtn_active_bg = make_color_hex("5865f2");
 	
+	//Preview
+	global.UI_PRVW_shade = c_black;
 	
 	//Window dragger
 	global.UI_windragger_focused = global.UI_general_secondary;

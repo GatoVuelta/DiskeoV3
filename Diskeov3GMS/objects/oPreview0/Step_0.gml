@@ -1,8 +1,3 @@
-if (element_enable) && (!global.overlay)
-{
-	script_execute(tte_ext_input_step,0,0,0,0,0);
-}
-
 //Slow border fading
 if (focus)
 {
@@ -35,9 +30,6 @@ if (fade_out)
 	} else fade_out = false;
 }
 
-//Output text
-global.input_fline_text = tte_ext_input_get_text();
-
 //If overlay
 if ((global.overlay) && (element_enable))
 {
@@ -45,10 +37,4 @@ if ((global.overlay) && (element_enable))
 } else if (!global.overlay) && (element_default_enable)
 {
 	element_enable = true;
-}
-
-//Maxium and minium handler
-if (focus) && (string_length(global.input_fline_text) > maxium_length)
-{
-	tte_ext_input_set_text(string_copy(global.input_fline_text, 1, maxium_length));
 }

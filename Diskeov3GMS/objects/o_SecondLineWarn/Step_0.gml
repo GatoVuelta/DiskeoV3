@@ -10,5 +10,5 @@ if (string_length(global.input_sline_text) < o_t_m.minium_lenght)
 } else {show_warning = false}
 
 //Position
-x = (o_t_m.x+o_t_m.x_threshold) + 625;
+x=(o_t_m.x-o_t_m.x_threshold)+625;
 if (!(o_t_m.focus)){y=init_y}else{y=init_y+3};
