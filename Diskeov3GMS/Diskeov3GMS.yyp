@@ -81,6 +81,7 @@
     {"id":{"name":"Make_Color_Hex_Edge_Engine","path":"extensions/Make_Color_Hex_Edge_Engine/Make_Color_Hex_Edge_Engine.yy",},"order":0,},
     {"id":{"name":"s_txtbx_warn_sy","path":"sprites/s_txtbx_warn_sy/s_txtbx_warn_sy.yy",},"order":2,},
     {"id":{"name":"tte_ext_set_selection_anchor","path":"scripts/tte_ext_set_selection_anchor/tte_ext_set_selection_anchor.yy",},"order":4,},
+    {"id":{"name":"s_prvw_topsq","path":"sprites/s_prvw_topsq/s_prvw_topsq.yy",},"order":2,},
     {"id":{"name":"execute_shell_simple","path":"extensions/execute_shell_simple/execute_shell_simple.yy",},"order":5,},
     {"id":{"name":"o_helperUI","path":"objects/o_helperUI/o_helperUI.yy",},"order":3,},
     {"id":{"name":"discord_init_dll","path":"scripts/discord_init_dll/discord_init_dll.yy",},"order":3,},
