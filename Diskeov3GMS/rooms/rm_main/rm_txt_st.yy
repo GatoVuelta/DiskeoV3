@@ -15,6 +15,7 @@
   "layers": [
     {"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[
         {"instances":[
+            {"properties":[],"isDnd":false,"objectId":{"name":"c_pfps_clip","path":"objects/c_pfps_clip/c_pfps_clip.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":871.0,"y":238.0,"resourceVersion":"1.0","name":"inst_701CC74C","tags":[],"resourceType":"GMRInstance",},
             {"properties":[],"isDnd":false,"objectId":{"name":"objNekoPresenceDemo","path":"objects/objNekoPresenceDemo/objNekoPresenceDemo.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":896.0,"y":320.0,"resourceVersion":"1.0","name":"inst_70792937","tags":[],"resourceType":"GMRInstance",},
           ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"DoneMarks0","tags":[],"resourceType":"GMRInstanceLayer",},
         {"instances":[
@@ -104,6 +105,7 @@
     {"name":"inst_4CA70794","path":"rooms/rm_txt_st/rm_txt_st.yy",},
     {"name":"inst_54DE851","path":"rooms/rm_txt_st/rm_txt_st.yy",},
     {"name":"inst_7619B2A","path":"rooms/rm_txt_st/rm_txt_st.yy",},
+    {"name":"inst_701CC74C","path":"rooms/rm_txt_st/rm_txt_st.yy",},
     {"name":"inst_70792937","path":"rooms/rm_txt_st/rm_txt_st.yy",},
   ],
   "inheritCreationOrder": false,
