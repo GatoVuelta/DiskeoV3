@@ -16,7 +16,7 @@ draw_set_alpha(1-global.fade_alpha);
 draw_set_halign(fa_center);
 draw_set_valign(fa_center);
 draw_set_font(f_UniSans_Title);
-draw_text((room_width/2)+60, 80, "STATUS TEXT");
+draw_text((room_width/2)+60, 80, global.room_title);
 
 //Restart drawing
 draw_set_halign(-1);

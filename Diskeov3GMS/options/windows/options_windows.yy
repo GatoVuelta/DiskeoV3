@@ -7,7 +7,7 @@
   "option_windows_copyright_info": "2021 Komodroid Developers",
   "option_windows_description_info": "Diskeo -  The Discord status customizer",
   "option_windows_display_cursor": true,
-  "option_windows_icon": "${base_options_dir}\\windows\\icons\\icon.ico",
+  "option_windows_icon": "${project_dir}\\options\\windows\\icons\\icon.ico",
   "option_windows_save_location": 0,
   "option_windows_splash_screen": "${base_options_dir}\\windows\\splash\\splash.png",
   "option_windows_use_splash": false,

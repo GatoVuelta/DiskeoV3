@@ -22,6 +22,10 @@ function scr_UI_init(){
 	
 	//Preview
 	global.UI_PRVW_shade = c_black;
+	global.UI_PRVW_bg = make_color_hex("18191c");
+	global.UI_PRVW_topsquare = c_black;
+	global.UI_PRVW_playingtext = make_color_hex("b5b7ba");
+	global.UI_PRVW_separator = make_color_hex("252628");
 	
 	//Window dragger
 	global.UI_windragger_focused = global.UI_general_secondary;

@@ -72,8 +72,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0dcbcb34-5a3b-4d03-a4d7-d6d94bf08b4b","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Preview",
+    "path": "folders/Sprites/Preview.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_donemark0",

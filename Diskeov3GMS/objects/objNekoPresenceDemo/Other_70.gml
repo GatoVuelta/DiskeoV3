@@ -6,13 +6,12 @@ if (ev_type == "DiscordReady")
 {
 	window_set_caption("We're ready!");
 	ready = true;
-	show_debug_message("date: " + string(date_current_datetime()));
+		show_debug_message("date: " + string(date_current_datetime()));
 	np_setpresence_timestamps(date_current_datetime(), 0, false);
-	np_setpresence_more("bruh", "lmao", false);
+	np_setpresence_more("Alpha 1", "Diskeo", false);
 	
 	//np_setpresence() should ALWAYS come the last!!
-	np_setpresence("this is a state", "this is some details", "astraicon", "astraicon");
-	
+	np_setpresence(global.input_sline_text, global.input_fline_text, "dsk_dsklogo", "dsk_dsklogo");
 	if (!global.hassprite)
 	{
 	// passing a URL will add this sprite asynchronously via *internets*

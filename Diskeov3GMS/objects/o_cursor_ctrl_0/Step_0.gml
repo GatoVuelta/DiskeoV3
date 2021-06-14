@@ -10,8 +10,16 @@ if
 	//LMButtons
 	(position_meeting(mouse_x, mouse_y, oButtonTXTST) && (oButtonTXTST.element_enable == true)) or
 	(position_meeting(mouse_x, mouse_y, oButtonPICST) && (oButtonPICST.element_enable == true)) or
+	(position_meeting(mouse_x, mouse_y, oButtonProfiles) && (oButtonProfiles.element_enable == true)) or
+	(position_meeting(mouse_x, mouse_y, oButtonPalette) && (oButtonPalette.element_enable == true)) or
+	(position_meeting(mouse_x, mouse_y, oButtonCog) && (oButtonCog.element_enable == true)) or
 	//ActionButtons
-	(position_meeting(mouse_x, mouse_y, oButtonUpdateDRP) && (oButtonUpdateDRP.element_enable == true))
+	(position_meeting(mouse_x, mouse_y, oButtonUpdateDRP) && (oButtonUpdateDRP.element_enable == true)) or
+	//Preview
+	(position_meeting(mouse_x, mouse_y, c_preview_online)) or
+	//Dropdowns
+	(position_meeting(mouse_x, mouse_y, obj_dropdown)) or
+	(position_meeting(mouse_x, mouse_y, obj_dropdown_item))
 )
 {
 	window_set_cursor(cr_drag);

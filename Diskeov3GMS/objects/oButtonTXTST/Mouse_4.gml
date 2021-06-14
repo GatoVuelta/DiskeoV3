@@ -1,4 +1,4 @@
-if (room_to_check != room) && (!ever_clicked_clicking)
+if (room_to_check != room) && (!ever_clicked_clicking) && (element_enable)
 {
 ever_clicked_clicking = true;
 //Define next

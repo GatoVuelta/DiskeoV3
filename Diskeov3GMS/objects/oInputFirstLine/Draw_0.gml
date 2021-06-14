@@ -37,7 +37,7 @@ draw_sprite_ext(s_txtbx_bd0, 0, x-x_threshold, y, 1, 1, 0, global.UI_general_pri
 	draw_set_alpha(1-init_alpha);
 	draw_text((x+175)-x_threshold, y-16, tab_text);
 	
-	if (soon_availability) && (position_meeting(mouse_x, mouse_y, id))
+	if (soon_availability) && (position_meeting(mouse_x, mouse_y, id) && !global.overlay)
 	{
 		//Cuadro
 		draw_set_color(global.UI_general_secondary);

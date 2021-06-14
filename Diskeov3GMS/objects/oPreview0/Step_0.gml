@@ -38,3 +38,31 @@ if ((global.overlay) && (element_enable))
 {
 	element_enable = true;
 }
+
+//Loading animation
+if (load_subimg < (total_subimgs-1)) && (!global.hassprite)
+{
+	load_subimg += 1;
+} else {load_subimg = 0}
+
+//Excess controller
+shrinked_fline = global.input_fline_text;
+if (string_length(shrinked_fline) > 27)
+{
+	shrinked_fline = string_copy(shrinked_fline, 1, 27);
+	shrinked_fline = string(shrinked_fline) + string("...");
+}
+shrinked_sline = global.input_sline_text;
+if (string_length(shrinked_sline) > 27)
+{
+	shrinked_sline = string_copy(shrinked_sline, 1, 27);
+	shrinked_sline = string(shrinked_sline) + string("...");
+}
+shrinked_heading = global.heading_dw.text;
+if (string_length(shrinked_heading) > 25)
+{
+	shrinked_heading = string_copy(shrinked_heading, 1, 25);
+	shrinked_heading = string(shrinked_heading) + string("...");
+}
+
+
