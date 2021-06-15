@@ -50,3 +50,9 @@ if ((global.overlay) && (element_enable))
 {
 	element_enable = true;
 }
+
+//Loading animation
+if (load_subimg < (total_subimgs-1)) && (draw_load)
+{
+	load_subimg += 1;
+} else {load_subimg = 0}

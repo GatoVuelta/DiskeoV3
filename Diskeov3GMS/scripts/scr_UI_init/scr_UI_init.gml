@@ -36,6 +36,7 @@ function scr_UI_init(){
 	//Text boxes
 	global.UI_txtbx_textsel = global.UI_general_primary;
 	global.UI_txtbx_bg_focused = make_color_hex("40444b");
+	global.UI_tab_inactive = make_color_hex("242b66");
 	global.UI_txtbx_bg_unfocused = make_color_hex("40444b");
 	global.UI_txtbx_bd = global.UI_general_primary;
 	

@@ -24,7 +24,7 @@ draw_sprite_ext(s_LMC_i2, 0, x, y-x_threshold, 1, 1, 0, global.UI_element_focuse
 	//Icon
 	draw_sprite_ext(s_LMC_i2, 0, x, y-x_threshold, 1, 1, 0, global.UI_element_disabled, 1-init_alpha);
 	
-	if (soon_availability) && (position_meeting(mouse_x, mouse_y, id))
+	if (soon_availability) && (position_meeting(mouse_x, mouse_y, id) && (!global.overlay))
 	{
 		//Basic text stuff
 		draw_set_halign(fa_center);

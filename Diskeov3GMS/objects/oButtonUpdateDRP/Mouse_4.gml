@@ -6,9 +6,11 @@ if (!ever_clicked_clicking)
 
 if !(global.lastusedappID == global.appIDto)
 {
-	show_message_async("You recently selected a new Heading or profile AppID.\nDiscord can take 3-5 seconds to finish the old presence and start the new one");
+	//show_message_async("You recently selected a new Heading or profile AppID.\nDiscord can take 3-5 seconds to finish the old presence and start the new one");
 	__np_shutdown();
 	np_initdiscord(global.appIDto, true, np_steam_app_id_empty);
+	draw_load = true;
+	alarm[0] = room_speed*1;
 }
 
 	show_debug_message("date: " + string(date_current_datetime()));
@@ -21,6 +23,9 @@ if !(global.lastusedappID == global.appIDto)
 	global.lastusedappID = global.appIDto;
 	
 	np_update();
+	
+	if !(draw_load)
+	{
+		instance_create_layer(mouse_x, mouse_y, "DoneMarks0", oDoneMark0)
+	}
 }
-
-instance_create_layer(mouse_x, mouse_y, "DoneMarks0", oDoneMark0)

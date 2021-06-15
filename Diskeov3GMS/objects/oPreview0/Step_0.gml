@@ -40,7 +40,7 @@ if ((global.overlay) && (element_enable))
 }
 
 //Loading animation
-if (load_subimg < (total_subimgs-1)) && (!global.hassprite)
+if (load_subimg < (total_subimgs-1)) && !(global.hassprite)
 {
 	load_subimg += 1;
 } else {load_subimg = 0}

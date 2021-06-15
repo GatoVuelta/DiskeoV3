@@ -1,6 +1,6 @@
 if (position_meeting(mouse_x, mouse_y, id))
 {
-	image_alpha = 0.7
+	hover = true;
 	
 	if (mouse_check_button_pressed(mb_left))
 	{
@@ -19,5 +19,5 @@ if (position_meeting(mouse_x, mouse_y, id))
 	dropdown_close();
 }else
 {
-	image_alpha = 1;
+	hover = false;
 }

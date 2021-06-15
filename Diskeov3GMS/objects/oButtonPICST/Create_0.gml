@@ -5,8 +5,8 @@ maxium_length = 200;
 ever_clicked_clicking = false;
 
 //Enable comander
-element_default_enable = false;
-element_enable = false;
+element_default_enable = true;
+element_enable = true;
 
 //Beta
 soon_availability = true;

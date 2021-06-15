@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_dropdown_item",
-    "path": "sprites/spr_dropdown_item/spr_dropdown_item.yy",
+    "name": "s_dw_large0_i",
+    "path": "sprites/s_dw_large0_i/s_dw_large0_i.yy",
   },
   "solid": false,
   "visible": true,
