@@ -36,5 +36,9 @@ show_message(string("Your version is ")
 //show_debug_message(string("stars: ") + string(stars));
 
 global.firstsuccess = true;
+} else if (status == 500) or (status == 404)
+{
+	show_message(string("There was an error contacting the server\nError code: ")+string(status));
+	game_end();
 }
 }
