@@ -40,7 +40,7 @@ draw_text(x-x_threshold, y, tab_text)
 	draw_set_alpha(1-init_alpha);
 	draw_text(x-x_threshold, y, tab_text);
 	
-	if (soon_availability) && (position_meeting(mouse_x, mouse_y, id))
+	if (soon_availability) && (position_meeting(mouse_x, mouse_y, id) && (!global.overlay))
 	{
 		//Basic text stuff
 		draw_set_halign(fa_center);

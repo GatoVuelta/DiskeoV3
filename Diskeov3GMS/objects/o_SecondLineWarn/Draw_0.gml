@@ -12,7 +12,7 @@ draw_self();
 //Icono
 draw_sprite_ext(s_txtbx_warn_sy, 0, x, y, 1, 1, 0, global.UI_element_focused, 1-global.fade_alpha);
 
-if (position_meeting(mouse_x, mouse_y, id))
+if (position_meeting(mouse_x, mouse_y, id) && (!global.overlay))
 	{
 		//Cuadro
 		draw_set_color(global.UI_general_secondary);
