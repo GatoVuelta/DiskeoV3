@@ -28,4 +28,4 @@ draw_set_halign(-1);
 draw_set_valign(-1);
 
 //Border
-draw_sprite_ext(s_dw_large0_bd, 0, x, y, 1, 1, 0, global.UI_general_primary, border_alpha);
+draw_sprite_ext(s_dw_large0_bd, 0, x, y-2, 1, 1, 0, global.UI_general_primary, border_alpha);
