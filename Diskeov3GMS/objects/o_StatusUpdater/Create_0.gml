@@ -11,5 +11,7 @@
 //var small_image = "logo_0_white";
 
 ////Actualizar
-//scr_update_drp(third_line, second_line, big_image, small_image);
+//scr_update_drp(third_line, second_line, big_image, small_image);show_message("nice 3");
+show_message("called nice 3");
 instance_create_layer(x, y, layer, objKMDPresence);
+show_message("nice 3");

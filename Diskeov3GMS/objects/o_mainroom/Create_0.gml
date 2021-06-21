@@ -20,3 +20,5 @@ get_request = http_get("https://api.npoint.io/f4f691ca862af6eb7855");
 //Define presence ID
 global.appIDto = "765725484779700224"
 global.lastusedappID = global.appIDto;
+
+show_debug_message("testooooooooooooooooooooo");
