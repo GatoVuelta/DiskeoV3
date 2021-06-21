@@ -7,5 +7,3 @@ offset_x = display_mouse_get_x()-window_get_x();
 offset_y = display_mouse_get_y()-window_get_y();
 
 mouse_release_count = 0;
-
-show_message("nice 2");
