@@ -10,7 +10,7 @@ if !(global.lastusedappID == global.appIDto)
 	__np_shutdown();
 	np_initdiscord(global.appIDto, true, np_steam_app_id_empty);
 	draw_load = true;
-	alarm[0] = room_speed*1.5;
+	alarm[0] = room_speed*1;
 }
 
 	show_debug_message("date: " + string(date_current_datetime()));
