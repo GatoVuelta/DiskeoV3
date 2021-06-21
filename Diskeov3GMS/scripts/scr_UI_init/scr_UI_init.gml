@@ -2,6 +2,10 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_UI_init(){
 	
+	//MSGBoxes
+	global.UI_msgbx_shade = make_color_hex("000000");
+	global.UI_msgbx_bg = make_color_hex("18191c");
+	
 	//Interruptions
 	global.interruption0 = false;
 	

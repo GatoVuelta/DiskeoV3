@@ -12,4 +12,4 @@
 
 ////Actualizar
 //scr_update_drp(third_line, second_line, big_image, small_image);
-instance_create_layer(x, y, layer, objNekoPresenceDemo);
+instance_create_layer(x, y, layer, objKMDPresence);
