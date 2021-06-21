@@ -11,7 +11,12 @@
 //var small_image = "logo_0_white";
 
 ////Actualizar
+<<<<<<< HEAD
 //scr_update_drp(third_line, second_line, big_image, small_image);show_message("nice 3");
 show_message("called nice 3");
 instance_create_layer(x, y, layer, objKMDPresence);
 show_message("nice 3");
+=======
+//scr_update_drp(third_line, second_line, big_image, small_image);
+instance_create_layer(x, y, layer, objNekoPresenceDemo);
+>>>>>>> parent of 4fdde81 (Updated core scripts / Setting up Linux export)
