@@ -12,5 +12,5 @@ my_btn1.caller = id;
 
 init_alpha = o_overlayctrl_0.overlay_alpha;
 
-msg_title = "Bruh moment";
-msg_description = ("There is already a new version with important features\nand critical fixes. You need to download and install\nthe update to continue using Diskeo.");
+msg_title = "Unable to check for updates";
+msg_description = ("Diskeo was unable to connect to fecth data from\nthe server. Check your firewall settings and internet connection\nthen try again.");

@@ -6,7 +6,7 @@ ever_clicked_clicking = false;
 draw_load = false;
 
 //ActionText
-tab_text = "What's new";
+tab_text = "Try again";
 
 //Enable comander
 element_default_enable = true;
