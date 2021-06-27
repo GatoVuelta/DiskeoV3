@@ -6,6 +6,6 @@ if (element_enable)
 	
 	global.firstsuccess = true;
 	
-	with (caller.my_btn0){fade_out = true; init_x_threshold = -100}
-	with (caller.my_btn1){fade_out = true; init_x_threshold = -100}
+	with (caller.my_btn2){fade_out = true; init_x_threshold = -100}
+	with (caller.my_btn3){fade_out = true; init_x_threshold = -100}
 }

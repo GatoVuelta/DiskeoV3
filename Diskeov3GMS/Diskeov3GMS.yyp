@@ -152,6 +152,7 @@
     {"id":{"name":"s_LMC_i1","path":"sprites/s_LMC_i1/s_LMC_i1.yy",},"order":5,},
     {"id":{"name":"s_LMC0_pic","path":"sprites/s_LMC0_pic/s_LMC0_pic.yy",},"order":7,},
     {"id":{"name":"tte_ext_move_cursor","path":"scripts/tte_ext_move_cursor/tte_ext_move_cursor.yy",},"order":9,},
+    {"id":{"name":"o_msgbx_cross_badsv","path":"objects/o_msgbx_cross_badsv/o_msgbx_cross_badsv.yy",},"order":8,},
     {"id":{"name":"scr_update_drp","path":"scripts/scr_update_drp/scr_update_drp.yy",},"order":15,},
     {"id":{"name":"tte_ext_input_set_selection_color","path":"scripts/tte_ext_input_set_selection_color/tte_ext_input_set_selection_color.yy",},"order":8,},
     {"id":{"name":"s_prvw_smap","path":"sprites/s_prvw_smap/s_prvw_smap.yy",},"order":9,},

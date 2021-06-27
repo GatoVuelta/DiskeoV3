@@ -7,8 +7,11 @@ if
 	
 	//MSG_btns
 	(position_meeting(mouse_x, mouse_y, o_msgbx_acbtn0) && (o_msgbx_acbtn0.element_enable == true)) or
+	(position_meeting(mouse_x, mouse_y, o_msgbx_acbtn1) && (o_msgbx_acbtn0.element_enable == true)) or
+	(position_meeting(mouse_x, mouse_y, o_msgbx_acbtn2) && (o_msgbx_acbtn0.element_enable == true)) or
+	(position_meeting(mouse_x, mouse_y, o_msgbx_acbtn3) && (o_msgbx_acbtn0.element_enable == true)) or
 	(position_meeting(mouse_x, mouse_y, o_msgbx_cross) && (o_msgbx_cross.element_enable == true)) or
-	(position_meeting(mouse_x, mouse_y, o_msgbx_acbtn1) && (o_msgbx_acbtn1.element_enable == true))
+	(position_meeting(mouse_x, mouse_y, o_msgbx_cross_badsv) && (o_msgbx_cross.element_enable == true))
 )
 {
 	window_set_cursor(cr_drag);
