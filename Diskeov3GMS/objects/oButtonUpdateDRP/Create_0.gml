@@ -25,6 +25,7 @@ room_to = rm_txt_st;
 fin_speed = 25;
 fout_speed = 25;
 //AnimationVariables
+
 init_x_threshold = 300;
 init_alpha = 0;
 x_threshold = init_x_threshold;
@@ -33,3 +34,6 @@ fade_in = true;
 fade_out = false;
 total_subimgs = sprite_get_number(spr_pfpcload_tr);
 load_subimg = 0;
+
+data_and_roots = false;
+root_accent_value_exists = false;

@@ -6,16 +6,16 @@ draw_sprite_ext(sprite_index, 0, x-x_threshold, y, 1, 1, 0, global.UI_PRVW_bg, 1
 //ProfilePicture
 if (global.hassprite)
 {
-	draw_sprite_stretched_ext(global.userid_spr,0,((x-x_threshold)-(sprite_width/2))+22,(y-(sprite_height/2))+22,82,82,c_white,1-init_alpha);
+	draw_sprite_stretched_ext(global.userid_spr,0,((x-x_threshold)-(sprite_width/2))+22,(y-(sprite_height/2))+22,86,86,c_white,1-init_alpha);
 	//c_pfps_load.image_index = global.userid_spr;
 } else
 {
-	draw_sprite_stretched_ext(spr_pfpcload,load_subimg,((x-x_threshold)-(sprite_width/2))+22,(y-(sprite_height/2))+22,82,82,global.UI_general_primary,1-init_alpha);
+	draw_sprite_stretched_ext(spr_pfpcload,load_subimg,((x-x_threshold)-(sprite_width/2))+22,(y-(sprite_height/2))+22,86,86,global.UI_general_primary,1-init_alpha);
 }
 //ProfilePictureClip
 draw_sprite_stretched_ext(spr_pfpclip, 0, (x-x_threshold)-(sprite_width/2), y-(sprite_height/2), 118, 118, global.UI_PRVW_bg, 1-init_alpha);
 //Topsquare
-draw_sprite_ext(s_prvw_topsq, 0, x-x_threshold, y-(sprite_height/2), 1, 1, 0, global.UI_PRVW_topsquare, 1-init_alpha);
+draw_sprite_ext(s_prvw_topsq, 0, x-x_threshold, y-(sprite_height/2), 1, 1, 0, global.userid_banner_color, 1-init_alpha);
 
 //UserText
 draw_set_halign(fa_left);

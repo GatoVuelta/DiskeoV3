@@ -16,6 +16,9 @@ if (ev_type == "DiscordReady")
 	if (!global.hassprite)
 	{
 	// passing a URL will add this sprite asynchronously via *internets*
-	sprite_add(np_get_avatar_url(async_load[? "user_id"], async_load[? "avatar"]), 1, false, false, 0, 0);
+	
+	user_avatar_url = np_get_avatar_url(async_load[? "user_id"], async_load[? "avatar"]);
+	sprite_add(user_avatar_url, 1, false, false, 0, 0);
+	img_request = http_get(string("https://api.sightengine.com/1.0/check.json?url=")+string(user_avatar_url)+string("&models=properties&api_user=25594430&api_secret=DULGwRWykZQUPB2SRyWF"));
 	}
 }

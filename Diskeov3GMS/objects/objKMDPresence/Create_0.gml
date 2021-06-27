@@ -1,6 +1,4 @@
 /// @description Initialize Discord.
-
-
 ready = false;
 if (!np_initdiscord(global.appIDto, true, np_steam_app_id_empty))
 {
