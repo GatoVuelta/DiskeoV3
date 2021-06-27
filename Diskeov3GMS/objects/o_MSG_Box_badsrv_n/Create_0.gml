@@ -13,4 +13,4 @@ my_btn3.caller = id;
 init_alpha = o_overlayctrl_0.overlay_alpha;
 
 msg_title = "Unable to check for updates";
-msg_description = ("Diskeo was unable to connect to fecth data from\nthe server. Check your firewall settings and internet connection\nthen try again.");
+msg_description = ("Diskeo was unable to connect to fetch data from\nthe server. Check your firewall settings and internet connection\nthen try again.");

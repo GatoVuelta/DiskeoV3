@@ -5,8 +5,6 @@ maxium_length = 200;
 minium_lenght = 3;
 total_subimgs = sprite_get_number(spr_pfpcload);
 load_subimg = 0;
-randomize();
-random_user = string("DiskeoUser#")+string(irandom_range(1000, 9999));
 
 //Enable comander
 element_default_enable = true;

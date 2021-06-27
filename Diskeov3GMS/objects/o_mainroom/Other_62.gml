@@ -10,7 +10,7 @@ show_debug_message(string("status: ") + string(status));
 show_debug_message(string("http_status: ") + string(http_status));
 
 //If fetching success
-if (http_status == 200) && !(fetched_data = "") && (status == 0)
+if (http_status == 200) && !(fetched_data = "") && (status == 0 or status == 1)
 {
 json_data = json_decode(fetched_data);
 lastv = json_data[? "lastver"];

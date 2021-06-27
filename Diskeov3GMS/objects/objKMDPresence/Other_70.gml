@@ -15,8 +15,8 @@ if (ev_type == "DiscordReady")
 	{
 	// passing a URL will add this sprite asynchronously via *internets*
 	sprite_add(np_get_avatar_url(async_load[? "user_id"], async_load[? "avatar"]), 1, false, false, 0, 0);
-	show_debug_message(async_load[? "username"]);
-	show_debug_message(async_load[? "discriminator"]);
+	global.userid_nick = (async_load[? "username"]);
+	global.userid_disc = (async_load[? "discriminator"]);
 	show_debug_message(async_load[? "bot"]);
 	}
 }

@@ -23,7 +23,7 @@ draw_set_valign(fa_center);
 draw_set_color(global.UI_element_focused);
 draw_set_font(f_UniSans_TabTtle);
 draw_set_alpha(1-init_alpha);
-draw_text(((x-x_threshold)-(sprite_width/2))+15, y-10, random_user);
+draw_text(((x-x_threshold)-(sprite_width/2))+15, y-10, string(global.userid_nick)+string("#")+string(global.userid_disc));
 //BigPic
 draw_sprite_ext(s_prvw_bigp, 0, (x-x_threshold) - 110, y+98, 1, 1, 0, c_black, 1-init_alpha);
 //Small
