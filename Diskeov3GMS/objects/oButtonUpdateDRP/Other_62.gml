@@ -41,6 +41,8 @@ var blue = ds_map_find_value(root_dominant0,"b");
 global.userid_banner_color = make_color_rgb(red, green, blue);
 }
 
+global.hassbanner = true;
+
 
 //if(lastv_n > global.app_ver)
 //{

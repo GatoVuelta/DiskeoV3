@@ -30,7 +30,10 @@ function scr_UI_init(){
 	global.UI_PRVW_topsquare = c_black;
 	global.UI_PRVW_playingtext = make_color_hex("b5b7ba");
 	global.UI_PRVW_separator = make_color_hex("252628");
-	global.userid_banner_color = global.UI_PRVW_topsquare;
+	if (global.userid_banner_color == -1)
+	{
+		global.userid_banner_color = global.UI_PRVW_topsquare;
+	}
 	
 	//Window dragger
 	global.UI_windragger_focused = global.UI_general_secondary;

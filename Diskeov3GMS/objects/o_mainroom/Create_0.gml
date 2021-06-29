@@ -20,6 +20,9 @@ get_request = http_get("https://api.npoint.io/f4f691ca862af6eb7855");
 global.appIDto = "765725484779700224"
 global.lastusedappID = global.appIDto;
 
+global.hassbanner = false;
+
 //Define preview props
 global.userid_nick = "Loading";
 global.userid_disc = "0000";
+global.userid_banner_color = -1;

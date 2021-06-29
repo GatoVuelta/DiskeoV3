@@ -4,6 +4,12 @@ border_alpha = 0;
 maxium_length = 200;
 ever_clicked_clicking = false;
 draw_load = false;
+img_request = -1;
+
+if (global.hassprite) && !(global.hassbanner)
+{
+	img_request = http_get(string("https://api.sightengine.com/1.0/check.json?url=")+string(global.user_avatar_url)+string("&models=properties&api_user=25594430&api_secret=DULGwRWykZQUPB2SRyWF"));
+}
 
 //ActionText
 tab_text = "Update presence";
