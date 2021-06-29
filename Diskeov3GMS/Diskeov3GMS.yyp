@@ -44,6 +44,7 @@
     {"id":{"name":"o_wdg_max","path":"objects/o_wdg_max/o_wdg_max.yy",},"order":4,},
     {"id":{"name":"s_cog_0","path":"sprites/s_cog_0/s_cog_0.yy",},"order":0,},
     {"id":{"name":"oDW_tab0","path":"objects/oDW_tab0/oDW_tab0.yy",},"order":3,},
+    {"id":{"name":"o_dw_pics","path":"objects/o_dw_pics/o_dw_pics.yy",},"order":5,},
     {"id":{"name":"s_wdg_max","path":"sprites/s_wdg_max/s_wdg_max.yy",},"order":6,},
     {"id":{"name":"__tte_ext_input_check_surface","path":"scripts/__tte_ext_input_check_surface/__tte_ext_input_check_surface.yy",},"order":3,},
     {"id":{"name":"objKMDPresence","path":"objects/objKMDPresence/objKMDPresence.yy",},"order":1,},

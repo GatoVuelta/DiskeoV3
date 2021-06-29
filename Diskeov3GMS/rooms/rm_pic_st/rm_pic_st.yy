@@ -16,7 +16,7 @@
     {"instances":[],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"DoneMarks0","tags":[],"resourceType":"GMRInstanceLayer",},
     {"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[
         {"instances":[
-            {"properties":[],"isDnd":false,"objectId":{"name":"o_dw_heading","path":"objects/o_dw_heading/o_dw_heading.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":145.0,"y":217.0,"resourceVersion":"1.0","name":"inst_43EEFB91","tags":[],"resourceType":"GMRInstance",},
+            {"properties":[],"isDnd":false,"objectId":{"name":"o_dw_pics","path":"objects/o_dw_pics/o_dw_pics.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":145.0,"y":217.0,"resourceVersion":"1.0","name":"inst_2720C534","tags":[],"resourceType":"GMRInstance",},
           ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"LY_dropdowns","tags":[],"resourceType":"GMRInstanceLayer",},
         {"instances":[
             {"properties":[],"isDnd":false,"objectId":{"name":"oDW_tab0","path":"objects/oDW_tab0/oDW_tab0.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":144.0,"y":218.0,"resourceVersion":"1.0","name":"inst_67B5E5A1","tags":[],"resourceType":"GMRInstance",},
@@ -94,7 +94,6 @@
   "creationCodeFile": "${project_dir}/rooms/rm_pic_st/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_43EEFB91","path":"rooms/rm_pic_st/rm_pic_st.yy",},
     {"name":"inst_67B5E5A1","path":"rooms/rm_pic_st/rm_pic_st.yy",},
     {"name":"inst_79C36D2D","path":"rooms/rm_pic_st/rm_pic_st.yy",},
     {"name":"inst_3EE3C76F","path":"rooms/rm_pic_st/rm_pic_st.yy",},
@@ -128,6 +127,7 @@
     {"name":"inst_190151A1","path":"rooms/rm_pic_st/rm_pic_st.yy",},
     {"name":"inst_2D6044FD","path":"rooms/rm_pic_st/rm_pic_st.yy",},
     {"name":"inst_1F770CF6","path":"rooms/rm_pic_st/rm_pic_st.yy",},
+    {"name":"inst_2720C534","path":"rooms/rm_pic_st/rm_pic_st.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
