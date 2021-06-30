@@ -18,7 +18,7 @@ if
 	//Preview
 	(position_meeting(mouse_x, mouse_y, c_preview_online)) or
 	//Dropdowns
-	(position_meeting(mouse_x, mouse_y, obj_dropdown)) or
+	(position_meeting(mouse_x, mouse_y, obj_dropdown) && !(obj_dropdown.open)) or
 	(position_meeting(mouse_x, mouse_y, obj_dropdown_item)) or
 	//DWTabs
 	(position_meeting(mouse_x, mouse_y, oDW_tab0) && (oDW_tab0.element_enable) && (!oDW_tab0.focus) && !(position_meeting(mouse_x, mouse_y, oDW_tab1))) or

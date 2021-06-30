@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 31,
+  "bbox_right": 9,
   "bbox_top": 0,
-  "bbox_bottom": 699,
+  "bbox_bottom": 283,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 32,
-  "height": 700,
+  "width": 10,
+  "height": 284,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"db362510-add7-4567-88e4-38a36be72fb5","path":"sprites/spr_bar/spr_bar.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"db362510-add7-4567-88e4-38a36be72fb5","path":"sprites/spr_bar/spr_bar.yy",},"LayerId":{"name":"d64dbea6-26bd-473a-85a1-c68ac12c7682","path":"sprites/spr_bar/spr_bar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bar","path":"sprites/spr_bar/spr_bar.yy",},"resourceVersion":"1.0","name":"db362510-add7-4567-88e4-38a36be72fb5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"56c17656-24a6-43d9-a031-7e360babbc2b","path":"sprites/spr_bar/spr_bar.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"56c17656-24a6-43d9-a031-7e360babbc2b","path":"sprites/spr_bar/spr_bar.yy",},"LayerId":{"name":"a95e1ffd-1a5c-4df5-ad75-f007fd2836e7","path":"sprites/spr_bar/spr_bar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_bar","path":"sprites/spr_bar/spr_bar.yy",},"resourceVersion":"1.0","name":"56c17656-24a6-43d9-a031-7e360babbc2b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_bar","path":"sprites/spr_bar/spr_bar.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"b8822a6b-2d7f-4076-a9f1-4ef90cd29646","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"db362510-add7-4567-88e4-38a36be72fb5","path":"sprites/spr_bar/spr_bar.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"800b2d1f-785f-4716-8b44-3f5687ac569d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"56c17656-24a6-43d9-a031-7e360babbc2b","path":"sprites/spr_bar/spr_bar.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 1080,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 16,
-    "yorigin": 350,
+    "xorigin": 5,
+    "yorigin": 142,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bar","path":"sprites/spr_bar/spr_bar.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d64dbea6-26bd-473a-85a1-c68ac12c7682","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a95e1ffd-1a5c-4df5-ad75-f007fd2836e7","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Sprites",

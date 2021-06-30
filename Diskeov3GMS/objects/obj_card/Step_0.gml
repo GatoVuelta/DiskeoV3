@@ -1,4 +1,4 @@
-y = ystart + ((global.areaHeight/100 * obj_slider.percentage) - global.areaHeight);
+y = ystart + ((global.areaHeight/100 * obj_slider.percentage) - global.areaHeight - 38);
 
 if (position_meeting(mouse_x-global.scroll_surface_x, mouse_y-global.scroll_surface_y, id)) && (mouse_check_button_pressed(mb_left))
 {

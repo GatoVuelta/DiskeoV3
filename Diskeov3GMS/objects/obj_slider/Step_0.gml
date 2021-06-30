@@ -9,10 +9,10 @@ if (point_in_rectangle(mouse_x, mouse_y, x0, y0, x1, y1))
 	wheelgrab = true;
 	if(mouse_wheel_down())
 	{
-		y = y+40;
+		y = y+10;
 	} else if (mouse_wheel_up())
 	{
-		y = y-40;
+		y = y-10;
 	} else
 	{
 		grab = false;
@@ -50,11 +50,13 @@ else if (wheelgrab)
 	}
 	else if (mouse_y + yy > bottomLimit)
 	{
-		y = bottomLimit;	
+		y = bottomLimit;
+		y = y;
 	}
 	else if (mouse_y + yy < topLimit)
 	{
-		y = topLimit;	
+		y = topLimit;
+		y = y;
 	}
 }
 

@@ -3,7 +3,7 @@ var areaHeight = 0;
 var maxWidth = 6;
 var maxHeight = 9;
 var xx = 110;
-var yy = 100;
+var yy = 104;
 
 for (var i = 0; i < maxWidth; i++)
 {
@@ -26,4 +26,4 @@ for (var i = 0; i < maxWidth; i++)
 	xx += 100;
 }
 
-global.areaHeight = areaHeight - 350;
+global.areaHeight = areaHeight - 395;

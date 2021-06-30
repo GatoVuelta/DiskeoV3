@@ -4,7 +4,7 @@
     "path": "sprites/s_reference1/s_reference1.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,

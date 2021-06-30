@@ -9,4 +9,7 @@
 //if (root_accent_value_exists)
 //{
 //	ds_map_destroy(root_accent_value);
-//} 
+//}
+
+np_clearpresence();
+__np_shutdown();

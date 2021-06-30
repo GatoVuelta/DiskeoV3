@@ -48,6 +48,10 @@ function scr_UI_init(){
 	global.UI_txtbx_bg_unfocused = make_color_hex("40444b");
 	global.UI_txtbx_bd = global.UI_general_primary;
 	
+	//ScrollabeArea
+	global.UI_scrll_scrollbar_bg = make_color_hex("2f3136"); 
+	global.UI_scrll_scrollbar = make_color_hex("202225"); 	
+	
 	//UI Elements
 	global.UI_element_regular = make_color_hex("52585f"); //NO
 	global.UI_element_disabled = make_color_hex("464950");
