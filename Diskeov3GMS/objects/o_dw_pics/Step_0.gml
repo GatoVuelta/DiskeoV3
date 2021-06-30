@@ -13,7 +13,7 @@ if (global.picdw_Exists)
 
 with(global.picdw)
 {
-	image_alpha = 1-oInputFirstLine.init_alpha;
+	image_alpha = 1-global.fade_alpha;
 	x = oPreview0.x-oPreview0.x_threshold - 845;
 }
 }
