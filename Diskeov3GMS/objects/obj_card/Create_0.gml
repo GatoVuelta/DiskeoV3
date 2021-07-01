@@ -1,5 +1,5 @@
 selected = false;
-txt = choose("Loading...");
+txt = choose("");
 
 empty_Asset = false;
 iread = false;

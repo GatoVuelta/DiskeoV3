@@ -13,6 +13,9 @@ with (oInputSecondLine){fade_out = true; init_x_threshold = -500}
 with (oDW_tab0){fade_out = true; init_x_threshold = -500}
 with (oDW_tab1){fade_out = true; init_x_threshold = -500}
 
+with (oDW_tabpic0){fade_out = true; init_x_threshold = -500}
+with (oDW_tabpic1){fade_out = true; init_x_threshold = -500}
+
 //LM Items
 with (oButtonTXTST){fade_out = true; init_x_threshold = -300}
 with (oButtonPICST){fade_out = true; init_x_threshold = -300}
@@ -22,6 +25,9 @@ with (oButtonCog){fade_out = true; init_x_threshold = -300}
 
 //Preview
 with (oPreview0){fade_out = true; init_x_threshold = -500}
+
+//ScrollableArea
+with (obj_bar){fade_out = true; init_x_threshold = -500}
 
 //ActionButtons
 with (oButtonUpdateDRP){fade_out = true; init_x_threshold = -500}

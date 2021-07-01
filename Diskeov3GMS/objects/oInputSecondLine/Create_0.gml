@@ -31,5 +31,7 @@ x_threshold = init_x_threshold;
 fade_in = true;
 fade_out = false;
 
-//Output text
-global.input_sline_text = "";
+//SetText
+tte_ext_input_set_text(global.input_sline_text);
+
+alarm[0] = 10;

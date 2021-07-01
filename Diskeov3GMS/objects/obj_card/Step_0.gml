@@ -1,4 +1,5 @@
 y = ystart + ((global.areaHeight/100 * obj_slider.percentage) - global.areaHeight - 38);
+x = xstart-obj_bar.x_threshold;
 
 if (o_dw_pics.map_ready) && !(iread)
 {

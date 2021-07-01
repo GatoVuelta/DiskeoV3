@@ -33,5 +33,3 @@ x_threshold = init_x_threshold;
 fade_in = true;
 fade_out = false;
 
-//Output text
-global.input_fline_text = "";

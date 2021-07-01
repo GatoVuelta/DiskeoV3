@@ -5,20 +5,17 @@ maxium_length = 200;
 minium_lenght = 3;
 
 //Enable comander
-element_default_enable = true;
-element_enable = true;
+element_default_enable = false;
+element_enable = false;
 
 //Beta
 soon_availability = true;
-soon_text = "Soon™";
+soon_text = "Coming soon";
 //beta = true;
-
-//Create input
-tte_ext_input_create(654, 54, false);
 
 //tte_ext_input_set_on_changed(example_on_changed);
 
-tab_text = "First Text Line";
+tab_text = "Custom Pictures";
 
 //Speed
 fin_speed = 25;
@@ -30,8 +27,3 @@ x_threshold = init_x_threshold;
 //AnimationState
 fade_in = true;
 fade_out = false;
-
-alarm[0] = 10;
-
-//SetText
-tte_ext_input_set_text(global.input_fline_text);

@@ -22,10 +22,23 @@ global.lastusedappID = global.appIDto;
 
 global.hassbanner = false;
 
-//Define preview props
+#region Define preview props
+
+//User
 global.userid_nick = "Loading";
 global.userid_disc = "0000";
 global.userid_banner_color = -1;
+
+//AppProps
+
+
+//Inputs-Outputs
+global.input_fline_text = "Check this out!";
+global.input_sline_text = "Hey";
+global.heading_dw_text = "Check my status"
+
+
+#endregion
 
 //AssetsReader
 global.asset_read_count = 0;

@@ -1,10 +1,3 @@
-spr_id = -1;
-//Focus indicator
-if (position_meeting(mouse_x, mouse_y, id) or (room==room_to_check))
-{
-	focus = true;
-} else focus = false;
-
 //Slow border fading
 if (focus)
 {
@@ -37,18 +30,20 @@ if (fade_out)
 	} else fade_out = false;
 }
 
+//Click action
+if ((element_enable) &&
+(mouse_check_button_pressed(mb_left)) &&
+(position_meeting(mouse_x, mouse_y, id)) &&
+!(position_meeting(mouse_x, mouse_y, oDW_tabpic0)))
+{
+focus = true;
+oDW_tabpic0.focus = false;
 
-//If overlay
-if ((global.overlay) && (element_enable))
-{
-	element_enable = false;
-} else if (!global.overlay) && (element_default_enable)
-{
-	element_enable = true;
+var objid = oDW_tabpic0;
+
+var dw_layer = layer_get_id("LY_dw_tabs_down");
+var up_layer = layer_get_id("LY_dw_tabs_up");
+
+objid.layer = dw_layer;
+id.layer = up_layer;
 }
-
-//Loading animation
-if (load_subimg < (total_subimgs-1)) && (draw_load)
-{
-	load_subimg += 1;
-} else {load_subimg = 0}

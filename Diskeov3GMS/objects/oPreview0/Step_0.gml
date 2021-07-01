@@ -58,7 +58,7 @@ if (string_length(shrinked_sline) > 27)
 	shrinked_sline = string_copy(shrinked_sline, 1, 27);
 	shrinked_sline = string(shrinked_sline) + string("...");
 }
-shrinked_heading = /*global.heading_dw.text;*/ "fix me when done";
+shrinked_heading = global.heading_dw_text;
 if (string_length(shrinked_heading) > 25)
 {
 	shrinked_heading = string_copy(shrinked_heading, 1, 25);

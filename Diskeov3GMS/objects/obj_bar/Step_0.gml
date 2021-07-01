@@ -1,10 +1,3 @@
-spr_id = -1;
-//Focus indicator
-if (position_meeting(mouse_x, mouse_y, id) or (room==room_to_check))
-{
-	focus = true;
-} else focus = false;
-
 //Slow border fading
 if (focus)
 {
@@ -36,19 +29,3 @@ if (fade_out)
 	init_alpha = 1-(init_x_threshold/(x_threshold+init_x_threshold));
 	} else fade_out = false;
 }
-
-
-//If overlay
-if ((global.overlay) && (element_enable))
-{
-	element_enable = false;
-} else if (!global.overlay) && (element_default_enable)
-{
-	element_enable = true;
-}
-
-//Loading animation
-if (load_subimg < (total_subimgs-1)) && (draw_load)
-{
-	load_subimg += 1;
-} else {load_subimg = 0}

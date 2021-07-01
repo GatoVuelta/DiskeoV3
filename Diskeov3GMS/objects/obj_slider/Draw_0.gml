@@ -9,5 +9,5 @@
 //draw_text(x+10, y, string("y:       ")+string(y));
 //draw_text(x+10, y+30, string("y_after: ")+string(y_after));
 
-draw_self();
+draw_sprite_ext(sprite_index, 0, x-obj_bar.x_threshold, y, 1, 1, 0, image_blend, image_alpha);
 

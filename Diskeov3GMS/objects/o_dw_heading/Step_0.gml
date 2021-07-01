@@ -1,3 +1,5 @@
+global.heading_dw_text = global.heading_dw.text;
+
 switch (global.heading_dw.text)
 {
 	case "Life": global.appIDto = "854011844557013022"; break;
