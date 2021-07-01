@@ -26,3 +26,6 @@ global.hassbanner = false;
 global.userid_nick = "Loading";
 global.userid_disc = "0000";
 global.userid_banner_color = -1;
+
+//AssetsReader
+global.asset_read_count = 0;

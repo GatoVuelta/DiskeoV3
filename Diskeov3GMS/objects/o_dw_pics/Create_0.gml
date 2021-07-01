@@ -11,3 +11,5 @@ app_assets_request = http_get
 );
 
 map_ready = false;
+
+global.asset_read_count = 0;

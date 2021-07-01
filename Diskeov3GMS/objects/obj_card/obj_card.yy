@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_card",
-    "path": "sprites/spr_card/spr_card.yy",
+    "name": "s_unknown0",
+    "path": "sprites/s_unknown0/s_unknown0.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,6 +24,7 @@
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_card","path":"objects/obj_card/obj_card.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_card","path":"objects/obj_card/obj_card.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_card","path":"objects/obj_card/obj_card.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":60,"eventType":7,"collisionObjectId":null,"parent":{"name":"obj_card","path":"objects/obj_card/obj_card.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

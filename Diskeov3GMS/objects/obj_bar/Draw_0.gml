@@ -15,3 +15,6 @@ surface_reset_target();
 
 //Self
 draw_self();
+
+//ScrollAreaBorder
+draw_sprite_ext(s_scrll_bd0, 0, global.scroll_surface_x, global.scroll_surface_y, 1, 1, 0, global.UI_general_primary, 1-global.fade_alpha);
