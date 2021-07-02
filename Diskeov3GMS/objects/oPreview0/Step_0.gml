@@ -65,4 +65,3 @@ if (string_length(shrinked_heading) > 25)
 	shrinked_heading = string(shrinked_heading) + string("...");
 }
 
-

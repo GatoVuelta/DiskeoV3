@@ -30,13 +30,24 @@ global.userid_disc = "0000";
 global.userid_banner_color = -1;
 
 //AppProps
+global.forceclick = false;
 
+//CardProps
+global.card_icount = 0;
 
 //Inputs-Outputs
 global.input_fline_text = "Check this out!";
 global.input_sline_text = "Hey";
-global.heading_dw_text = "Check my status"
+global.heading_dw_text = "Check my status";
 
+//StatusPictures
+global.lastused_spic_key = "dsk_dsklogo";
+global.spic_key = "dsk_dsklogo";
+global.spic_id = "853048028062547999";
+
+global.lastused_lpic_key = "dsk_dsklogo";
+global.lpic_key = "dsk_dsklogo";
+global.lpic_id = "853048028062547999";
 
 #endregion
 

@@ -6,8 +6,8 @@ surface_set_target(global.scroll_surface)
 if !(empty_Asset) && !(asset_sprite_exists)
 {
 	image_blend = -1;
-	image_alpha = 0.8-global.fade_alpha;
-	draw_sprite_stretched_ext(spr_pfpcload_tr, 0, x, y, 83, 83, c_white, image_alpha);
+	image_alpha = 1-global.fade_alpha;
+	draw_sprite_stretched_ext(spr_pfpcload_tr, oButtonUpdateDRP.load_subimg, x-42, y-42, 83, 83, global.UI_general_primary, image_alpha);
 } else if (empty_Asset)
 {
 	image_blend = global.UI_general_terciary;
@@ -40,13 +40,20 @@ if (position_meeting(mouse_x-global.scroll_surface_x, mouse_y-global.scroll_surf
 		draw_set_valign(fa_middle);
 		draw_set_font(f_input);
 		draw_set_alpha(1);
-		draw_text((mouse_x+(width/2))-dx, (mouse_y+25)-dy, txt);
+		draw_text((mouse_x+(width/2))-dx, (mouse_y+25)-dy, txt); 
 	}
 } else
 {
 	image_alpha = 1-global.fade_alpha;
 }
 }
+
+//draw_set_color(global.UI_general_primary);
+//draw_text(x, y-25, c_count);
+
+//draw_set_color(global.UI_element_focused);
+//draw_text(x, y, string("f: ")+string(fila));
+//draw_text(x, y+25, string("c: ")+string(columna));
 
 surface_reset_target()
 }

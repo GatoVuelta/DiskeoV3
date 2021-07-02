@@ -3,27 +3,27 @@ var areaHeight = 0;
 var maxWidth = 6;
 var maxHeight = 9;
 var xx = 110;
-var yy = 104;
+var yy = 100;
 
-for (var i = 0; i < maxWidth; i++)
+for (var j = 0; j < maxHeight; j++)
 {
-	for (var j = 0; j < maxHeight; j++)
+	for (var i = 0; i < maxWidth; i++)
 	{
 		instance_create_layer(xx - 50, yy, "LY_ScrollArea", obj_card);
 		
-		if (j == maxHeight - 1)
+		if (i == maxWidth - 1)
 		{
-			yy += 100;
+			xx += 100;
 		}
 		else {
-			yy += 100;
+			xx += 100;
 		}
 	}
 	
 	areaHeight = yy;
 	
-	yy = 105;
-	xx += 100;
+	xx = 110;
+	yy += 100;
 }
 
-global.areaHeight = areaHeight - 395;
+global.areaHeight = areaHeight - 290;

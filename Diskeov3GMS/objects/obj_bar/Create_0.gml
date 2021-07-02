@@ -18,7 +18,7 @@ a.depth = depth - 1;
 image_blend = global.UI_scrll_scrollbar_bg;
 
 //SurfaceVars
-area_width = 608;
+area_width = 610;
 area_height = 320;
 
 //Surface

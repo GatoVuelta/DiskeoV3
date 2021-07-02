@@ -11,7 +11,7 @@ if (ev_type == "DiscordReady")
 	np_setpresence_more("bruh", "lmao", false);
 	
 	//np_setpresence() should ALWAYS come the last!!
-	np_setpresence(global.input_fline_text, global.input_sline_text, "astraicon", "astraicon");
+	np_setpresence(global.input_fline_text, global.input_sline_text, global.lpic_key, global.spic_key);
 	
 	if (!global.hassprite)
 	{

@@ -25,9 +25,21 @@ draw_set_font(f_UniSans_TabTtle);
 draw_set_alpha(1-init_alpha);
 draw_text(((x-x_threshold)-(sprite_width/2))+15, y-10, string(global.userid_nick)+string("#")+string(global.userid_disc));
 //BigPic
-draw_sprite_ext(s_prvw_bigp, 0, (x-x_threshold) - 110, y+98, 1, 1, 0, c_black, 1-init_alpha);
+if (!asset_l_pic_exists)
+{
+	draw_sprite_ext(s_prvw_bigp, 0, (x-x_threshold) - 110, y+98, 1, 1, 0, c_black, 1-init_alpha);
+} else
+{
+	draw_sprite_stretched_ext(asset_l_pic, 0, (x-x_threshold) - 138, y+68, 61, 61, c_white, 1-init_alpha);
+}
 //Small
-draw_sprite_ext(s_prvw_smap, 0, (x-x_threshold) - 84, y+123, 1, 1, 0, c_black, 1-init_alpha);
+if (!asset_s_pic_exists)
+{
+	draw_sprite_ext(s_prvw_smap, 0, (x-x_threshold) - 84, y+123, 1, 1, 0, c_black, 1-init_alpha);
+} else
+{
+	draw_sprite_stretched_ext(asset_s_pic, 0, (x-x_threshold) - 84, y+103, 21, 21, c_white, 1-init_alpha);
+}
 
 //Separator
 draw_sprite_ext(s_prvw_separator0, 0, (x-x_threshold), y+30, 1, 1, 0, global.UI_PRVW_separator, 1);
