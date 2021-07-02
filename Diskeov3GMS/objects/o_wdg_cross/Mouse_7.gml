@@ -1,4 +1,6 @@
 if (element_enable)
 {
-window_command_run(window_command_close)
+	np_clearpresence();
+	__np_shutdown();
+	window_command_run(window_command_close)
 }
