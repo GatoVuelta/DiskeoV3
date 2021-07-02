@@ -6,3 +6,4 @@ iread = false;
 
 asset_sprite_exists = false;
 spr_id = -1;
+hover = false;
