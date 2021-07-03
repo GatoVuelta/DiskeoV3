@@ -32,6 +32,12 @@ fade_in = true;
 fade_out = false;
 
 //SetText
-tte_ext_input_set_text(global.input_sline_text);
+if (global.input_sline_text != "")
+{
+	tte_ext_input_set_text(global.input_sline_text);
+} else
+{
+	tte_ext_input_set_text("   ");
+}
 
 alarm[0] = 10;

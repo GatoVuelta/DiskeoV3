@@ -39,21 +39,4 @@ asset_s_pic_exists = false;
 asset_l_pic = spr_pfpcload;
 asset_l_pic_exists = false;
 
-s_url=(
-		string("https://cdn.discordapp.com/app-assets/") +
-		string(global.appIDto) +
-		string("/") +
-		string(global.spic_id) +
-		string(".png")
-	);
-	
-l_url=(
-		string("https://cdn.discordapp.com/app-assets/") +
-		string(global.appIDto) +
-		string("/") +
-		string(global.lpic_id) +
-		string(".png")
-	);
-
-spic_request = sprite_add(s_url, 1, false, false, 0, 0); 
-lpic_request = sprite_add(l_url, 1, false, false, 0, 0);
+iread = false;

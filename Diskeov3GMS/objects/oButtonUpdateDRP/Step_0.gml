@@ -36,7 +36,7 @@ if !(global.lastusedappID == global.appIDto)
 	}
 	
 	global.forceclick = false;
-	
+	oPreview0.iread = false;
 }
 } else 
 {

@@ -34,4 +34,10 @@ fade_out = false;
 alarm[0] = 10;
 
 //SetText
-tte_ext_input_set_text(global.input_fline_text);
+if (global.input_fline_text != "")
+{
+	tte_ext_input_set_text(global.input_fline_text);
+} else
+{
+	tte_ext_input_set_text("   ");
+}

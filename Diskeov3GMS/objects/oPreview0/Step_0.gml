@@ -65,3 +65,28 @@ if (string_length(shrinked_heading) > 25)
 	shrinked_heading = string(shrinked_heading) + string("...");
 }
 
+if (!iread)
+{
+	
+s_url=(
+		string("https://cdn.discordapp.com/app-assets/") +
+		string(global.appIDto) +
+		string("/") +
+		string(global.spic_id) +
+		string(".png")
+	);
+	
+l_url=(
+		string("https://cdn.discordapp.com/app-assets/") +
+		string(global.appIDto) +
+		string("/") +
+		string(global.lpic_id) +
+		string(".png")
+	);
+
+spic_request = sprite_add(s_url, 1, false, false, 0, 0); 
+lpic_request = sprite_add(l_url, 1, false, false, 0, 0);
+
+iread =true;
+
+}

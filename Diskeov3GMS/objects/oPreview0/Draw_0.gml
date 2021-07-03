@@ -24,6 +24,7 @@ draw_set_color(global.UI_element_focused);
 draw_set_font(f_UniSans_TabTtle);
 draw_set_alpha(1-init_alpha);
 draw_text(((x-x_threshold)-(sprite_width/2))+15, y-10, string(global.userid_nick)+string("#")+string(global.userid_disc));
+
 //BigPic
 if (!asset_l_pic_exists)
 {
@@ -38,7 +39,13 @@ if (!asset_s_pic_exists)
 	draw_sprite_ext(s_prvw_smap, 0, (x-x_threshold) - 84, y+123, 1, 1, 0, c_black, 1-init_alpha);
 } else
 {
-	draw_sprite_stretched_ext(asset_s_pic, 0, (x-x_threshold) - 84, y+103, 21, 21, c_white, 1-init_alpha);
+	draw_sprite_ext(spr_lspics_clip_c, 0, (x-x_threshold) - 90, y+116, 1, 1, 0, global.UI_PRVW_bg, 1-init_alpha);
+	draw_sprite_stretched_ext(asset_s_pic, 0, (x-x_threshold) - 90, y+116, 21, 21, c_white, 1-init_alpha);
+}
+//LSClip
+if (asset_s_pic_exists or asset_l_pic_exists)
+{
+	draw_sprite_ext(spr_lspics_clip, 0, (x-x_threshold) - 138, y+68, 1, 1, 0, global.UI_PRVW_bg, 1-init_alpha);
 }
 
 //Separator

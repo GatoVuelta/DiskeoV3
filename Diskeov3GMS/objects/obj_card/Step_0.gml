@@ -47,4 +47,7 @@ if (position_meeting(mouse_x-global.scroll_surface_x, mouse_y-global.scroll_surf
 	global.lpic_key = txt;
 	global.spic_key = txt;
 	
+	global.lpic_id = asset_id;
+	global.spic_id = asset_id;
+	
 }
