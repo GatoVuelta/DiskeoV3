@@ -66,7 +66,7 @@ draw_text((x-x_threshold) - 65, y+93, shrinked_fline);
 //Line2
 draw_text((x-x_threshold) - 65, y+108, shrinked_sline);
 //Timer
-draw_text((x-x_threshold) - 65, y+125, "Some time elapsed");
+draw_text((x-x_threshold) - 65, y+125, string(timestamp)+string(" elapsed"));
 
 
 //Reset

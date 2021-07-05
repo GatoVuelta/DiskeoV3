@@ -40,3 +40,15 @@ asset_l_pic = spr_pfpcload;
 asset_l_pic_exists = false;
 
 iread = false;
+
+hours = 0;
+minutes = 0;
+seconds = 0;
+hours_display = "00";
+minutes_display = "00";
+hours_display = "00";
+
+timestamp_start = current_time;
+timestamp_now = current_time;
+timestamp = "00:00";
+alarm[0] = room_speed*1;
