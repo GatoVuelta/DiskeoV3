@@ -18,6 +18,13 @@ if !(empty_Asset) && !(asset_sprite_exists)
 	draw_sprite_stretched_ext(asset_sprite_this, 0, x-42, y-42, 83, 83, c_white, image_alpha);
 }
 
+//Selection
+if (selected)
+{
+	draw_sprite_ext(s_selected_b, 0, x, y, 1, 1, 0, global.UI_general_primary, image_alpha);
+	draw_sprite_ext(s_selected_s, 0, x+30, y+30, 1, 1, 0, global.UI_element_focused, image_alpha);
+}
+
 //Hover
 if (!empty_Asset)
 {
@@ -48,11 +55,8 @@ if (position_meeting(mouse_x-global.scroll_surface_x, mouse_y-global.scroll_surf
 }
 }
 
-//draw_set_color(global.UI_general_primary);
-//draw_text(x, y-25, c_count);
-
 //draw_set_color(global.UI_element_focused);
-//draw_text(x, y, string("f: ")+string(fila));
+//draw_text(x, y, selected);
 //draw_text(x, y+25, string("c: ")+string(columna));
 
 surface_reset_target()

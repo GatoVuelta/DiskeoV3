@@ -5,8 +5,8 @@ maxium_length = 200;
 minium_lenght = 3;
 
 //Enable comander
-element_default_enable = false;
-element_enable = false;
+element_default_enable = true;
+element_enable = true;
 
 //Beta
 soon_availability = true;
@@ -15,7 +15,7 @@ soon_text = "Coming soon";
 
 //tte_ext_input_set_on_changed(example_on_changed);
 
-tab_text = "Custom Pictures";
+tab_text = "Small Image";
 
 //Speed
 fin_speed = 25;

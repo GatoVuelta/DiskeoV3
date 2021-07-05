@@ -29,25 +29,47 @@ if (o_dw_pics.map_ready) && !(iread)
 
 if (position_meeting(mouse_x-global.scroll_surface_x, mouse_y-global.scroll_surface_y, id)) && (mouse_check_button_pressed(mb_left)) && !(empty_Asset)
 {
-	//if (selected)
-	//{
-	//	selected = false;
-	//	//txt = choose(":)", ":D", ":O", "CatFlip\n#5812");
-	//} else
-	//{
-	//	selected = true;
-	//}
-	
+	//Large
+if (global.asset_select_l)
+{
 	oPreview0.asset_l_pic = asset_sprite_this;
-	oPreview0.asset_s_pic = asset_sprite_this;
-	
 	oPreview0.asset_l_pic_exists = true;
-	oPreview0.asset_s_pic_exists = true;
-	
 	global.lpic_key = txt;
-	global.spic_key = txt;
-	
 	global.lpic_id = asset_id;
-	global.spic_id = asset_id;
 	
+} else if (global.asset_select_s)
+{
+	//Small
+	oPreview0.asset_s_pic = asset_sprite_this;
+	oPreview0.asset_s_pic_exists = true;
+	global.spic_key = txt;
+	global.spic_id = asset_id;	
+}
+}
+
+//SelectionCheck
+if (global.asset_select_l) && (global.lpic_key == txt)
+{
+	selected = true;
+	if !(oPreview0.asset_l_pic_exists)
+	{
+	oPreview0.asset_l_pic = asset_sprite_this;
+	oPreview0.asset_l_pic_exists = true;
+	global.lpic_key = txt;
+	global.lpic_id = asset_id;
+	}
+	
+} else if (global.asset_select_s) && (global.spic_key == txt)
+{
+	selected = true;
+	if !(oPreview0.asset_s_pic_exists)
+	{
+	oPreview0.asset_s_pic = asset_sprite_this;
+	oPreview0.asset_s_pic_exists = true;
+	global.spic_key = txt;
+	global.spic_id = asset_id;
+	}	
+} else 
+{
+	selected = false;
 }

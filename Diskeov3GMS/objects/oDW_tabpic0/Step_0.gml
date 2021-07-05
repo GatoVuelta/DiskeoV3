@@ -46,4 +46,8 @@ var up_layer = layer_get_id("LY_dw_tabs_up");
 
 objid.layer = dw_layer;
 id.layer = up_layer;
+
+global.asset_select_l = true;
+global.asset_select_s = false;
+
 }

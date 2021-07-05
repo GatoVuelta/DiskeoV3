@@ -22,7 +22,7 @@ draw_set_alpha(1-init_alpha);
 draw_text((x+185)-x_threshold, y-16, tab_text);
 
 draw_set_color(global.UI_element_unfocused);
-draw_text((x+175)-x_threshold-275, y-16, "Built-in Pictures");
+draw_text((x+175)-x_threshold-275, y-16, "Large Image");
 }
 
 //Focus indicator

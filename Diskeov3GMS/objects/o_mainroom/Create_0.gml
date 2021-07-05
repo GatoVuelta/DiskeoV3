@@ -31,6 +31,8 @@ global.userid_banner_color = -1;
 
 //AppProps
 global.forceclick = false;
+global.asset_select_l = true;
+global.asset_select_s = false;
 
 //CardProps
 global.card_icount = 0;

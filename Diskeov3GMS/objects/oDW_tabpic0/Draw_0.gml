@@ -24,7 +24,7 @@ draw_text((x+175)-x_threshold, y-16, tab_text);
 if ((oDW_tabpic1.element_enable))
  {
 	 draw_set_color(global.UI_element_unfocused);
-	 draw_text((x+175)-x_threshold+260, y-16, "Custom Pictures");
+	 draw_text((x+175)-x_threshold+260, y-16, "Small Image");
  }
 }
 

@@ -15,7 +15,7 @@ soon_text = "Soon™";
 
 //tte_ext_input_set_on_changed(example_on_changed);
 
-tab_text = ("Built-in (") + string(global.heading_dw_text) + string(")");
+tab_text = ("Large Image");
 
 //Speed
 fin_speed = 25;
