@@ -7,7 +7,7 @@ if (ev_type == "DiscordReady")
 	ready = true;
 		show_debug_message("date: " + string(date_current_datetime()));
 	np_setpresence_timestamps(date_current_datetime(), 0, false);
-	np_setpresence_more("Alpha 2", "Diskeo", false);
+	np_setpresence_more("Alpha 4", "Diskeo", false);
 	
 	//np_setpresence() should ALWAYS come the last!!
 	np_setpresence(global.input_sline_text, global.input_fline_text, "dsk_dsklogo", "dsk_dsklogo");
@@ -19,6 +19,5 @@ if (ev_type == "DiscordReady")
 	
 	global.userid_nick = (async_load[? "username"]);
 	global.userid_disc = (async_load[? "discriminator"]);
-	show_debug_message(async_load[? "bot"]);
 	}
 }

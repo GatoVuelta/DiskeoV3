@@ -100,6 +100,7 @@
     {"id":{"name":"spr_donemark0","path":"sprites/spr_donemark0/spr_donemark0.yy",},"order":4,},
     {"id":{"name":"s_prvw_separator0","path":"sprites/s_prvw_separator0/s_prvw_separator0.yy",},"order":10,},
     {"id":{"name":"__tte_ext_input_handle_caret","path":"scripts/__tte_ext_input_handle_caret/__tte_ext_input_handle_caret.yy",},"order":4,},
+    {"id":{"name":"scr_check_heading","path":"scripts/scr_check_heading/scr_check_heading.yy",},"order":11,},
     {"id":{"name":"tte_ext_input_create","path":"scripts/tte_ext_input_create/tte_ext_input_create.yy",},"order":0,},
     {"id":{"name":"oInputFirstLine","path":"objects/oInputFirstLine/oInputFirstLine.yy",},"order":0,},
     {"id":{"name":"TTE_Extension___Input","path":"extensions/TTE_Extension___Input/TTE_Extension___Input.yy",},"order":4,},
