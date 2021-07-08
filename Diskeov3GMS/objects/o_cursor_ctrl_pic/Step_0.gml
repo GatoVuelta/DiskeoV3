@@ -1,11 +1,14 @@
+//NearestCard
+nearest_card = instance_nearest(mouse_x-global.scroll_surface_x, mouse_y-global.scroll_surface_y, obj_card)
+
 //---Hand cursor---
 if 
 (
 	//Window dragger
 	(position_meeting(mouse_x, mouse_y, o_wdg_min) && (o_wdg_min.element_enable)) or
 	(position_meeting(mouse_x, mouse_y, o_wdg_cross) && (o_wdg_cross.element_enable)) or
-	//Text boxes
-	//(position_meeting(mouse_x, mouse_y, oInputFirstLine) && (oInputFirstLine.focus == false) && (oInputFirstLine.element_enable == true)) or
+	//ScrollArea
+	(position_meeting(mouse_x-global.scroll_surface_x, mouse_y-global.scroll_surface_y, obj_card) && (nearest_card != noone) && !(nearest_card.empty_Asset)) or
 	//(position_meeting(mouse_x, mouse_y, oInputSecondLine) && (oInputSecondLine.focus == false) && (oInputSecondLine.element_enable == true)) or
 	//LMButtons
 	(position_meeting(mouse_x, mouse_y, oButtonTXTST) && (oButtonTXTST.element_enable == true)) or

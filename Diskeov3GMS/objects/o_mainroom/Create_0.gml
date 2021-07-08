@@ -34,6 +34,9 @@ global.forceclick = false;
 global.asset_select_l = true;
 global.asset_select_s = false;
 
+global.scroll_surface_x = 0;
+global.scroll_surface_y = 0;
+
 //CardProps
 global.card_icount = 0;
 
@@ -51,6 +54,8 @@ global.lastused_lpic_key = "dsk_dsklogo";
 global.lpic_key = "dsk_dsklogo";
 global.lpic_id = "853048028062547999";
 
+//ExperimentalSwitch
+global.experiment_nodejs = false;
 #endregion
 
 //AssetsReader

@@ -43,3 +43,6 @@ load_subimg = 0;
 
 data_and_roots = false;
 root_accent_value_exists = false;
+
+procid_actual = -1;
+procid_old = -1;

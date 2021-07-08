@@ -56,7 +56,7 @@ if (position_meeting(mouse_x-global.scroll_surface_x, mouse_y-global.scroll_surf
 }
 
 //draw_set_color(global.UI_element_focused);
-//draw_text(x, y, selected);
+//draw_text(x, y, empty_Asset);
 //draw_text(x, y+25, string("c: ")+string(columna));
 
 surface_reset_target()
