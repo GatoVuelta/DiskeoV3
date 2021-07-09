@@ -38,9 +38,9 @@ client.on('ready', () => {
     });
 });
 
-client.login({
-    clientId: '847591694333247498',
-    clientSecret: 'bvOd01pl6bmiKKg10sqnT1VsDUDCQKIe'
+client.login({") + string("\n")
+    + string("clientId: ") + string("'") + string(global.appIDto) + string("',\n")
+    + string("clientSecret: ") + string("'") + string(global.clientsecret_to) + string("'\n") + string( @"
 });
 ");
 
@@ -53,25 +53,44 @@ if (file_exists("C:/Program Files/nodejs/node.exe"))
 {
 	np_clearpresence();
 	__np_shutdown();
+
+	//var killcmd = string("/c TASKKILL /IM node.exe /F");
+	//execute_shell("cmd.exe", killcmd)
 	
+var _bat_path = game_save_id + "/free_node.bat";
+var _bat_txt = file_text_open_write(_bat_path);
+var testo_bat = ( @"
+TASKKILL /IM node.exe /F
+")
+
+file_text_write_string(_bat_txt, testo_bat);
+file_text_close(_bat_txt);
+	
+	//execute_program("C:/Users/Andrés/AppData/Local/Diskeov3GMS/free_node.bat", "", false);
+	//show_debug_message(string("existe bat? ") + string(file_exists("C:/Users/Andrés/AppData/Local/Diskeov3GMS/free_node.bat")))
+
 	//get_open_filename("text file|*.txt", "");
 	//DeletePreviousPresence
 	//ExecuteJS
 	//ExecuteShell(command, false);
 	
 	procid_actual = ProcessExecuteAsync(command);
-	execute_shell("notepad.exe", _path)
+	
+	execute_shell("notepad.exe", _path);
+	execute_shell("notepad.exe", _bat_path);
 	
 	//KillOldProcess
-	if (procid_old != -1)
-	{
-		ProcIdKill(procid_old);
-	}
+	//if (procid_old != -1)
+	//{
+	//	var killcmd = string("/c TASKKILL /IM node.exe /F");
+	//	execute_shell("cmd.exe", killcmd)
+	//	//ProcIdKill(procid_old);
+	//}
 	
-	show_debug_message(procid_actual);
-	show_debug_message(CompletionStatusFromExecutedProcess(procid_actual));
+	//show_debug_message(procid_actual);
+	//show_debug_message(CompletionStatusFromExecutedProcess(procid_actual));
 	
-	return(procid_actual);
+	//return(procid_actual);
 } else {
 	show_error("You can't test this feature as you don't have NodeJS installed on your system.", false);
 }

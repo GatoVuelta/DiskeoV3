@@ -55,7 +55,15 @@ global.lpic_key = "dsk_dsklogo";
 global.lpic_id = "853048028062547999";
 
 //ExperimentalSwitch
-global.experiment_nodejs = false;
+
+#region EXPERIMENT: NODE.JS
+
+global.experiment_nodejs = true;
+global.clientsecret_to = "vBCWL1WEP4f-x_nJhXn-Pr1bWaBD_xH4";
+global.lastused_clientsecret = "vBCWL1WEP4f-x_nJhXn-Pr1bWaBD_xH4";
+
+#endregion
+
 #endregion
 
 //AssetsReader

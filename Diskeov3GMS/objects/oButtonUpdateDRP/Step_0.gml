@@ -7,7 +7,7 @@ if ((position_meeting(mouse_x, mouse_y, id) or global.forceclick))
 		focus = true;
 	}
 	
-if (mouse_check_button_pressed(mb_left) or global.forceclick)
+if (mouse_check_button_pressed(mb_left) or global.forceclick) && !(global.experiment_nodejs)
 {
 
 scr_check_heading();
@@ -29,6 +29,7 @@ if !(global.lastusedappID == global.appIDto)
 	np_setpresence(global.input_sline_text, global.input_fline_text, global.lpic_key, global.spic_key);
 	
 	global.lastusedappID = global.appIDto;
+	global.lastused_clientsecret = global.clientsecret_to;
 	
 	np_update();
 	
