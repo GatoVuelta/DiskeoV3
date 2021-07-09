@@ -46,7 +46,7 @@
     {"id":{"name":"f_UniSans_TabTtle","path":"fonts/f_UniSans_TabTtle/f_UniSans_TabTtle.yy",},"order":2,},
     {"id":{"name":"o_wdg_max","path":"objects/o_wdg_max/o_wdg_max.yy",},"order":4,},
     {"id":{"name":"s_cog_0","path":"sprites/s_cog_0/s_cog_0.yy",},"order":0,},
-    {"id":{"name":"NekoPresence","path":"extensions/NekoPresence/NekoPresence.yy",},"order":12,},
+    {"id":{"name":"KomodroidPresence","path":"extensions/KomodroidPresence/KomodroidPresence.yy",},"order":12,},
     {"id":{"name":"oDW_tab0","path":"objects/oDW_tab0/oDW_tab0.yy",},"order":3,},
     {"id":{"name":"o_dw_pics","path":"objects/o_dw_pics/o_dw_pics.yy",},"order":5,},
     {"id":{"name":"s_wdg_max","path":"sprites/s_wdg_max/s_wdg_max.yy",},"order":6,},

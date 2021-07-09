@@ -58,7 +58,7 @@ global.lpic_id = "853048028062547999";
 
 #region EXPERIMENT: NODE.JS
 
-global.experiment_nodejs = true;
+global.experiment_nodejs = false;
 global.clientsecret_to = "vBCWL1WEP4f-x_nJhXn-Pr1bWaBD_xH4";
 global.lastused_clientsecret = "vBCWL1WEP4f-x_nJhXn-Pr1bWaBD_xH4";
 

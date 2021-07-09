@@ -28,6 +28,8 @@ if !(global.lastusedappID == global.appIDto)
 	//np_setpresence() should ALWAYS come the last!!
 	np_setpresence(global.input_sline_text, global.input_fline_text, global.lpic_key, global.spic_key);
 	
+	np_setpresence_buttons(0, "LOL", "https://nothing.com/")
+	
 	global.lastusedappID = global.appIDto;
 	global.lastused_clientsecret = global.clientsecret_to;
 	
