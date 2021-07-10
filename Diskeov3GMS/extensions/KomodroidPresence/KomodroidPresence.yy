@@ -94,7 +94,7 @@
         {"value":"1","hidden":false,"resourceVersion":"1.0","name":"DISCORD_PARTY_PRIVACY_PUBLIC","tags":[],"resourceType":"GMExtensionConstant",},
         {"value":"2","hidden":false,"resourceVersion":"1.0","name":"DISCORD_MAX_BUTTONS","tags":[],"resourceType":"GMExtensionConstant",},
       ],"ProxyFiles":[
-        {"TargetMask":7,"resourceVersion":"1.0","name":"libnekopresence.so","tags":[],"resourceType":"GMProxyFile",},
+        {"TargetMask":7,"resourceVersion":"1.0","name":"KomodroidPresence.so","tags":[],"resourceType":"GMProxyFile",},
       ],"copyToTargets":192,"order":[
         {"name":"__np_initdll","path":"extensions/KomodroidPresence/KomodroidPresence.yy",},
         {"name":"__np_shutdown","path":"extensions/KomodroidPresence/KomodroidPresence.yy",},

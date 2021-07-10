@@ -35,6 +35,7 @@
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"o_helperUI","path":"objects/o_helperUI/o_helperUI.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":23.068964,"scaleY":25.5333347,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":558.0,"y":346.0,"resourceVersion":"1.0","name":"inst_2D6044FD","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"o_static_alpha_controller","path":"objects/o_static_alpha_controller/o_static_alpha_controller.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1312.0,"y":96.0,"resourceVersion":"1.0","name":"inst_1514DA39","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"o_OsChecker","path":"objects/o_OsChecker/o_OsChecker.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1216.0,"y":704.0,"resourceVersion":"1.0","name":"inst_146EF5D9","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_1","tags":[],"resourceType":"GMRInstanceLayer",},
     {"spriteId":null,"colour":4294967295,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":15.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":700,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"MainBG_layer","tags":[],"resourceType":"GMRBackgroundLayer",},
   ],
@@ -51,6 +52,7 @@
     {"name":"inst_1514DA39","path":"rooms/rm_main/rm_main.yy",},
     {"name":"inst_33B1E3C2","path":"rooms/rm_main/rm_main.yy",},
     {"name":"inst_4CD1F48B","path":"rooms/rm_main/rm_main.yy",},
+    {"name":"inst_146EF5D9","path":"rooms/rm_main/rm_main.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
