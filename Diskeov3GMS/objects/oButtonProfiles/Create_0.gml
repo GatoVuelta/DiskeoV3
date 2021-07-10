@@ -18,8 +18,8 @@ room_to_check = rm_txt_st;
 room_to = rm_txt_st; 
 
 //Speed
-fin_speed = 25;
-fout_speed = 25;
+fin_speed = 20;
+fout_speed = 20;
 //AnimationVariables
 init_x_threshold = 300;
 init_alpha = 0;

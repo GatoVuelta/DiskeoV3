@@ -11,7 +11,7 @@ if !(empty_Asset) && !(asset_sprite_exists)
 } else if (empty_Asset)
 {
 	image_blend = global.UI_general_terciary;
-	image_alpha = 0.8-global.fade_alpha;
+	image_alpha = 0.7-global.fade_alpha;
 	draw_self()	
 } else if (asset_sprite_exists)
 {
@@ -28,7 +28,7 @@ if (selected)
 //Hover
 if (!empty_Asset)
 {
-if (position_meeting(mouse_x-global.scroll_surface_x, mouse_y-global.scroll_surface_y, id))
+if (position_meeting(mouse_x-global.scroll_surface_x, mouse_y-global.scroll_surface_y, id)) && !(selected)
 {
 	image_alpha = 0.9-global.fade_alpha;
 	{

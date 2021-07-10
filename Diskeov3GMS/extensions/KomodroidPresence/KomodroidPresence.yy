@@ -16,7 +16,7 @@
   "androidProps": false,
   "installdir": "",
   "files": [
-    {"filename":"NekoPresence.gml","origname":"","init":"","final":"","kind":2,"uncompress":false,"functions":[
+    {"filename":"KomodroidPresence.gml","origname":"","init":"","final":"","kind":2,"uncompress":false,"functions":[
         {"externalName":"np_get_avatar_url","kind":2,"help":"np_get_avatar_url(user_id,avatar_hash)","hidden":false,"returnType":1,"argCount":0,"args":[
             1,
             1,
@@ -24,7 +24,7 @@
       ],"constants":[],"ProxyFiles":[],"copyToTargets":192,"order":[
         {"name":"np_get_avatar_url","path":"extensions/KomodroidPresence/KomodroidPresence.yy",},
       ],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
-    {"filename":"NekoPresence.dll","origname":"","init":"__np_initdll","final":"__np_shutdown","kind":1,"uncompress":false,"functions":[
+    {"filename":"KomodroidPresence.dll","origname":"","init":"__np_initdll","final":"__np_shutdown","kind":1,"uncompress":false,"functions":[
         {"externalName":"np_initdll","kind":1,"help":"__np_initdll()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"__np_initdll","tags":[],"resourceType":"GMExtensionFunction",},
         {"externalName":"np_shutdown","kind":1,"help":"__np_shutdown()","hidden":false,"returnType":2,"argCount":0,"args":[],"resourceVersion":"1.0","name":"__np_shutdown","tags":[],"resourceType":"GMExtensionFunction",},
         {"externalName":"np_initdiscord","kind":1,"help":"np_initdiscord(client_id,autoRegister,steam_id)","hidden":false,"returnType":2,"argCount":0,"args":[

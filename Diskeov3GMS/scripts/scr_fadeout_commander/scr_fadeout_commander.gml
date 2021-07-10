@@ -19,6 +19,7 @@ with (oDW_tabpic1){fade_out = true; init_x_threshold = -500}
 //LM Items
 with (oButtonTXTST){fade_out = true; init_x_threshold = -300}
 with (oButtonPICST){fade_out = true; init_x_threshold = -300}
+with (oButtonBNTS){fade_out = true; init_x_threshold = -300}
 with (oButtonProfiles){fade_out = true; init_x_threshold = -300}
 with (oButtonPalette){fade_out = true; init_x_threshold = -300}
 with (oButtonCog){fade_out = true; init_x_threshold = -300}
