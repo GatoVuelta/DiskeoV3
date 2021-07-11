@@ -25,10 +25,12 @@ if !(global.lastusedappID == global.appIDto)
 	np_setpresence_timestamps(date_current_datetime(), 0, false);
 	np_setpresence_more("Alpha 5", "Diskeo", false);
 	
-	//np_setpresence() should ALWAYS come the last!!
+	//TextLines
 	np_setpresence(global.input_sline_text, global.input_fline_text, global.lpic_key, global.spic_key);
 	
-	np_setpresence_buttons(0, "LOL", "https://nothing.com/")
+	//Buttons
+	//np_setpresence_buttons(0, "LOL", "https://nothing.com/") 
+	//np_setpresence_buttons(1, "LMAO", "https://nothing.com/") 
 	
 	global.lastusedappID = global.appIDto;
 	global.lastused_clientsecret = global.clientsecret_to;

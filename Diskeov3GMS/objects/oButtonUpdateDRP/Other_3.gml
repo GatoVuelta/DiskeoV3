@@ -13,3 +13,4 @@
 
 np_clearpresence();
 __np_shutdown();
+

@@ -7,7 +7,7 @@ x = room_width/2;
 y = room_height/2;
 
 //Define app version
-global.app_ver = 4;
+global.app_ver = 5;
 global.firstsuccess = false;
 
 lastv_n = global.app_ver;
