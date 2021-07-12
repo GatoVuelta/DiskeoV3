@@ -1,7 +1,7 @@
 x0 = global.scroll_surface_x;
 y0 = global.scroll_surface_y;
-x1 = x0 + obj_bar.area_width;
-y1 = y0 + obj_bar.area_height;
+x1 = x0 + o_scrollbar_pics.area_width;
+y1 = y0 + o_scrollbar_pics.area_height;
 
 if (point_in_rectangle(mouse_x, mouse_y, x0, y0, x1, y1))
 {

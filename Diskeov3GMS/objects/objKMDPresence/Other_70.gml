@@ -5,10 +5,21 @@ if (ev_type == "DiscordReady")
 {
 	window_set_caption("Diskeo - Status: Up");
 	ready = true;
-		show_debug_message("date: " + string(date_current_datetime()));
-	np_setpresence_timestamps(date_current_datetime(), 0, false);
-	np_setpresence_more("Alpha 4", "Diskeo", false);
+	show_debug_message("date: " + string(date_current_datetime()));
 	
+	//Timestamp
+	if (global.show_timestamp)
+	{
+		if (global.start_timestamp_type == "current")
+		{
+			np_setpresence_timestamps(date_current_datetime(), global.end_timestamp, false);
+		} else {
+			np_setpresence_timestamps(global.start_timestamp, global.end_timestamp, true);
+		}
+	}
+	
+	np_setpresence_more(global.s_tooltip, global.l_tooltip, false);
+		
 	//np_setpresence() should ALWAYS come the last!!
 	np_setpresence(global.input_sline_text, global.input_fline_text, "dsk_dsklogo", "dsk_dsklogo");
 	if (!global.hassprite)

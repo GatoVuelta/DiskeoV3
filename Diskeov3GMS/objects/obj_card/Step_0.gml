@@ -1,9 +1,9 @@
 y = ystart + ((global.areaHeight/100 * obj_slider.percentage) - global.areaHeight - 38);
 if !(global.fade_out)
 {
-	x = xstart-obj_bar.x_threshold;
+	x = xstart-o_scrollbar_pics.x_threshold;
 } else {
-	x = xstart-(obj_bar.x_threshold + 90);
+	x = xstart-(o_scrollbar_pics.x_threshold + 90);
 }
 
 if (o_dw_pics.map_ready) && !(iread)

@@ -50,4 +50,15 @@ id.layer = up_layer;
 global.asset_select_l = true;
 global.asset_select_s = false;
 
+with (oInputTooltip0)
+{
+	if (global.l_tooltip == "") 
+	{
+		global.l_tooltip = ""
+		tte_ext_input_set_text(" ")
+	} else {
+		tte_ext_input_set_text(global.l_tooltip);
+	}
+}
+
 }

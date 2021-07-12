@@ -22,8 +22,19 @@ if !(global.lastusedappID == global.appIDto)
 }
 
 	show_debug_message("date: " + string(date_current_datetime()));
-	np_setpresence_timestamps(date_current_datetime(), 0, false);
-	np_setpresence_more("Alpha 5", "Diskeo", false);
+	
+	//Timestamp
+	if (global.show_timestamp)
+	{
+		if (global.start_timestamp_type == "current")
+		{
+			np_setpresence_timestamps(date_current_datetime(), global.end_timestamp, false);
+		} else {
+			np_setpresence_timestamps(global.start_timestamp, global.end_timestamp, true);
+		}
+	}
+	//PicTooltips
+	np_setpresence_more(global.s_tooltip, global.l_tooltip, false);
 	
 	//TextLines
 	np_setpresence(global.input_sline_text, global.input_fline_text, global.lpic_key, global.spic_key);

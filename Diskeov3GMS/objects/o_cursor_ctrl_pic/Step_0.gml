@@ -9,7 +9,8 @@ if
 	(position_meeting(mouse_x, mouse_y, o_wdg_cross) && (o_wdg_cross.element_enable)) or
 	//ScrollArea
 	(position_meeting(mouse_x-global.scroll_surface_x, mouse_y-global.scroll_surface_y, obj_card) && (nearest_card != noone) && !(nearest_card.empty_Asset) && !(nearest_card.selected)) or
-	//(position_meeting(mouse_x, mouse_y, oInputSecondLine) && (oInputSecondLine.focus == false) && (oInputSecondLine.element_enable == true)) or
+	//TooltipInput
+	(position_meeting(mouse_x, mouse_y, oInputTooltip0) && (oInputTooltip0.focus == false) && (oInputTooltip0.element_enable == true)) or
 	//LMButtons
 	((position_meeting(mouse_x, mouse_y, oButtonTXTST) && (oButtonTXTST.element_enable == true)) && room != oButtonTXTST.room_to_check) or
 	((position_meeting(mouse_x, mouse_y, oButtonPICST) && (oButtonPICST.element_enable == true)) && room != oButtonPICST.room_to_check) or
@@ -33,8 +34,8 @@ if
 } else if 
 (
 	//---Hand beam---
-	(position_meeting(mouse_x, mouse_y, oInputFirstLine) && (oInputFirstLine.focus == true) && (oInputFirstLine.element_enable = true)) or
-	(position_meeting(mouse_x, mouse_y, oInputSecondLine) && (oInputSecondLine.focus == true) && (oInputSecondLine.element_enable = true))
+	(position_meeting(mouse_x, mouse_y, oInputTooltip0) && (oInputTooltip0.focus == true) && (oInputTooltip0.element_enable = true))
+	//(position_meeting(mouse_x, mouse_y, oInputSecondLine) && (oInputSecondLine.focus == true) && (oInputSecondLine.element_enable = true))
 )
 {
 	window_set_cursor(cr_beam);

@@ -7,7 +7,7 @@ x = room_width/2;
 y = room_height/2;
 
 //Define app version
-global.app_ver = 5;
+global.app_ver = 6;
 global.firstsuccess = false;
 
 lastv_n = global.app_ver;
@@ -44,6 +44,8 @@ global.card_icount = 0;
 global.input_fline_text = "Check this out!";
 global.input_sline_text = "Hey";
 global.heading_dw_text = "Check my status";
+global.s_tooltip = "Alpha6 (Leave blank to disallow)"
+global.l_tooltip = "Diskeo (Leave blank to disallow)"
 
 //StatusPictures
 global.lastused_spic_key = "dsk_dsklogo";
@@ -53,6 +55,19 @@ global.spic_id = "853048028062547999";
 global.lastused_lpic_key = "dsk_dsklogo";
 global.lpic_key = "dsk_dsklogo";
 global.lpic_id = "853048028062547999";
+
+//Preview
+global.timezone_delay = -5;
+
+global.start_timestamp_type = "other";
+var epoch = date_second_span(date_create_datetime(1970,1,1,0,0,0),date_create_datetime(2021,7,10,18-global.timezone_delay,0,0));
+global.start_timestamp = epoch;
+
+//var epoch = date_second_span(date_create_datetime(1970,1,1,0,0,0),date_create_datetime(2021,7,11,22,0,0));
+global.end_timestamp = 0;
+
+global.show_timestamp = true;
+
 
 //ExperimentalSwitch
 

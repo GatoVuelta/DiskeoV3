@@ -1,8 +1,8 @@
 //Window dragger color
-if (window_has_focus())
-{
+/*if (window_has_focus())
+{*/
 image_blend = global.UI_windragger_focused;
-} else image_blend = global.UI_windragger_unfocused;
+/*} else image_blend = global.UI_windragger_unfocused;*/
 
 draw_sprite_ext(s_wdg_bar, 0, x, y, 1, 1, 0, image_blend, 1-global.fade_alpha)
 
