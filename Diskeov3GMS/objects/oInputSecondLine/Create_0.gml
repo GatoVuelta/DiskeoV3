@@ -40,4 +40,8 @@ if (global.input_sline_text != "")
 	tte_ext_input_set_text("   ");
 }
 
+pressing_ctrl = false;
+pressed_c = false;
+pressed_v = false;
+
 alarm[0] = 10;

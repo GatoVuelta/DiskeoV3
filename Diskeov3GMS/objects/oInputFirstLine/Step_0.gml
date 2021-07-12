@@ -35,6 +35,30 @@ if (fade_out)
 	} else fade_out = false;
 }
 
+//Clipboard
+
+//Ctrl
+if (keyboard_check(vk_control)){pressing_ctrl = true} else {pressing_ctrl = false}
+//C
+if (keyboard_check_pressed(ord("C"))){pressed_c = true} else {pressed_c = false}
+//V
+if (keyboard_check_pressed(ord("V"))){pressed_v = true} else {pressed_v = false}
+
+if (pressing_ctrl) && (focus)
+{
+if(pressed_v)
+{
+	if (clipboard_has_text())
+	{
+		tte_ext_input_insert(clipboard_get_text());
+	}
+} else if(pressed_c)
+{
+	tte_ext_set_selection(1, 1, 1, string_length(tte_ext_input_get_text()));
+	clipboard_set_text(tte_ext_input_get_text());
+}
+}
+
 //Output text
 global.input_fline_text = tte_ext_input_get_text();
 

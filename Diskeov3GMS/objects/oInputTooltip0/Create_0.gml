@@ -40,5 +40,9 @@ x_threshold = init_x_threshold;
 fade_in = true;
 fade_out = false;
 
+pressing_ctrl = false;
+pressed_c = false;
+pressed_v = false;
+
 alarm[0] = 10;
 
