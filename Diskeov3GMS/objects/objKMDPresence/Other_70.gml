@@ -28,7 +28,10 @@ if (ev_type == "DiscordReady")
 	user_avatar_url = np_get_avatar_url(async_load[? "user_id"], async_load[? "avatar"]);
 	spr_id = sprite_add(user_avatar_url, 1, false, false, 0, 0);
 	
+	global.userid = (async_load[? "user_id"]);
 	global.userid_nick = (async_load[? "username"]);
 	global.userid_disc = (async_load[? "discriminator"]);
+	
+	show_debug_message(global.userid);
 	}
 }

@@ -7,7 +7,12 @@ image_blend = global.UI_windragger_focused;
 draw_sprite_ext(s_wdg_bar, 0, x, y, 1, 1, 0, image_blend, 1-global.fade_alpha)
 
 //Diskeo logo
-draw_sprite_ext(s_wdg_diskeologo, 0, (room_width/2)+60, 15, 1, 1, 0, global.UI_general_terciary, 1);
+if (os_type != os_linux)
+{
+	draw_sprite_ext(s_wdg_diskeologo, 0, (room_width/2)+60, 15, 1, 1, 0, global.UI_general_terciary, 1);
+} else {
+	draw_sprite_ext(s_wdg_diskeologo, 0, room_width/2, 15, 1, 1, 0, global.UI_general_terciary, 1);
+}
 //GradientBG
 draw_sprite_ext(s_GradientBG, 0, (room_width/2)+60, 22, 1, 1, 0, global.UI_general_secondary, 1-global.fade_alpha);
 //BIG TITLE
@@ -16,7 +21,12 @@ draw_set_alpha(1-global.fade_alpha);
 draw_set_halign(fa_center);
 draw_set_valign(fa_center);
 draw_set_font(f_UniSans_Title);
-draw_text((room_width/2)+60, 80, global.room_title);
+if (os_type != os_linux)
+{
+	draw_text((room_width/2)+60, 80, global.room_title);
+} else {
+	draw_text(room_width/2, 80, global.room_title);
+}
 
 //Restart drawing
 draw_set_halign(-1);

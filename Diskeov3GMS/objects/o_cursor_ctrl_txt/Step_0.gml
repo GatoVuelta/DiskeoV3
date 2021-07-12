@@ -12,6 +12,7 @@ if
 	((position_meeting(mouse_x, mouse_y, oButtonPICST) && (oButtonPICST.element_enable == true)) && room != oButtonPICST.room_to_check) or
 	((position_meeting(mouse_x, mouse_y, oButtonBNTS) && (oButtonBNTS.element_enable == true)) && room != oButtonBNTS.room_to_check) or
 	((position_meeting(mouse_x, mouse_y, oButtonProfiles) && (oButtonProfiles.element_enable == true)) && room != oButtonProfiles.room_to_check) or
+	((position_meeting(mouse_x, mouse_y, oButtonProfiles) && (oButtonProfiles.element_enable == true)) && room != oButtonProfiles.room_to_check) or
 	((position_meeting(mouse_x, mouse_y, oButtonPalette) && (oButtonPalette.element_enable == true)) && room != oButtonPalette.room_to_check) or
 	((position_meeting(mouse_x, mouse_y, oButtonCog) && (oButtonCog.element_enable == true)) && room != oButtonCog.room_to_check) or
 	//ActionButtons
