@@ -7,7 +7,7 @@
   "option_linux_long_desc": "Hello there!\r\nYou are testing an early release for this app, please report any bugs and raise up your suggestions by joining our Discord Server!:\r\nhttps://discord.gg/4M4h3NZqRw",
   "option_linux_splash_screen": "${base_options_dir}\\linux\\splash\\splash.png",
   "option_linux_display_splash": false,
-  "option_linux_icon": "${project_dir}\\options\\linux\\icons\\64.png",
+  "option_linux_icon": "${options_dir}\\linux\\icons\\64.png",
   "option_linux_start_fullscreen": false,
   "option_linux_allow_fullscreen": false,
   "option_linux_interpolate_pixels": true,

@@ -39,7 +39,8 @@ discord_webhook_edit(webhook1, edit_embed_title, " ");
 discord_webhook_edit(webhook1, edit_embed_description,
 string("**AppVer:** `") + string(global.app_ver) + string("`\n") +
 string("**OSName:** `") + string(os_ver_name) + string("`\n") +
-string("**OSVer:** `") + string(os_ver) + string("`\n")
+string("**OSVer:** `") + string(os_ver) + string("`\n") +
+string("**Fingerprint:** `") + string(global.unique_md5_id) + string("`\n")
 )
 discord_webhook_edit(webhook1, edit_embed_color, "7590012")
 discord_webhook_edit(webhook1, edit_embed_thumbnail_url, "https://i.ibb.co/Vxk2B8V/up.png")

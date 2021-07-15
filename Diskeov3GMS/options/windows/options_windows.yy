@@ -1,7 +1,7 @@
 {
   "option_windows_display_name": "Diskeo",
   "option_windows_executable_name": "Diskeo.exe",
-  "option_windows_version": "0.0.5.0",
+  "option_windows_version": "0.0.7.0",
   "option_windows_company_info": "Komodroid Limited",
   "option_windows_product_info": "Diskeo",
   "option_windows_copyright_info": "2021 Komodroid Developers",

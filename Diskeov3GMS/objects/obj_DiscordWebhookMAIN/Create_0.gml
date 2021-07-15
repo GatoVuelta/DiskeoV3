@@ -8,7 +8,6 @@ var myhour = date_get_hour(date_current_datetime());
 var myday = date_get_day(date_current_datetime());
 
 
-
 discord_webhook_edit(webhook1, edit_embed_use, true)
 discord_webhook_edit(webhook1, edit_embed_title, string("At Day: ")+string(myday) + string(" and Hour: ")+string(myhour))
 discord_webhook_edit(webhook1, edit_embed_description, string_hash_to_newline("And that's a __*description*__#in multiple lines!!"))

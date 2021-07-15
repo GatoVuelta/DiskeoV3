@@ -18,7 +18,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_DiscordWebhooksDEMO","path":"objects/obj_DiscordWebhooksDEMO/obj_DiscordWebhooksDEMO.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_DiscordWebhookMAIN","path":"objects/obj_DiscordWebhookMAIN/obj_DiscordWebhookMAIN.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -27,7 +27,7 @@
     "path": "folders/Objects/Webhooks.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_DiscordWebhooksDEMO",
+  "name": "obj_DiscordWebhookMAIN",
   "tags": [],
   "resourceType": "GMObject",
 }
