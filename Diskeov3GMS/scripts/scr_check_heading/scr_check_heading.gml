@@ -30,7 +30,14 @@ function scr_check_heading()
 			global.clientsecret_to = "F6LNwiln84g0YgeYnbBkJ1d1ZoYrybWE";
 		}; 
 		break;
-		default: 
+		case "Check my status":
+		{
+			global.appIDto = "765725484779700224"
+			global.clientsecret_to = "F6LNwiln84g0YgeYnbBkJ1d1ZoYrybWE";
+		}; 
+		break;
+		default:
+		//CustomHeading
 		{
 			global.appIDto = "765725484779700224";
 			global.clientsecret_to = "vBCWL1WEP4f-x_nJhXn-Pr1bWaBD_xH4";

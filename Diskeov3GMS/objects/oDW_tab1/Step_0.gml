@@ -39,6 +39,16 @@ if ((element_enable) &&
 focus = true;
 oDW_tab0.focus = false;
 
+if (instance_exists(o_dw_heading))
+{
+	instance_destroy(o_dw_heading);
+	if (instance_exists(obj_dropdown))
+	{
+		instance_destroy(obj_dropdown_item);
+		instance_destroy(obj_dropdown);
+	}
+}
+
 var objid = oDW_tab0;
 
 var dw_layer = layer_get_id("LY_dw_tabs_down");
