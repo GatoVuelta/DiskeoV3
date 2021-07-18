@@ -1,6 +1,6 @@
 {
   "option_linux_display_name": "Diskeo",
-  "option_linux_version": "0.0.5",
+  "option_linux_version": "0.0.8",
   "option_linux_maintainer_email": "komodroid@outlook.com",
   "option_linux_homepage": "http://komodroid.tk/",
   "option_linux_short_desc": "The brand-new Discord status customizer",
