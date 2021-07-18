@@ -34,10 +34,14 @@ if (fade_out)
 if ((element_enable) &&
 (mouse_check_button_pressed(mb_left)) &&
 (position_meeting(mouse_x, mouse_y, id)) &&
-!(position_meeting(mouse_x, mouse_y, oDW_tab0)))
+!(position_meeting(mouse_x, mouse_y, oDW_tab0))) or forceclick
 {
 focus = true;
 oDW_tab0.focus = false;
+
+global.last_heading_tab = 1;
+
+forceclick = false;
 
 if (instance_exists(o_dw_heading))
 {
@@ -48,10 +52,10 @@ if (instance_exists(o_dw_heading))
 		instance_destroy(obj_dropdown_item);
 		instance_destroy(obj_dropdown);
 	}
-	//CreateTXT
+}
+//CreateTXT
 	global.overlay = false;
 	instance_create_layer(145, 218, "LY_TextboxBG", oInputCustomHeading);
-}
 
 var objid = oDW_tab0;
 

@@ -4,9 +4,17 @@ border_alpha = 0;
 maxium_length = 200;
 minium_lenght = 3;
 
-//Enable comander
-element_default_enable = true;
 element_enable = true;
+
+//Enable comander
+if (global.last_heading_tab == 1)
+{
+	focus = true;
+	forceclick = true;
+} else {
+	focus = false;
+	forceclick = false;
+}
 
 //Beta
 soon_availability = true;
@@ -15,7 +23,7 @@ soon_text = "Coming soon";
 
 //tte_ext_input_set_on_changed(example_on_changed);
 
-tab_text = "Custom Headings";
+tab_text = "Custom AppID";
 
 //Speed
 fin_speed = 25;

@@ -59,7 +59,13 @@ draw_text((x-x_threshold) - 140, y+50, "PLAYING A GAME");
 draw_set_font(f_UniSans_PrevAppTitle);
 //draw_set_color(global.UI_element_focused);
 //Heading
-draw_text((x-x_threshold) - 65, y+78, shrinked_heading);
+if (global.last_heading_tab == 0)
+{
+	draw_text((x-x_threshold) - 65, y+78, shrinked_heading); 
+}
+else {
+	draw_text((x-x_threshold) - 65, y+78, "Your cool app name"); 
+}
 //Line1
 draw_set_font(f_Arial_PrevAppDetails);
 draw_text((x-x_threshold) - 65, y+93, shrinked_fline);

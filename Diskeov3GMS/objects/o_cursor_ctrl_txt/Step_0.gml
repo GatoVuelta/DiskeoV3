@@ -1,4 +1,5 @@
 //---Hand cursor---
+var custom_i = instance_exists(oInputCustomHeading);
 if 
 (
 	//Window dragger
@@ -7,6 +8,7 @@ if
 	//Text boxes
 	(position_meeting(mouse_x, mouse_y, oInputFirstLine) && (oInputFirstLine.focus == false) && (oInputFirstLine.element_enable == true)) or
 	(position_meeting(mouse_x, mouse_y, oInputSecondLine) && (oInputSecondLine.focus == false) && (oInputSecondLine.element_enable == true)) or
+	custom_i && ((position_meeting(mouse_x, mouse_y, oInputCustomHeading) && (oInputCustomHeading.focus == false) && (oInputCustomHeading.element_enable == true))) or
 	//LMButtons
 	((position_meeting(mouse_x, mouse_y, oButtonTXTST) && (oButtonTXTST.element_enable == true)) && room != oButtonTXTST.room_to_check) or
 	((position_meeting(mouse_x, mouse_y, oButtonPICST) && (oButtonPICST.element_enable == true)) && room != oButtonPICST.room_to_check) or
@@ -32,7 +34,8 @@ if
 (
 	//---Hand beam---
 	(position_meeting(mouse_x, mouse_y, oInputFirstLine) && (oInputFirstLine.focus == true) && (oInputFirstLine.element_enable = true)) or
-	(position_meeting(mouse_x, mouse_y, oInputSecondLine) && (oInputSecondLine.focus == true) && (oInputSecondLine.element_enable = true))
+	(position_meeting(mouse_x, mouse_y, oInputSecondLine) && (oInputSecondLine.focus == true) && (oInputSecondLine.element_enable = true)) or
+	custom_i && ((position_meeting(mouse_x, mouse_y, oInputCustomHeading) && (oInputCustomHeading.focus == true) && (oInputCustomHeading.element_enable = true)))
 )
 {
 	window_set_cursor(cr_beam);

@@ -1,12 +1,19 @@
 //Basic stuff
-focus = true;
+
 border_alpha = 0;
 maxium_length = 200;
 minium_lenght = 3;
+element_enable = true;
 
 //Enable comander
-element_default_enable = true;
-element_enable = true;
+if (global.last_heading_tab == 0)
+{
+	focus = true;
+	forceclick = true;
+} else {
+	focus = false;
+	forceclick = false;
+}
 
 //Beta
 soon_availability = true;

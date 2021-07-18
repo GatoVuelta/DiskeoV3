@@ -24,7 +24,7 @@ draw_text((x+175)-x_threshold, y-16, tab_text);
 if ((oDW_tab1.element_enable))
  {
 	 draw_set_color(global.UI_element_unfocused);
-	 draw_text((x+175)-x_threshold+275, y-16, "Custom Headings");
+	 draw_text((x+175)-x_threshold+275, y-16, "Custom AppID");
  }
 }
 

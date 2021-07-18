@@ -1,7 +1,7 @@
 //Tab
 if (focus)
 {
-	draw_sprite_ext(s_tab0_corner, 0, x-x_threshold-197, y+1, 1, 1, 0, global.UI_general_primary, 1-init_alpha-0.6);
+	draw_sprite_ext(s_tab0_corner, 0, x-x_threshold-197, y-1, 1, 1, 0, global.UI_general_primary, 1-init_alpha-0.6);
 }
 
 if (element_enable)

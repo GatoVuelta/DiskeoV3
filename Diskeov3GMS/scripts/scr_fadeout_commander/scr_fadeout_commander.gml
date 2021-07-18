@@ -9,6 +9,7 @@ global.fade_out = true;
 with (oInputFirstLine){fade_out = true; init_x_threshold = -500}
 with (oInputSecondLine){fade_out = true; init_x_threshold = -500}
 with (oInputTooltip0){fade_out = true; init_x_threshold = -500}
+with (oInputCustomHeading){fade_out = true; init_x_threshold = -500}
 
 //Dropdowns
 with (oDW_tab0){fade_out = true; init_x_threshold = -500}

@@ -34,10 +34,14 @@ if (fade_out)
 if ((element_enable) &&
 (mouse_check_button_pressed(mb_left)) &&
 (position_meeting(mouse_x, mouse_y, id)) &&
-!(position_meeting(mouse_x, mouse_y, oDW_tab1)))
+!(position_meeting(mouse_x, mouse_y, oDW_tab1))) or (forceclick)
 {
 focus = true;
 oDW_tab1.focus = false;
+
+global.last_heading_tab = 0;
+
+forceclick = false;
 
 if !(instance_exists(o_dw_heading))
 {
