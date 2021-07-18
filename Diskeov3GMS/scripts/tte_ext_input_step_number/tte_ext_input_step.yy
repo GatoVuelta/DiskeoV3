@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "internal",
-    "path": "folders/Scripts/TTExt - Input/internal.yy",
+    "name": "Object",
+    "path": "folders/Scripts/TTExt - Input/Object.yy",
   },
   "resourceVersion": "1.0",
-  "name": "__tte_ext_input_handle_keyboard",
+  "name": "tte_ext_input_step",
   "tags": [],
   "resourceType": "GMScript",
 }

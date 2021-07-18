@@ -41,7 +41,11 @@ oDW_tab1.focus = false;
 
 if !(instance_exists(o_dw_heading))
 {
-	instance_create_layer(145, 217, "LY_dropdowns", o_dw_heading);
+	if (instance_exists(oInputCustomHeading))
+	{
+		instance_destroy(oInputCustomHeading)
+	}
+	instance_create_layer(145, 217,"LY_dropdowns", o_dw_heading);
 }
 
 var objid = oDW_tab1;

@@ -41,12 +41,16 @@ oDW_tab0.focus = false;
 
 if (instance_exists(o_dw_heading))
 {
+	//DeleteOLD
 	instance_destroy(o_dw_heading);
 	if (instance_exists(obj_dropdown))
 	{
 		instance_destroy(obj_dropdown_item);
 		instance_destroy(obj_dropdown);
 	}
+	//CreateTXT
+	global.overlay = false;
+	instance_create_layer(145, 218, "LY_TextboxBG", oInputCustomHeading);
 }
 
 var objid = oDW_tab0;

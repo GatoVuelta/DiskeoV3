@@ -6,7 +6,7 @@
     "path": "folders/Scripts/TTExt - Input/internal.yy",
   },
   "resourceVersion": "1.0",
-  "name": "__tte_ext_input_handle_keyboard",
+  "name": "__tte_ext_input_handle_keyboard_number",
   "tags": [],
   "resourceType": "GMScript",
 }

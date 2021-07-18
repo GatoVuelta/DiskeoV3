@@ -1,8 +1,8 @@
 //Basic stuff
 focus = false;
 border_alpha = 0;
-maxium_length = 200;
-minium_lenght = 3;
+maxium_length = 20;
+minium_lenght = 5;
 
 //Enable comander
 element_default_enable = true;
@@ -18,7 +18,7 @@ tte_ext_input_create(654, 54, false);
 
 //tte_ext_input_set_on_changed(example_on_changed);
 
-tab_text = "Second Text Line";
+tab_text = "AE";
 
 //Speed
 fin_speed = 25;
@@ -32,13 +32,14 @@ fade_in = true;
 fade_out = false;
 
 //SetText
-if (global.input_sline_text != "")
-{
-	tte_ext_input_set_text(global.input_sline_text);
-} else
-{
-	tte_ext_input_set_text("   ");
-}
+//if (global.input_sline_text != "")
+//{
+//	tte_ext_input_set_text(global.input_sline_text);
+//} else
+//{
+//	tte_ext_input_set_text("   ");
+//}
+tte_ext_input_set_text(global.appIDto);
 
 pressing_ctrl = false;
 pressed_c = false;

@@ -1,8 +1,3 @@
-if (element_enable) && (!global.overlay)
-{
-	script_execute(tte_ext_input_step,0,0,0,0,0);
-}
-
 //Slow border fading
 if (focus)
 {
@@ -59,8 +54,27 @@ if(pressed_v)
 }
 }
 
+//OnlyLetters
+//string_replace_all()
+
 //Output text
-global.input_sline_text = tte_ext_input_get_text();
+var IDTo = tte_ext_input_get_text();
+modded_str = IDTo;
+
+//IfNumber
+	if (string_length(IDTo) > 0) && (IDTo != "")
+	{
+	if (string_length(IDTo) != string_length(string_digits(IDTo)))
+	{
+		var modded_str = string(string_digits(IDTo));
+		if (string_length(modded_str) < 1)
+		{
+			modded_str = "0";
+		}
+		tte_ext_input_set_text(modded_str);
+	}
+	global.appIDto = modded_str
+	}
 
 //If overlay
 if ((global.overlay) && (element_enable))
@@ -72,7 +86,12 @@ if ((global.overlay) && (element_enable))
 }
 
 //Maxium and minium handler
-if (focus) && (string_length(global.input_sline_text) > maxium_length)
+if (focus) && (string_length(global.appIDto) > maxium_length)
 {
-	tte_ext_input_set_text(string_copy(global.input_sline_text, 1, maxium_length));
+	tte_ext_input_set_text(string_copy(global.appIDto, 1, maxium_length));
+}
+
+if (element_enable) && (!global.overlay)
+{
+	script_execute(tte_ext_input_step,0,0,0,0,0);
 }
