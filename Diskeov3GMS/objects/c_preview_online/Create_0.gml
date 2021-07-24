@@ -4,3 +4,5 @@ idl_color = make_color_hex("faa81a");
 onl_color = make_color_hex("3ba55d");
 
 click_sw = 3;
+
+init_y = y;

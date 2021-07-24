@@ -7,7 +7,7 @@ x = room_width/2;
 y = room_height/2;
 
 //Define app version
-global.app_ver = 8;
+global.app_ver = 9;
 global.firstsuccess = false;
 global.unique_md5_id = fingerprint_md5();
 
@@ -47,7 +47,7 @@ global.card_icount = 0;
 global.input_fline_text = "Check this out!";
 global.input_sline_text = "Hey";
 global.heading_dw_text = "Check my status";
-global.s_tooltip = "Alpha8 (Leave blank to disallow)"
+global.s_tooltip = "Alpha9 (Leave blank to disallow)"
 global.l_tooltip = "Diskeo (Leave blank to disallow)"
 
 //StatusPictures
@@ -60,6 +60,9 @@ global.lpic_key = "dsk_dsklogo";
 global.lpic_id = "853048028062547999";
 
 //Preview
+global.presence_button1_enable = true;
+global.presence_button2_enable = true;
+
 global.timezone_delay = -5;
 
 global.start_timestamp_type = "current";

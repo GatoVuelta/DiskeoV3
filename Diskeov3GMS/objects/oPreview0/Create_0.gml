@@ -5,6 +5,8 @@ maxium_length = 200;
 minium_lenght = 3;
 total_subimgs = sprite_get_number(spr_pfpcload);
 load_subimg = 0;
+button_count = 0;
+y_threshold = 0;
 
 //Enable comander
 element_default_enable = true;

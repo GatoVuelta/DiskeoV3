@@ -1,3 +1,32 @@
+//ButtonCount
+if (global.presence_button1_enable)
+{
+	if (global.presence_button2_enable)
+	{
+		button_count = 2;
+		sprite_index = s_prvw_bg_2;
+		y_threshold = -60;
+		with(c_preview_online){y = init_y+other.y_threshold + 18};
+	} else {
+		button_count = 1;
+		sprite_index = s_prvw_bg_1
+		y_threshold = -30;
+		with(c_preview_online){y = init_y+other.y_threshold + 7};
+	}
+} else if (global.presence_button2_enable)
+	{
+		button_count = 1;
+		sprite_index = s_prvw_bg_1;
+		y_threshold = -30;
+		with(c_preview_online){y = init_y+other.y_threshold + 7};
+	} else
+{
+	button_count = 0;
+	sprite_index = s_prvw_bg_0;
+	y_threshold = 0;
+	with(c_preview_online){y = init_y};
+}
+
 //Slow border fading
 if (focus)
 {

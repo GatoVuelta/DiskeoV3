@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_prvw_bg",
-    "path": "sprites/s_prvw_bg/s_prvw_bg.yy",
+    "name": "s_prvw_bg_0",
+    "path": "sprites/s_prvw_bg_0/s_prvw_bg_0.yy",
   },
   "solid": false,
   "visible": true,
