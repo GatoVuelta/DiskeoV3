@@ -21,9 +21,9 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"oButton_PRVW_1","path":"objects/oButton_PRVW_1/oButton_PRVW_1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"oButton_PRVW_1","path":"objects/oButton_PRVW_1/oButton_PRVW_1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"oButton_PRVW_1","path":"objects/oButton_PRVW_1/oButton_PRVW_1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"oButton_PRVW_2","path":"objects/oButton_PRVW_2/oButton_PRVW_2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"oButton_PRVW_2","path":"objects/oButton_PRVW_2/oButton_PRVW_2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"oButton_PRVW_2","path":"objects/oButton_PRVW_2/oButton_PRVW_2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -32,7 +32,7 @@
     "path": "folders/Objects/ActionButtons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oButton_PRVW_1",
+  "name": "oButton_PRVW_2",
   "tags": [],
   "resourceType": "GMObject",
 }

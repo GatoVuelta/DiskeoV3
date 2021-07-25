@@ -23,7 +23,7 @@ draw_set_valign(fa_center);
 draw_set_color(global.UI_element_focused);
 draw_set_font(f_Whitney_Bold_BTN);
 draw_set_alpha(1-init_alpha);
-draw_text(x-x_threshold, y, global.presence_button1_text)
+draw_text(x-x_threshold, y, global.presence_button2_text)
 
 } else 
 {
@@ -38,7 +38,7 @@ draw_text(x-x_threshold, y, global.presence_button1_text)
 	draw_set_color(global.UI_element_unfocused);
 	draw_set_font(f_Whitney_Bold_BTN);
 	draw_set_alpha(1-init_alpha);
-	draw_text(x-x_threshold, y, global.presence_button1_text);
+	draw_text(x-x_threshold, y, global.presence_button2_text);
 	
 	if (soon_availability) && (position_meeting(mouse_x, mouse_y, id) && (!global.overlay))
 	{

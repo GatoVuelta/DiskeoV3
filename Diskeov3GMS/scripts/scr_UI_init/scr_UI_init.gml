@@ -34,6 +34,8 @@ function scr_UI_init(){
 	{
 		global.userid_banner_color = global.UI_PRVW_topsquare;
 	}
+	global.UI_PRVW_btn_inactive = make_color_hex("50555d");
+	global.UI_PRVW_btn_active = make_color_hex("5d6269");
 	
 	//Window dragger
 	global.UI_windragger_focused = global.UI_general_secondary;

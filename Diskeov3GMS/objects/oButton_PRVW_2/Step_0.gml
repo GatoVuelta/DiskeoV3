@@ -5,7 +5,7 @@ if (position_meeting(mouse_x, mouse_y, id))
 	focus = true;
 	if (mouse_check_button_pressed(mb_left))
 	{
-		scr_open_url(global.presence_button1_link, false);
+		scr_open_url(global.presence_button2_link, false);
 	}
 } else 
 	{

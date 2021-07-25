@@ -61,7 +61,12 @@ global.lpic_id = "853048028062547999";
 
 //Preview
 global.presence_button1_enable = true;
+global.presence_button1_text = "Button1";
+global.presence_button1_link = "http://komodroid.com/";
+
 global.presence_button2_enable = true;
+global.presence_button2_text = "Button2";
+global.presence_button2_link = "http://komodroid.com/";
 
 global.timezone_delay = -5;
 

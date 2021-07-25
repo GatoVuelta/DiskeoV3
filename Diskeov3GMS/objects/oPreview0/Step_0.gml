@@ -5,20 +5,24 @@ if (global.presence_button1_enable)
 	{
 		button_count = 2;
 		sprite_index = s_prvw_bg_2;
-		y_threshold = -60;
-		with(c_preview_online){y = init_y+other.y_threshold + 18};
+		y_threshold = -57;
+		with(c_preview_online){y = init_y+other.y_threshold + 15};
+		if !(instance_exists(oButton_PRVW_1)){var btn1 = instance_create_layer(989, 469, "LyPreviewBG_up", oButton_PRVW_1)};
+		if !(instance_exists(oButton_PRVW_2)){var btn2 = instance_create_layer(989, 509, "LyPreviewBG_up", oButton_PRVW_2)};
 	} else {
 		button_count = 1;
 		sprite_index = s_prvw_bg_1
-		y_threshold = -30;
-		with(c_preview_online){y = init_y+other.y_threshold + 7};
+		y_threshold = -27;
+		with(c_preview_online){y = init_y+other.y_threshold + 4};
+		if !(instance_exists(oButton_PRVW_1)){var btn1 = instance_create_layer(989, 469, "LyPreviewBG_up", oButton_PRVW_1)};
 	}
 } else if (global.presence_button2_enable)
 	{
 		button_count = 1;
 		sprite_index = s_prvw_bg_1;
-		y_threshold = -30;
-		with(c_preview_online){y = init_y+other.y_threshold + 7};
+		y_threshold = -27;
+		with(c_preview_online){y = init_y+other.y_threshold + 4};
+		if !(instance_exists(oButton_PRVW_2)){var btn2 = instance_create_layer(989, 469, "LyPreviewBG_up", oButton_PRVW_2)};
 	} else
 {
 	button_count = 0;
