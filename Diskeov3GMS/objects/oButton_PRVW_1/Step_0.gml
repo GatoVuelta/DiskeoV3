@@ -59,3 +59,18 @@ if (load_subimg < (total_subimgs-1)) /*&& (draw_load)*/
 {
 	load_subimg += 1;
 } else {load_subimg = 0}
+
+//CheckButton
+if !(global.presence_button1_enable)
+{
+	fade_out = true;
+	init_x_threshold = -300;
+	alarm[0] = 5;
+} else {
+	if !(global.presence_button2_enable)
+	{
+		y = 495;
+	} else {
+		y = 469;
+	}
+}
