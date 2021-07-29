@@ -15,7 +15,7 @@ lastv_n = global.app_ver;
 lastv_m = "false";
 
 //!<DEBUG!>!
-global.debugmode0 = true;
+global.debugmode0 = false;
 
 //Get latest version
 if !(global.debugmode0)

@@ -13,6 +13,10 @@ with (oInputCustomHeading){fade_out = true; init_x_threshold = -500}
 with (oInputBTN_link){fade_out = true; init_x_threshold = -500}
 with (oInputBTN_txt){fade_out = true; init_x_threshold = -500}
 
+//Tabs
+with (oDW_tabbtn_0){fade_out = true; init_x_threshold = -500}
+with (oDW_tabbtn_1){fade_out = true; init_x_threshold = -500}
+
 //Dropdowns
 with (oDW_tab0){fade_out = true; init_x_threshold = -500}
 with (oDW_tab1){fade_out = true; init_x_threshold = -500}

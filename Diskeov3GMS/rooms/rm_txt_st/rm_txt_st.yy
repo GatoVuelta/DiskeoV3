@@ -68,9 +68,7 @@
           ],"visible":true,"depth":1400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"LY_TextboxBG","tags":[],"resourceType":"GMRInstanceLayer",},
       ],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Textboxes","tags":[],"resourceType":"GMRLayer",},
     {"visible":true,"depth":1500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[
-        {"instances":[
-            {"properties":[],"isDnd":false,"objectId":{"name":"oToggle_BTN","path":"objects/oToggle_BTN/oToggle_BTN.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":736.0,"y":608.0,"resourceVersion":"1.0","name":"inst_65067849","tags":[],"resourceType":"GMRInstance",},
-          ],"visible":true,"depth":1600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"LyPreviewBG_up","tags":[],"resourceType":"GMRInstanceLayer",},
+        {"instances":[],"visible":true,"depth":1600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"LyPreviewBG_up","tags":[],"resourceType":"GMRInstanceLayer",},
         {"instances":[
             {"properties":[],"isDnd":false,"objectId":{"name":"oPreview0","path":"objects/oPreview0/oPreview0.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":989.0,"y":357.0,"resourceVersion":"1.0","name":"inst_7619B2A","tags":[],"resourceType":"GMRInstance",},
             {"properties":[],"isDnd":false,"objectId":{"name":"c_preview_online","path":"objects/c_preview_online/c_preview_online.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":927.0,"y":300.0,"resourceVersion":"1.0","name":"inst_15E0939E","tags":[],"resourceType":"GMRInstance",},
@@ -139,7 +137,6 @@
     {"name":"inst_79C36D2D","path":"rooms/rm_txt_st/rm_txt_st.yy",},
     {"name":"inst_43EEFB91","path":"rooms/rm_txt_st/rm_txt_st.yy",},
     {"name":"inst_2133DD65","path":"rooms/rm_txt_st/rm_txt_st.yy",},
-    {"name":"inst_65067849","path":"rooms/rm_txt_st/rm_txt_st.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

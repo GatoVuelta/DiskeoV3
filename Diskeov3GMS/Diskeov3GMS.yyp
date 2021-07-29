@@ -75,6 +75,7 @@
     {"id":{"name":"s_selected_s","path":"sprites/s_selected_s/s_selected_s.yy",},"order":6,},
     {"id":{"name":"tte_ext_input_set_font","path":"scripts/tte_ext_input_set_font/tte_ext_input_set_font.yy",},"order":4,},
     {"id":{"name":"tte_ext_handle_mouse_selection","path":"scripts/tte_ext_handle_mouse_selection/tte_ext_handle_mouse_selection.yy",},"order":0,},
+    {"id":{"name":"o_cursor_ctrl_btn","path":"objects/o_cursor_ctrl_btn/o_cursor_ctrl_btn.yy",},"order":19,},
     {"id":{"name":"s_prvw_pfps0","path":"sprites/s_prvw_pfps0/s_prvw_pfps0.yy",},"order":3,},
     {"id":{"name":"oInputBTN_txt","path":"objects/oInputBTN_txt/oInputBTN_txt.yy",},"order":6,},
     {"id":{"name":"o_cog_0","path":"objects/o_cog_0/o_cog_0.yy",},"order":0,},
