@@ -6,7 +6,7 @@ if (ev_type == "DiscordReady")
 {
 	window_set_caption("Diskeo - Status: Up");
 	ready = true;
-	show_debug_message("date: " + string(date_current_datetime()));
+	show_debug_message("async social date (updrp): " + string(date_current_datetime()));
 	
 	//Timestamp
 	if (global.show_timestamp)
@@ -22,7 +22,7 @@ if (ev_type == "DiscordReady")
 	np_setpresence_more(global.s_tooltip, global.l_tooltip, false);
 	np_setpresence(global.input_fline_text, global.input_sline_text, global.lpic_key, global.spic_key);
 	
-	if (!global.hassprite)
+	if (!global.hassprite) && !(global.debugmode0)
 	{	
 	global.user_avatar_url = np_get_avatar_url(async_load[? "user_id"], async_load[? "avatar"]);
 	spr_id = sprite_add(global.user_avatar_url, 1, false, false, 0, 0);

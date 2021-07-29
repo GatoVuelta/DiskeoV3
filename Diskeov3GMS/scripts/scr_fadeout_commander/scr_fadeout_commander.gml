@@ -29,11 +29,14 @@ with (oButtonCog){fade_out = true; init_x_threshold = -300}
 
 //Preview
 with (oPreview0){fade_out = true; init_x_threshold = -500}
+with (oButton_PRVW_1){fade_out = true; init_x_threshold = -500}
+with (oButton_PRVW_2){fade_out = true; init_x_threshold = -500}
 
 //ScrollableArea
 with (o_scrollbar_pics){fade_out = true; init_x_threshold = -700}
 
 //ActionButtons
 with (oButtonUpdateDRP){fade_out = true; init_x_threshold = -500}
+with (oToggle_BTN1){fade_out = true; init_x_threshold = -500}
 
 }

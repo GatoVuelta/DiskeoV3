@@ -1,5 +1,5 @@
 /// @description check if we can use the avatar.
-if (!global.hassprite)
+if (!global.hassprite) && !(global.debugmode0)
 {
 	if (async_load[? "id"] = spr_id)
 	{

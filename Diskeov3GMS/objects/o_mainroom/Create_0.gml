@@ -14,8 +14,14 @@ global.unique_md5_id = fingerprint_md5();
 lastv_n = global.app_ver;
 lastv_m = "false";
 
+//!<DEBUG!>!
+global.debugmode0 = true;
+
 //Get latest version
-get_request = http_get("https://api.npoint.io/f4f691ca862af6eb7855");
+if !(global.debugmode0)
+{
+	get_request = http_get("https://api.npoint.io/f4f691ca862af6eb7855");
+}
 
 //Define presence ID
 global.appIDto = "765725484779700224"
@@ -98,3 +104,8 @@ global.lastused_clientsecret = "vBCWL1WEP4f-x_nJhXn-Pr1bWaBD_xH4";
 
 //AssetsReader
 global.asset_read_count = 0;
+
+if (global.debugmode0)
+{
+	room_goto(rm_txt_st);
+}

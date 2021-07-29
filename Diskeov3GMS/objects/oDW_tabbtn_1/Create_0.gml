@@ -2,7 +2,7 @@
 focus = false;
 border_alpha = 0;
 maxium_length = 200;
-ever_clicked_clicking = false;
+minium_lenght = 3;
 
 //Enable comander
 element_default_enable = true;
@@ -10,16 +10,16 @@ element_enable = true;
 
 //Beta
 soon_availability = true;
-soon_text = "Soon™";
+soon_text = "Coming soon";
 //beta = true;
 
-//Room
-room_to_check = rm_btn_st;
-room_to = rm_btn_st; 
+//tte_ext_input_set_on_changed(example_on_changed);
+
+tab_text = "Button 2";
 
 //Speed
-fin_speed = 20;
-fout_speed = 20;
+fin_speed = 25;
+fout_speed = 25;
 //AnimationVariables
 init_x_threshold = 300;
 init_alpha = 0;

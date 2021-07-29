@@ -21,7 +21,12 @@ if !(global.lastusedappID == global.appIDto)
 	alarm[0] = room_speed*1.5;
 }
 
-	show_debug_message("date: " + string(date_current_datetime()));
+if (!global.debugmode0)
+{
+	show_debug_message("Attempting to connect...");
+} else {
+	show_debug_message("Attempting to connect... (DEBUG MODE ENABLED!)");
+}
 	
 	//Timestamp
 	if (global.show_timestamp)

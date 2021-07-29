@@ -5,7 +5,7 @@ if (ev_type == "DiscordReady")
 {
 	window_set_caption("Diskeo - Status: Up");
 	ready = true;
-	show_debug_message("date: " + string(date_current_datetime()));
+	show_debug_message("async social date (kmd): " + string(date_current_datetime()));
 	
 	//Timestamp
 	if (global.show_timestamp)
@@ -22,7 +22,7 @@ if (ev_type == "DiscordReady")
 		
 	//np_setpresence() should ALWAYS come the last!!
 	np_setpresence(global.input_sline_text, global.input_fline_text, "dsk_dsklogo", "dsk_dsklogo");
-	if (!global.hassprite)
+	if (!global.hassprite) && !(global.debugmode0)
 	{
 	// passing a URL will add this sprite asynchronously via *internets*
 	user_avatar_url = np_get_avatar_url(async_load[? "user_id"], async_load[? "avatar"]);
