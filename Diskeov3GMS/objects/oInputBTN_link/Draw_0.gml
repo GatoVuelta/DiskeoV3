@@ -1,17 +1,18 @@
-//Tab
-if (focus) && (oDW_tabbtn_1.element_enable)
-{
-	draw_sprite_ext(s_dw_tab1, 0, x-x_threshold+200, y+1, 1, 1, 0, global.UI_general_primary, 1-init_alpha-0.6);
-}
-
 if (element_enable)
 {
 
 //Focus border	
-if (focus)
+if (!focus)
 {
-	draw_sprite_ext(sprite_index, 0, x-x_threshold, y, 1, 1, 0, global.UI_general_primary, 1-init_alpha);
+	draw_sprite_ext(sprite_index, 0, x-x_threshold, y, 1, 1, 0, global.UI_txtbx_bg_unfocused, 1-init_alpha);
+} else 
+{
+	//Background
+	draw_sprite_ext(sprite_index, 0, x-x_threshold, y, 1, 1, 0, global.UI_txtbx_bg_focused, border_alpha-init_alpha);
+}
 
+//Tab
+draw_sprite_ext(s_tab0_corner, 0, x-x_threshold, y+2, 1, 1, 0, global.UI_general_primary, 1-init_alpha);
 
 //TabText
 draw_set_halign(fa_center);
@@ -21,19 +22,12 @@ draw_set_font(f_UniSans_TabTtle);
 draw_set_alpha(1-init_alpha);
 draw_text((x+175)-x_threshold, y-16, tab_text);
 
-if ((oDW_tabbtn_1.element_enable))
- {
-	 draw_set_color(global.UI_element_unfocused);
-	 draw_text((x+175)-x_threshold+260, y-16, "Button 2");
- }
-}
-
 //Focus indicator
-//draw_sprite_ext(s_txtbx_bd0, 0, x-x_threshold, y, 1, 1, 0, global.UI_general_primary, border_alpha-init_alpha);
+draw_sprite_ext(s_txtbx_bd1, 0, x-x_threshold, y, 1, 1, 0, global.UI_general_primary, border_alpha-init_alpha);
 
 } else 
 {
-	//draw_sprite_ext(s_tab0_corner, 0, x-x_threshold, y+2, 1, 1, 0, global.UI_element_disabled, 1-init_alpha);
+	draw_sprite_ext(s_tab0_corner, 0, x-x_threshold, y+2, 1, 1, 0, global.UI_element_disabled, 1-init_alpha);
 	draw_sprite_ext(sprite_index, 0, x-x_threshold, y, 1, 1, 0, global.UI_element_disabled, 0.5-init_alpha)
 	//TabText
 	draw_set_halign(fa_center);
@@ -58,9 +52,9 @@ if ((oDW_tabbtn_1.element_enable))
 	}
 }
 
-//AreaBorder
-draw_sprite_ext(s_btnc_bd0, 0, x-x_threshold, y-2, 1, 1, 0, global.UI_general_primary, 1-init_alpha)
-
 //Reset
 draw_set_halign(-1);
 draw_set_valign(-1);
+
+//Draw textbox itself
+script_execute(tte_ext_input_draw,0,0,0,0,0);

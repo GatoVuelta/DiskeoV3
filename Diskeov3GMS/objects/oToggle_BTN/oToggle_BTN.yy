@@ -21,9 +21,9 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"oToggle_BTN1","path":"objects/oToggle_BTN1/oToggle_BTN1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"oToggle_BTN1","path":"objects/oToggle_BTN1/oToggle_BTN1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"oToggle_BTN1","path":"objects/oToggle_BTN1/oToggle_BTN1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"oToggle_BTN","path":"objects/oToggle_BTN/oToggle_BTN.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"oToggle_BTN","path":"objects/oToggle_BTN/oToggle_BTN.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"oToggle_BTN","path":"objects/oToggle_BTN/oToggle_BTN.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -32,7 +32,7 @@
     "path": "folders/Objects/ActionButtons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oToggle_BTN1",
+  "name": "oToggle_BTN",
   "tags": [],
   "resourceType": "GMObject",
 }

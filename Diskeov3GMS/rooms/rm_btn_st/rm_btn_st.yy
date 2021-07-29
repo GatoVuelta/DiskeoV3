@@ -20,7 +20,7 @@
             {"properties":[],"isDnd":false,"objectId":{"name":"oDW_tabbtn_0","path":"objects/oDW_tabbtn_0/oDW_tabbtn_0.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":153.0,"y":252.0,"resourceVersion":"1.0","name":"inst_3572CB53","tags":[],"resourceType":"GMRInstance",},
           ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"LY_dw_tabs_up","tags":[],"resourceType":"GMRInstanceLayer",},
         {"instances":[
-            {"properties":[],"isDnd":false,"objectId":{"name":"oDW_tabbtn_1","path":"objects/oDW_tabbtn_1/oDW_tabbtn_1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":349.0,"y":250.0,"resourceVersion":"1.0","name":"inst_5A7508BB","tags":[],"resourceType":"GMRInstance",},
+            {"properties":[],"isDnd":false,"objectId":{"name":"oDW_tabbtn_1","path":"objects/oDW_tabbtn_1/oDW_tabbtn_1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":349.0,"y":251.0,"resourceVersion":"1.0","name":"inst_5A7508BB","tags":[],"resourceType":"GMRInstance",},
           ],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"LY_dw_tabs_down","tags":[],"resourceType":"GMRInstanceLayer",},
       ],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Dropdowns","tags":[],"resourceType":"GMRLayer",},
     {"instances":[
@@ -55,11 +55,14 @@
       ],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"LeftMenu","tags":[],"resourceType":"GMRLayer",},
     {"visible":true,"depth":1200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[
         {"instances":[],"visible":true,"depth":1300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"LY_TexboxWarns","tags":[],"resourceType":"GMRInstanceLayer",},
-        {"instances":[],"visible":true,"depth":1400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"LY_TextboxBG","tags":[],"resourceType":"GMRInstanceLayer",},
+        {"instances":[
+            {"properties":[],"isDnd":false,"objectId":{"name":"oInputBTN_link","path":"objects/oInputBTN_link/oInputBTN_link.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":179.0,"y":419.0,"resourceVersion":"1.0","name":"inst_6086CFBA","tags":[],"resourceType":"GMRInstance",},
+          ],"visible":true,"depth":1400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"LY_TextboxBG","tags":[],"resourceType":"GMRInstanceLayer",},
       ],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Textboxes","tags":[],"resourceType":"GMRLayer",},
     {"visible":true,"depth":1500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[
         {"instances":[
-            {"properties":[],"isDnd":false,"objectId":{"name":"oToggle_BTN1","path":"objects/oToggle_BTN1/oToggle_BTN1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":736.0,"y":608.0,"resourceVersion":"1.0","name":"inst_65067849","tags":[],"resourceType":"GMRInstance",},
+            {"properties":[],"isDnd":false,"objectId":{"name":"oToggle_BTN","path":"objects/oToggle_BTN/oToggle_BTN.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":638.0,"y":290.0,"resourceVersion":"1.0","name":"inst_65067849","tags":[],"resourceType":"GMRInstance",},
+            {"properties":[],"isDnd":false,"objectId":{"name":"oInputBTN_txt","path":"objects/oInputBTN_txt/oInputBTN_txt.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":179.0,"y":316.0,"resourceVersion":"1.0","name":"inst_2B92DA63","tags":[],"resourceType":"GMRInstance",},
           ],"visible":true,"depth":1600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"LyPreviewBG_up","tags":[],"resourceType":"GMRInstanceLayer",},
         {"instances":[
             {"properties":[],"isDnd":false,"objectId":{"name":"oPreview0","path":"objects/oPreview0/oPreview0.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":989.0,"y":357.0,"resourceVersion":"1.0","name":"inst_7619B2A","tags":[],"resourceType":"GMRInstance",},
@@ -123,6 +126,8 @@
     {"name":"inst_A743103","path":"rooms/rm_btn_st/rm_btn_st.yy",},
     {"name":"inst_3572CB53","path":"rooms/rm_btn_st/rm_btn_st.yy",},
     {"name":"inst_5A7508BB","path":"rooms/rm_btn_st/rm_btn_st.yy",},
+    {"name":"inst_2B92DA63","path":"rooms/rm_btn_st/rm_btn_st.yy",},
+    {"name":"inst_6086CFBA","path":"rooms/rm_btn_st/rm_btn_st.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

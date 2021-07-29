@@ -45,8 +45,18 @@ if (!global.debugmode0)
 	np_setpresence(global.input_sline_text, global.input_fline_text, global.lpic_key, global.spic_key);
 	
 	//Buttons
-	//np_setpresence_buttons(0, "LOL", "https://nothing.com/") 
-	//np_setpresence_buttons(1, "LMAO", "https://nothing.com/") 
+	if (global.presence_button1_enable)
+	{
+		np_setpresence_buttons(0, global.presence_button1_text, global.presence_button1_link);
+	} else {
+		np_setpresence_buttons(0, "", "");
+	}
+	if (global.presence_button2_enable)
+	{
+		np_setpresence_buttons(1, global.presence_button2_text, global.presence_button2_link);
+	} else {
+		np_setpresence_buttons(1, "", "");
+	}
 	
 	global.lastusedappID = global.appIDto;
 	global.lastused_clientsecret = global.clientsecret_to;

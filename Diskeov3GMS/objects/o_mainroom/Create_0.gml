@@ -74,6 +74,8 @@ global.presence_button2_enable = true;
 global.presence_button2_text = "Button2";
 global.presence_button2_link = "http://komodroid.com/";
 
+global.presence_button_selected = 1;
+
 global.timezone_delay = -5;
 
 global.start_timestamp_type = "current";

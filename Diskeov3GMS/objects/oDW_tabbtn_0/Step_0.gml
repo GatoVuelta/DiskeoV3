@@ -47,7 +47,29 @@ var up_layer = layer_get_id("LY_dw_tabs_up");
 objid.layer = dw_layer;
 id.layer = up_layer;
 
-//global.asset_select_l = true;
-//global.asset_select_s = false;
+//SetGlobalBTNSelect
+global.presence_button_selected = 1;
+with (oInputBTN_txt)
+{
+	if !(string_length(global.presence_button1_text) < 1)
+	{
+		tte_ext_input_set_text(global.presence_button1_text)
+	} else {
+		tte_ext_input_set_text(" ");
+	}
+}
+with (oInputBTN_link)
+{
+	if !(string_length(global.presence_button1_link) < 1)
+	{
+		tte_ext_input_set_text(global.presence_button1_link)
+	} else {
+		tte_ext_input_set_text(" ");
+	}
+}
+with (oToggle_BTN)
+{
+	toggle_st = global.presence_button1_enable;
+}
 
 }

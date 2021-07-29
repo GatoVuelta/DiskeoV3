@@ -10,6 +10,8 @@ with (oInputFirstLine){fade_out = true; init_x_threshold = -500}
 with (oInputSecondLine){fade_out = true; init_x_threshold = -500}
 with (oInputTooltip0){fade_out = true; init_x_threshold = -500}
 with (oInputCustomHeading){fade_out = true; init_x_threshold = -500}
+with (oInputBTN_link){fade_out = true; init_x_threshold = -500}
+with (oInputBTN_txt){fade_out = true; init_x_threshold = -500}
 
 //Dropdowns
 with (oDW_tab0){fade_out = true; init_x_threshold = -500}
@@ -37,6 +39,6 @@ with (o_scrollbar_pics){fade_out = true; init_x_threshold = -700}
 
 //ActionButtons
 with (oButtonUpdateDRP){fade_out = true; init_x_threshold = -500}
-with (oToggle_BTN1){fade_out = true; init_x_threshold = -500}
+with (oToggle_BTN){fade_out = true; init_x_threshold = -500}
 
 }

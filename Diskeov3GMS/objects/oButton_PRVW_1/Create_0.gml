@@ -33,7 +33,7 @@ fout_speed = 25;
 //AnimationVariables
 
 init_x_threshold = 300;
-init_alpha = 0;
+init_alpha = 1;
 x_threshold = init_x_threshold;
 //AnimationState
 fade_in = true;
@@ -46,3 +46,5 @@ root_accent_value_exists = false;
 
 procid_actual = -1;
 procid_old = -1;
+
+image_alpha = 0;

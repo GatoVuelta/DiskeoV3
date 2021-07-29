@@ -6,6 +6,15 @@ if (position_meeting(mouse_x, mouse_y, id))
 	if (mouse_check_button_pressed(mb_left))
 	{
 		toggle_st = !toggle_st;
+		
+		if (toggle_st)
+		{
+			if (global.presence_button_selected == 1){global.presence_button1_enable = true} else 
+			if (global.presence_button_selected == 2){global.presence_button2_enable = true}
+		} else {
+			if (global.presence_button_selected == 1){global.presence_button1_enable = false} else 
+			if (global.presence_button_selected == 2){global.presence_button2_enable = false}
+		}
 	}
 } else 
 	{

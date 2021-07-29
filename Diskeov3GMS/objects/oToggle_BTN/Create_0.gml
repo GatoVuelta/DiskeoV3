@@ -7,6 +7,15 @@ draw_load = false;
 img_request = -1;
 
 toggle_st = true;
+
+if (global.presence_button_selected == 1)
+{
+	toggle_st = global.presence_button1_enable;
+} else if (global.presence_button_selected == 2)
+{
+	toggle_st = global.presence_button1_enable;
+}
+
 toggle_active_threshold = 60;
 toggle_inactive_threshold = 27;
 toggle_threshold = 0;
