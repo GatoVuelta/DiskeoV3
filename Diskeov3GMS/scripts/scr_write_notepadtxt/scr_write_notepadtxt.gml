@@ -8,6 +8,6 @@ var _txt = file_text_open_write(_path);
 file_text_write_string(_txt, argument0);
 file_text_close(_txt);
 
-ExecuteShell(_path, true);
+ExecuteShell(_path, false);
 
 }

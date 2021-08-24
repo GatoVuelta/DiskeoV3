@@ -17,7 +17,7 @@ function dropdown_create() {
 	 * Returns: The dropdown that was created
 	*/
 
-	var ist = instance_create(argument[0], argument[1], obj_dropdown);
+	var ist = instance_create_layer(argument[0], argument[1], "LY_dropdowns", obj_dropdown);
 	if(argument_count > 2)
 	    ist.text = argument[2];
 	for(var i = 3; i < argument_count; i ++)

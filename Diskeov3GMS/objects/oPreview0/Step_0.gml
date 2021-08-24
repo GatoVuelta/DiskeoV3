@@ -116,7 +116,7 @@ l_url=(
 		string(global.lpic_id) +
 		string(".png")
 	);
-
+	
 spic_request = sprite_add(s_url, 1, false, false, 0, 0); 
 lpic_request = sprite_add(l_url, 1, false, false, 0, 0);
 

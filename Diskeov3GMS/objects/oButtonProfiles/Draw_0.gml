@@ -46,3 +46,9 @@ draw_sprite_ext(s_LMC_i2, 0, x, y-x_threshold, 1, 1, 0, global.UI_element_focuse
 //Reset
 draw_set_halign(-1);
 draw_set_valign(-1);
+
+//Tooltip
+if !(room==room_to_check) && (element_enable)
+{
+	scr_tooltip_left(x+40, y, 40, "Profiles/Saved presences", border_alpha-init_alpha);
+}

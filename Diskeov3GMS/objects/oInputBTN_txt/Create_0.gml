@@ -34,6 +34,7 @@ fade_out = false;
 pressing_ctrl = false;
 pressed_c = false;
 pressed_v = false;
+pressed_a = false;
 
 if (global.presence_button_selected == 1)
 {

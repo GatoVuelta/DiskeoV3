@@ -60,3 +60,11 @@ var up_layer = layer_get_id("LY_dw_tabs_up");
 objid.layer = dw_layer;
 id.layer = up_layer;
 }
+
+//Enable
+if !(global.overlay_init)
+{
+	element_enable = true;
+} else {
+	element_enable = false;
+}

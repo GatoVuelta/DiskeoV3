@@ -44,5 +44,6 @@ tte_ext_input_set_text(global.appIDto);
 pressing_ctrl = false;
 pressed_c = false;
 pressed_v = false;
+pressed_a = false;
 
 alarm[0] = 10;

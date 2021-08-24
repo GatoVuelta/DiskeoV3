@@ -7,7 +7,8 @@ x = room_width/2;
 y = room_height/2;
 
 //Define app version
-global.app_ver = 9;
+global.app_ver = 10;
+global.app_ver_name = "Beta 1.0 (0.1.0)";
 global.firstsuccess = false;
 global.unique_md5_id = fingerprint_md5();
 
@@ -15,7 +16,7 @@ lastv_n = global.app_ver;
 lastv_m = "false";
 
 //!<DEBUG!>!
-global.debugmode0 = false;
+global.debugmode0 = true;
 
 //Get latest version
 if !(global.debugmode0)
@@ -37,6 +38,8 @@ global.userid_disc = "0000";
 global.userid_banner_color = -1;
 
 //AppProps
+global.default_overlay_init = true;
+global.overlay_init = false;
 global.forceclick = false;
 global.asset_select_l = true;
 global.asset_select_s = false;
@@ -50,8 +53,8 @@ global.last_heading_tab = 0;
 global.card_icount = 0;
 
 //Inputs-Outputs
-global.input_fline_text = "Check this out!";
-global.input_sline_text = "Hey";
+global.input_fline_text = "Line 1 (Leave blank to disallow)";
+global.input_sline_text = "Line 2 (Leave blank to disallow)";
 global.heading_dw_text = "Check my status";
 global.s_tooltip = "Alpha9 (Leave blank to disallow)"
 global.l_tooltip = "Diskeo (Leave blank to disallow)"

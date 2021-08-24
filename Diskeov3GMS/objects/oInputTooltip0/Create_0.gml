@@ -43,6 +43,7 @@ fade_out = false;
 pressing_ctrl = false;
 pressed_c = false;
 pressed_v = false;
+pressed_a = false;
 
 alarm[0] = 10;
 

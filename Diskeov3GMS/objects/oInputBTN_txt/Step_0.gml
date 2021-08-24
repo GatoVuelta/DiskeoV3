@@ -43,6 +43,8 @@ if (keyboard_check(vk_control)){pressing_ctrl = true} else {pressing_ctrl = fals
 if (keyboard_check_pressed(ord("C"))){pressed_c = true} else {pressed_c = false}
 //V
 if (keyboard_check_pressed(ord("V"))){pressed_v = true} else {pressed_v = false}
+//A
+if (keyboard_check_pressed(ord("A"))){pressed_a = true} else {pressed_a = false}
 
 if (pressing_ctrl) && (focus)
 {
@@ -54,8 +56,11 @@ if(pressed_v)
 	}
 } else if(pressed_c)
 {
-	tte_ext_set_selection(1, 1, 1, string_length(tte_ext_input_get_text()));
+	tte_ext_set_selection(0, 0, 0, string_length(tte_ext_input_get_text())+1);
 	clipboard_set_text(tte_ext_input_get_text());
+} else if(pressed_a)
+{
+	tte_ext_set_selection(0, 0, 0, string_length(tte_ext_input_get_text())+1);
 }
 }
 

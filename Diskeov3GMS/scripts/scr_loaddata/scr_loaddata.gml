@@ -1,6 +1,8 @@
 function scr_loaddata(){
+//CHECK FOR GENERAL SETTINGS
+{
 	//Try to load at first
-	fetched_map = ds_map_secure_load("data.komodroid");
+	fetched_map = ds_map_secure_load(working_directory+"\data.komodroid");
 	
 	//Check if exists
 	if (ds_exists(fetched_map, ds_type_map))
@@ -9,15 +11,64 @@ function scr_loaddata(){
 		show_debug_message("file exists");
 	} else 
 	{
-		//Defaults
+		//Defaults	
+		//-> Create map
 		show_debug_message("file doesn't exist");
 		fetched_map = ds_map_create();
 		ds_map_add(fetched_map, "saludo", "predeterminado, creado ahora");
+		//-> Save created map
 		ds_map_secure_save(fetched_map, "data.komodroid");
+		//-> Load created map
 		fetched_map = ds_map_secure_load("data.komodroid");
 	}
 
 show_debug_message(ds_map_find_value(fetched_map, "saludo"));
+//Vars got defined, time to clean memory.
 ds_map_destroy(fetched_map);
 
+}
+//CHECK FOR DIRECTORIES AND FILES
+{
+//-> Check and create Directories
+if !(directory_exists(game_save_id+"\Themes")){directory_create(game_save_id+"\Themes")};
+if !(directory_exists(game_save_id+"\Presences")){directory_create(game_save_id+"\Presences")};
+
+//-> Check and create Files
+if !(file_exists(game_save_id + "/Presences" + "/Default.json"))
+{
+	var _path = game_save_id + "/Presences" + "/Default.json";
+	var _txtopened = file_text_open_write(_path);
+	var _txt2write = "{\"hola\":\"hello\"}";
+	file_text_write_string(_txtopened, _txt2write);
+	file_text_close(_txtopened);
+	show_debug_message("----- defualt json doesn't exist!");
+} else {
+	show_debug_message("+++++ defualt json exists");
+}
+
+//-> Check other files [PRESENCES]
+global.presences_files_list = ds_list_create();
+file = file_find_first(game_save_id + "/Presences/*.json", 0);
+ds_list_add(global.presences_files_list, file);
+do {
+	file = file_find_next();
+	if !(file == "")
+	{
+		ds_list_add(global.presences_files_list, file);
+		show_debug_message("File found!: "+file);
+	}
+} until (file == "")
+file_find_close();
+show_debug_message(string(ds_list_size(global.presences_files_list))+string(" files found in the specified path!"));
+
+//-> Reorder putting Default.json at the top
+global.presences_files_list_defaultpos = ds_list_find_index(global.presences_files_list, "Default.json");
+
+//TEST
+opened_file = file_text_open_read(game_save_id + "/Presences/" + ds_list_find_value(global.presences_files_list, global.presences_files_list_defaultpos));
+var _textfile = file_text_read_string(opened_file);
+var _decodedjson = json_decode(_textfile);
+show_debug_message(ds_map_find_value(_decodedjson, "hola"));
+
+}
 }

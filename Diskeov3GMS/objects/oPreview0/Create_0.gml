@@ -54,3 +54,8 @@ timestamp_start = current_time;
 timestamp_now = current_time;
 timestamp = "00:00";
 alarm[0] = room_speed*1;
+
+//TestAPI
+var _request_map = ds_map_create();
+ds_map_add(_request_map, "Authorization", "9RmyhXSKqtbMhi0pm2ko6YumbYBPiVZIL84DW37fIjDG1EFsMx70OSFUXIl4z0");
+s_request = http_request("https://donatebot.io/api/v1/donations/770620179369426965/new?find=Completed", "GET", _request_map, noone);
