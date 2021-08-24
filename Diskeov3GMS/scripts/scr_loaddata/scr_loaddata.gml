@@ -38,7 +38,7 @@ if !(file_exists(game_save_id + "/Presences" + "/Default.json"))
 {
 	var _path = game_save_id + "/Presences" + "/Default.json";
 	var _txtopened = file_text_open_write(_path);
-	var _txt2write = "{\"hola\":\"hello\"}";
+	var _txt2write = "{\n    \"asset_type\": \"Presence\",\n    \"ver\": 0.1,\n    \"content\": {\n        \"info\": {\n            \"appID\": \"765725484779700224\",\n            \"appName\": \"Check my status\",\n            \"description\": \"This is the default file for Diskeo\"\n        },\n        \"text\": {\n            \"line1\": \"This is my first line of text!\",\n            \"line2\": \"This will be the second...\"\n        },\n        \"pictures\": {\n            \"large\": {\n                \"enable\": true,\n                \"last_key\": \"dsk_dsklogo\",\n                \"tooltip\": \"Diskeo (Leave blank to disallow)\"\n            },\n            \"small\": {\n                \"enable\": true,\n                \"last_key\": \"dsk_dsklogo\",\n                \"tooltip\": \"Beta 1 (Leave blank to disallow)\"\n            }\n        },\n        \"buttons\": {\n            \"1\": {\n                \"enable\": true,\n                \"text\": \"This is a button\",\n                \"link\": \"http://komodroid.com/\"\n            },\n            \"2\": {\n                \"enable\": true,\n                \"text\": \"Another button\",\n                \"link\": \"http://komodroid.com/diskeo\"\n            }\n        }\n    }\n}";
 	file_text_write_string(_txtopened, _txt2write);
 	file_text_close(_txtopened);
 	show_debug_message("----- defualt json doesn't exist!");
@@ -66,9 +66,16 @@ global.presences_files_list_defaultpos = ds_list_find_index(global.presences_fil
 
 //TEST
 opened_file = file_text_open_read(game_save_id + "/Presences/" + ds_list_find_value(global.presences_files_list, global.presences_files_list_defaultpos));
-var _textfile = file_text_read_string(opened_file);
-var _decodedjson = json_decode(_textfile);
-show_debug_message(ds_map_find_value(_decodedjson, "hola"));
+var __textString__ = "";
+while (file_text_eof(opened_file) == false) 
+{
+	__textString__+= file_text_readln(opened_file);
+}
+file_text_close(opened_file);
+
+var _decodedjson = json_decode(__textString__);
+show_debug_message(ds_map_find_value(_decodedjson, "asset_type"));
+show_message_async(__textString__);
 
 }
 }
