@@ -65,17 +65,31 @@ show_debug_message(string(ds_list_size(global.presences_files_list))+string(" fi
 global.presences_files_list_defaultpos = ds_list_find_index(global.presences_files_list, "Default.json");
 
 //TEST
-opened_file = file_text_open_read(game_save_id + "/Presences/" + ds_list_find_value(global.presences_files_list, global.presences_files_list_defaultpos));
-var __textString__ = "";
-while (file_text_eof(opened_file) == false) 
-{
-	__textString__+= file_text_readln(opened_file);
-}
-file_text_close(opened_file);
+//var file_to_open = ds_list_find_value(global.presences_files_list, global.presences_files_list_defaultpos);
+//opened_file = file_text_open_read(game_save_id + "/Presences/" + file_to_open);
+//var __textString__ = "";
+//while (file_text_eof(opened_file) == false) 
+//{
+//	__textString__+= file_text_readln(opened_file);
+//}
+//file_text_close(opened_file);
 
-var _decodedjson = json_decode(__textString__);
-show_debug_message(ds_map_find_value(_decodedjson, "asset_type"));
-show_message_async(__textString__);
+//var _decodedjson = json_decode(__textString__);
+//var _content_map = ds_map_find_value(_decodedjson, "content");
+//_asset_type = ds_map_find_value(_decodedjson, "asset_type");
 
+////Check asset type
+//if (_asset_type == "Presence")
+//{
+//	var _info_map = ds_map_find_value(_content_map, "info");
+//	var _text_map = ds_map_find_value(_content_map, "text");
+
+//appname_frommap = ds_map_find_value(_info_map, "appName");
+//line1_frommap = ds_map_find_value(_text_map, "line1");
+////dshow_message_async(appname_frommap);
+//show_message(line1_frommap);
+//} else {
+//	show_error("\""+file_to_open+"\" is not a presence asset.\nIt wasn't saved and/or edited properly.",false);
+//}
 }
 }

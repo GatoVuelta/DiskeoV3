@@ -46,11 +46,14 @@ global.asset_select_s = false;
 
 global.scroll_surface_x = 0;
 global.scroll_surface_y = 0;
+global.scroll_pres_surface_x = 0;
+global.scroll_pres_surface_y = 0;
 
 global.last_heading_tab = 0;
 
 //CardProps
 global.card_icount = 0;
+global.card_pres_icount = 0;
 
 //Inputs-Outputs
 global.input_fline_text = "Line 1 (Leave blank to disallow)";
@@ -109,6 +112,7 @@ global.lastused_clientsecret = "vBCWL1WEP4f-x_nJhXn-Pr1bWaBD_xH4";
 
 //AssetsReader
 global.asset_read_count = 0;
+global.asset_read_count_pres = 0;
 
 if (global.debugmode0)
 {

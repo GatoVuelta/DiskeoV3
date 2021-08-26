@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Pictures",
-    "path": "folders/Objects/Scrollers/Pictures.yy",
+    "name": "Scrollers",
+    "path": "folders/Objects/Scrollers.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_card",

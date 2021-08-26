@@ -61,7 +61,10 @@ if (!global.debugmode0)
 	global.lastusedappID = global.appIDto;
 	global.lastused_clientsecret = global.clientsecret_to;
 	
+
+	//UpdateonNP
 	np_update();
+
 	
 	if !(draw_load) && !(global.forceclick)
 	{

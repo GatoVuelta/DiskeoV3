@@ -1,4 +1,4 @@
 scr_loaddata();
 
 //gotoMAIN
-//room_goto(rm_main);
+room_goto(rm_main);

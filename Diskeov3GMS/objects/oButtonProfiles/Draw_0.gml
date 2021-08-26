@@ -50,5 +50,5 @@ draw_set_valign(-1);
 //Tooltip
 if !(room==room_to_check) && (element_enable)
 {
-	scr_tooltip_left(x+40, y, 40, "Profiles/Saved presences", border_alpha-init_alpha);
+	scr_tooltip_left(x+40, y, 40, "Profiles / Saved presences", border_alpha-init_alpha);
 }
