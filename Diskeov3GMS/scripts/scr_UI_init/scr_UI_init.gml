@@ -17,6 +17,9 @@ function scr_UI_init(){
 	//Tooltips
 	global.UI_tooltip_bg = make_color_hex("0d0e0f");
 	global.UI_tooltip_txt = make_color_hex("d8d9da");
+	
+	//ActionButtons
+	//global.UI_acbtn_bg =
 
 	//Left menu
 	global.UI_element_leftmenu_bg = global.UI_general_secondary;

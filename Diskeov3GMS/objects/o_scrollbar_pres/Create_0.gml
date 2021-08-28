@@ -19,7 +19,7 @@ image_blend = global.UI_scrll_scrollbar_bg;
 
 //SurfaceVars
 area_width = 610;
-area_height = 300;
+area_height = 318;
 
 //Surface
 global.scroll_pres_surface = surface_create(area_width, area_height);

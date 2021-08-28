@@ -2,6 +2,9 @@ function scr_loaddata(){
 //CHECK FOR GENERAL SETTINGS
 {
 	//Try to load at first
+	enable_map_data = false;
+if (enable_map_data)
+{
 	fetched_map = ds_map_secure_load(working_directory+"\data.komodroid");
 	
 	//Check if exists
@@ -25,6 +28,8 @@ function scr_loaddata(){
 show_debug_message(ds_map_find_value(fetched_map, "saludo"));
 //Vars got defined, time to clean memory.
 ds_map_destroy(fetched_map);
+
+}
 
 }
 //CHECK FOR DIRECTORIES AND FILES

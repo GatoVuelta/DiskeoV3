@@ -22,21 +22,35 @@ if (obj_controller_pres.map_ready) && !(iread)
 		var _decodedjson = json_decode(__textString__);
 		var _content_map = ds_map_find_value(_decodedjson, "content");
 		_asset_type = ds_map_find_value(_decodedjson, "asset_type");
+		_ver = ds_map_find_value(_decodedjson, "ver");
 
 		//Check asset type
 		if (_asset_type == "Presence")
 		{
+		if (_ver <= 0.1)
+		{
+		//---> Valid
+		valid_Asset = true;
+		txt = file_to_open;
 		var _info_map = ds_map_find_value(_content_map, "info");
 		var _text_map = ds_map_find_value(_content_map, "text");
-
-		appname_frommap = ds_map_find_value(_info_map, "appName");
-		line1_frommap = ds_map_find_value(_text_map, "line1");
-		} else {
-		show_error("\""+file_to_open+"\" is not a presence asset.\nIt wasn't saved and/or edited properly.",false);
-		appname_frommap = string("Damaged file! (")+string(file_to_open)+string(")");
+		pres_info_name = ds_map_find_value(_info_map, "appName");
+		pres_info_desc = ds_map_find_value(_info_map, "description");
+		pres_content_line1 = ds_map_find_value(_text_map, "line1");
+		} else
+		{
+			//---> NotValid -> Newer format
+			valid_Asset = false;
+			show_error("The file \""+file_to_open+"\" is from a newer format!\nPlease consider updating Diskeo to the latest version", false);
+			txt = "Newer file format. Diskeo couldn't read this asset.";
 		}
-		
-		txt = appname_frommap;
+		} else 
+		{
+		//---> NotValid -> Unknown format
+		valid_Asset = false;
+		txt = string("Damaged file! (")+string(file_to_open)+string(")");
+		show_error("\""+file_to_open+"\" is not a presence asset.\nIt wasn't saved and/or edited properly.",false);
+		}
 		
 		global.asset_read_count_pres += 1;
 		iread = true;
@@ -54,6 +68,12 @@ if (obj_controller_pres.map_ready) && !(iread)
 if (position_meeting(mouse_x-global.scroll_pres_surface_x, mouse_y-global.scroll_pres_surface_y, id)) && (mouse_check_button_pressed(mb_left)) && !(empty_Asset)
 {
 }
+
+//UpdateButtonsCoordinates
+//with (mybtn_load)
+//{
+//	y = other.y;
+//}
 
 //SelectionCheck
 //if (global.asset_select_l) && (global.lpic_key == txt)

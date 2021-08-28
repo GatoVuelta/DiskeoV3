@@ -1,5 +1,12 @@
 if (surface_exists(global.scroll_pres_surface))
 {
+
+//Define common coordinates
+var mx_pos = mouse_x-global.scroll_pres_surface_x;
+var my_pos = mouse_y-global.scroll_pres_surface_y;
+var acbtn_load_x = x+380;
+var acbtn_share_x = x+430;
+var acbtn_delete_x = x+480;
 	
 surface_set_target(global.scroll_pres_surface)
 
@@ -15,22 +22,34 @@ if !(empty_Asset) && !(asset_sprite_exists)
 	draw_self()	
 } else if (asset_sprite_exists)
 {
-	draw_sprite_stretched_ext(asset_sprite_this, 0, x-42, y-42, 610, 83, c_white, image_alpha);
+	draw_set_color(global.UI_general_secondary);
+	draw_set_alpha(image_alpha);
+	draw_roundrect_ext(x-42, y-42, x+542, y+42, 30, 30, false);
 }
+draw_set_alpha(1-global.fade_alpha);
 
-//Selection
-if (selected)
-{
-	draw_sprite_ext(s_selected_b, 0, x, y, 1, 1, 0, global.UI_general_primary, image_alpha);
-	draw_sprite_ext(s_selected_s, 0, x+30, y+30, 1, 1, 0, global.UI_element_focused, image_alpha);
-}
-
-//Hover
+//DrawOtherThings
 if (!empty_Asset)
 {
-if (position_meeting(mouse_x-global.scroll_pres_surface_x, mouse_y-global.scroll_pres_surface_y, id)) && !(selected)
+	
+//ActionButtons
+//-->Load
+if (point_in_rectangle(mx_pos, my_pos, acbtn_load_x, y-18, acbtn_load_x+40, y+18)){draw_set_color(global.UI_general_primary)}else{draw_set_color(global.UI_LMbtn_unfocused_bg)};
+draw_roundrect_ext(acbtn_load_x, y-20, acbtn_load_x+40, y+20, 25, 25, false);
+draw_sprite_ext(s_icon_load, 0, acbtn_load_x+21, y, 1, 1, 0, global.UI_element_focused, 1-global.fade_alpha);
+//-->Share
+if (point_in_rectangle(mx_pos, my_pos, acbtn_share_x, y-18, acbtn_share_x+40, y+18)){draw_set_color(global.UI_general_primary)}else{draw_set_color(global.UI_LMbtn_unfocused_bg)};
+draw_roundrect_ext(acbtn_share_x, y-20, acbtn_share_x+40, y+20, 25, 25, false);
+draw_sprite_ext(s_icon_share, 0, acbtn_share_x+21, y, 1, 1, 0, global.UI_element_focused, 1-global.fade_alpha);
+//-->Delete
+if (point_in_rectangle(mx_pos, my_pos, acbtn_delete_x, y-18, acbtn_delete_x+40, y+18)){draw_set_color(global.UI_windragger_element_focus_indicator_alt)}else{draw_set_color(global.UI_LMbtn_unfocused_bg)};
+draw_roundrect_ext(acbtn_delete_x, y-20, acbtn_delete_x+40, y+20, 25, 25, false);
+draw_sprite_ext(s_icon_delete, 0, acbtn_delete_x+21, y, 1, 1, 0, global.UI_element_focused, 1-global.fade_alpha);
+
+//Hover
+if (position_meeting(mx_pos, my_pos, id)) && !(selected)
 {
-	image_alpha = 0.9-global.fade_alpha;
+	image_alpha = 1-global.fade_alpha;
 	{
 		//Cuadro
 		draw_set_color(global.UI_general_secondary);
@@ -51,7 +70,7 @@ if (position_meeting(mouse_x-global.scroll_pres_surface_x, mouse_y-global.scroll
 	}
 } else
 {
-	image_alpha = 1-global.fade_alpha;
+	image_alpha = 0.7-global.fade_alpha;
 }
 }
 

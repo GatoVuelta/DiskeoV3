@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_unknown0",
-    "path": "sprites/s_unknown0/s_unknown0.yy",
+    "name": "s_unknown_pres0",
+    "path": "sprites/s_unknown_pres0/s_unknown_pres0.yy",
   },
   "solid": false,
   "visible": true,
