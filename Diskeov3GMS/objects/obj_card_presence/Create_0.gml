@@ -5,8 +5,10 @@ hovering_action = false;
 //PresenceInfo
 pres_info_name = "<Empty>";
 pres_info_desc = "<Empty>";
+pres_info_appID = 0;
 pres_content_line1 = "<Empty>";
-//pres_info_ = "Loading...";
+pres_content_line2 = "<Empty>";
+
 
 empty_Asset = false;
 valid_Asset = false;

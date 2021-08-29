@@ -65,7 +65,24 @@ if (point_in_rectangle(mx_pos, my_pos, acbtn_load_x, y-18, acbtn_load_x+40, y+18
 	draw_set_color(global.UI_general_primary);
 	if (mouse_check_button(mb_left))
 	{
-		show_message_async("Cliked load!");
+		//INFO
+		global.appIDto = pres_info_appID;
+		global.input_fline_text = pres_content_line1;
+		global.input_sline_text = pres_content_line2;
+		//PICTURES
+		global.lpic_key = pres_content_pic1_key;
+		global.l_tooltip = pres_content_pic1_tooltip;
+		global.spic_key = pres_content_pic2_key;
+		global.s_tooltip = pres_content_pic2_tooltip;
+		//BUTTONS
+		global.presence_button1_enable = pres_content_btn1_enable;
+		global.presence_button1_text = pres_content_btn1_text;
+		global.presence_button1_link = pres_content_btn1_link;
+		global.presence_button2_enable = pres_content_btn2_enable;
+		global.presence_button2_text = pres_content_btn2_text;
+		global.presence_button2_link = pres_content_btn2_link;
+		
+		show_message_async("ok load!");
 	}
 } else { draw_set_color(global.UI_LMbtn_unfocused_bg) };
 draw_roundrect_ext(acbtn_load_x, y-20, acbtn_load_x+40, y+20, 25, 25, false);
