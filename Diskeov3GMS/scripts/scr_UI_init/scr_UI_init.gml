@@ -49,6 +49,11 @@ function scr_UI_init(){
 	global.UI_windragger_unfocused = make_color_hex("52585f");
 	global.UI_windragger_element_focus_indicator = make_color_hex("36393f");
 	global.UI_windragger_element_focus_indicator_alt = make_color_hex("ed4245");
+	
+	var _hh = color_get_hue(global.UI_windragger_element_focus_indicator_alt);
+	var _hs = color_get_saturation(global.UI_windragger_element_focus_indicator_alt) - 50;
+	var _hv = color_get_value(global.UI_windragger_element_focus_indicator_alt);
+	global.UI_windragger_element_focus_indicator_alt_clear = make_color_hsv(_hh, _hs, _hv);
 
 	//Text boxes
 	global.UI_txtbx_textsel = global.UI_general_primary;

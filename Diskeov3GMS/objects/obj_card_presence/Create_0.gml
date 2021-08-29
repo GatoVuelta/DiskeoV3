@@ -1,5 +1,6 @@
 selected = false;
 txt = choose("");
+hovering_action = false;
 
 //PresenceInfo
 pres_info_name = "<Empty>";
