@@ -1,6 +1,8 @@
 selected = false;
 txt = choose("");
-hovering_action = false;
+hover_load = false;
+hover_share = false;
+hover_delete = false;
 
 //PresenceInfo
 pres_info_name = "<Empty>";

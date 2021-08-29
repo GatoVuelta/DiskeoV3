@@ -96,7 +96,7 @@ if (obj_controller_pres.map_ready) && !(iread)
 		pres_info_desc = file_to_open;
 		valid_Asset = false;
 		txt = string("Damaged file! (")+string(file_to_open)+string(")");
-		show_error("\""+file_to_open+"\" is not a presence asset.\nIt wasn't saved and/or edited properly.",false);
+		//show_error("\""+file_to_open+"\" is not a presence asset.\nIt wasn't saved and/or edited properly.",false);
 		}
 		
 		global.asset_read_count_pres += 1;

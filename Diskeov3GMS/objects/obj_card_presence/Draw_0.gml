@@ -61,9 +61,12 @@ draw_text(x-15, y+10, pres_info_desc);
 if (valid_Asset)
 {
 if (point_in_rectangle(mx_pos, my_pos, acbtn_load_x, y-18, acbtn_load_x+40, y+18))
-{
+{	
+	//HOVER
 	draw_set_color(global.UI_general_primary);
-	if (mouse_check_button(mb_left))
+	hover_load = true;
+	//CLICK
+	if (mouse_check_button_pressed(mb_left))
 	{
 		//INFO
 		global.appIDto = pres_info_appID;
@@ -81,12 +84,13 @@ if (point_in_rectangle(mx_pos, my_pos, acbtn_load_x, y-18, acbtn_load_x+40, y+18
 		global.presence_button2_enable = pres_content_btn2_enable;
 		global.presence_button2_text = pres_content_btn2_text;
 		global.presence_button2_link = pres_content_btn2_link;
-		
-		show_message_async("ok load!");
+		//DONEMARK
+		instance_create_layer(acbtn_load_x+185, y+210, "DoneMarks0",oDoneMark0);
 	}
-} else { draw_set_color(global.UI_LMbtn_unfocused_bg) };
+} else { draw_set_color(global.UI_LMbtn_unfocused_bg); hover_load = false};
 draw_roundrect_ext(acbtn_load_x, y-20, acbtn_load_x+40, y+20, 25, 25, false);
 draw_sprite_ext(s_icon_load, 0, acbtn_load_x+21, y, 1, 1, 0, global.UI_element_focused, 1-global.fade_alpha);
+if (hover_load){scr_tooltip_up(acbtn_load_x+21, y+37, 30, "Load", 1-global.fade_alpha)};
 } else {
 	//DisabledInvalid
 	draw_set_color(global.UI_general_terciary);
@@ -100,14 +104,18 @@ if (valid_Asset)
 {
 if (point_in_rectangle(mx_pos, my_pos, acbtn_share_x, y-18, acbtn_share_x+40, y+18))
 {
+	//Hover
 	draw_set_color(global.UI_general_primary)
+	hover_share = true;
+	//Click
 	if (mouse_check_button(mb_left))
 	{
 		show_message_async("Cliked share!");
 	}
-} else { draw_set_color(global.UI_LMbtn_unfocused_bg) };
+} else { draw_set_color(global.UI_LMbtn_unfocused_bg); hover_share = false};
 draw_roundrect_ext(acbtn_share_x, y-20, acbtn_share_x+40, y+20, 25, 25, false);
 draw_sprite_ext(s_icon_share, 0, acbtn_share_x+21, y, 1, 1, 0, global.UI_element_focused, 1-global.fade_alpha);
+if (hover_share){scr_tooltip_up(acbtn_share_x+21, y+37, 30, "Share", 1-global.fade_alpha);};
 } else {
 	//DisabledInvalid
 	draw_set_color(global.UI_general_terciary)
@@ -119,39 +127,22 @@ draw_sprite_ext(s_icon_share, 0, acbtn_share_x+21, y, 1, 1, 0, global.UI_element
 //-->Delete
 if (point_in_rectangle(mx_pos, my_pos, acbtn_delete_x, y-18, acbtn_delete_x+40, y+18))
 {
+	hover_delete = true;
 	draw_set_color(global.UI_windragger_element_focus_indicator_alt)
 	if (mouse_check_button(mb_left))
 	{
 		show_message_async("Cliked delete!");
 	}
-} else { draw_set_color(global.UI_LMbtn_unfocused_bg) };
+} else { draw_set_color(global.UI_LMbtn_unfocused_bg); hover_delete = false};
 draw_roundrect_ext(acbtn_delete_x, y-20, acbtn_delete_x+40, y+20, 25, 25, false);
 draw_sprite_ext(s_icon_delete, 0, acbtn_delete_x+21, y, 1, 1, 0, global.UI_element_focused, 1-global.fade_alpha);
+if (hover_delete){scr_tooltip_up(acbtn_delete_x+21, y+37, 30, "Delete", 1-global.fade_alpha);};
 
 //Hover
 if (position_meeting(mx_pos, my_pos, id)) && !(selected)
 {	if (valid_Asset)
 	{	
 		image_alpha = 1-global.fade_alpha;
-	}
-	{
-		//Cuadro
-		draw_set_color(global.UI_general_secondary);
-		draw_set_alpha(0.6);
-		//ResetDrawing
-		draw_set_halign(fa_center);
-		draw_set_valign(fa_middle);	
-		
-		var dx = global.scroll_pres_surface_x;
-		var dy = global.scroll_pres_surface_y;
-		
-		var width = (string_length(txt)*9) + 15;
-		draw_roundrect_ext((mouse_x)-dx, (mouse_y+10)-dy, (mouse_x+width)-dx, (mouse_y+40)-dy, 20, 20, false);
-		//Texto
-		draw_set_color(global.UI_element_focused);
-		draw_set_font(f_input);
-		draw_set_alpha(1);
-		draw_text((mouse_x+(width/2))-dx, (mouse_y+25)-dy, txt); 
 	}
 } else
 {
