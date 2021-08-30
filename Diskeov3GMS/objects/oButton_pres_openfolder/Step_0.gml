@@ -5,7 +5,13 @@ if (position_meeting(mouse_x, mouse_y, id))
 	focus = true;
 	if (mouse_check_button_pressed(mb_left))
 	{
-		scr_open_url(global.presence_button2_link, false);
+		if (os_type == os_windows)
+		{
+			execute_shell("cmd.exe","start "+game_save_id+"\Presences .");
+		} else if (os_type == os_linux)
+		{
+			execute_shell_svlin("nautilus " + game_save_id, false);
+		}
 	}
 } else 
 	{
@@ -59,18 +65,3 @@ if (load_subimg < (total_subimgs-1)) /*&& (draw_load)*/
 {
 	load_subimg += 1;
 } else {load_subimg = 0}
-
-//CheckButton
-if !(global.presence_button2_enable)
-{
-	fade_out = true;
-	init_x_threshold = -300;
-	alarm[0] = 5;
-} else {
-	if !(global.presence_button1_enable)
-	{
-		y = 495;
-	} else {
-		y = 509;
-	}
-}

@@ -14,7 +14,7 @@ soon_text = "Soon™";
 //beta = true;
 
 //Room
-room_to_check = rm_example;
+room_to_check = rm_main;
 room_to = rm_pic_st; 
 
 //Speed

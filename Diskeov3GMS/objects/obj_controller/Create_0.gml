@@ -26,4 +26,4 @@ for (var j = 0; j < maxHeight; j++)
 	yy += 100;
 }
 
-global.areaHeight = areaHeight - 290;
+global.areaHeight = areaHeight - 190;

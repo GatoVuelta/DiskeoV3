@@ -11,20 +11,13 @@ if (global.hassprite) && !(global.hassbanner)
 	img_request = http_get(string("https://api.sightengine.com/1.0/check.json?url=")+string(global.user_avatar_url)+string("&models=properties&api_user=25594430&api_secret=DULGwRWykZQUPB2SRyWF"));
 }
 
-//ActionText
-tab_text = "Button 1";
 
 //Enable comander
 element_default_enable = true;
 element_enable = true;
 
-//Beta
-soon_availability = true;
-soon_text = "Soon™";
-//beta = true;
-
 //Room
-room_to_check = rm_example;
+room_to_check = rm_main;
 room_to = rm_txt_st; 
 
 //Speed

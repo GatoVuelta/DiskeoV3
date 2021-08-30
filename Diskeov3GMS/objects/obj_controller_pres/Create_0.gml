@@ -26,5 +26,5 @@ for (var j = 0; j < maxHeight; j++)
 	yy += 100;
 }
 
-global.areaHeight_pres = areaHeight - 290;
+global.areaHeight_pres = areaHeight - 490;
 map_ready = true;

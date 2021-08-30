@@ -25,7 +25,7 @@ c_count = global.card_pres_icount;
 
 asset_sprite_this = sprite_index;
 
-if (c_count > 5)
+if (c_count > 3)
 {
 	instance_destroy();
 } else {
