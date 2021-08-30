@@ -116,10 +116,9 @@ if (position_meeting(mouse_x-global.scroll_pres_surface_x, mouse_y-global.scroll
 {
 }
 
-//UpdateButtonsCoordinates
-//with (mybtn_load)
+//with (mybtn_openf)
 //{
-//	y = other.y;
+//	y = (other.y) + 50;
 //}
 
 //SelectionCheck

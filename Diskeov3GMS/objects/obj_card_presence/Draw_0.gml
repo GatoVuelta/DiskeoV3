@@ -155,9 +155,39 @@ if (position_meeting(mx_pos, my_pos, id)) && !(selected)
 }
 }
 
-//draw_set_color(global.UI_element_focused);
-//draw_text(x, y, empty_Asset);
-//draw_text(x, y+25, string("c: ")+string(columna));
+if (c_count == 3)
+{
+//LastButtons
+var acbtn_openf_x = x+200;
+var acbtn_import_x = x+260;
+//-> OpenFolder
+if (point_in_rectangle(mx_pos, my_pos, acbtn_openf_x, y+60, acbtn_openf_x+50, y+110))
+{
+	hover_openf = true;
+	draw_set_color(global.UI_general_primary)
+	if (mouse_check_button(mb_left))
+	{
+		show_message_async("Cliked of");
+	}
+} else { draw_set_color(global.UI_LMbtn_unfocused_bg); hover_openf = false};
+draw_roundrect_ext(acbtn_openf_x, y+60, acbtn_openf_x+50, y+110, 25, 25, false);
+draw_sprite_ext(s_icon_folder, 0, acbtn_openf_x+27, y+85, 1, 1, 0, global.UI_element_focused, 1-global.fade_alpha);
+if (hover_openf){scr_tooltip_up(acbtn_openf_x+25, y+138, 40, "Open presences folder", 1-global.fade_alpha);};
+//-> Import
+if (point_in_rectangle(mx_pos, my_pos, acbtn_import_x, y+60, acbtn_import_x+50, y+110))
+{
+	hover_import = true;
+	draw_set_color(global.UI_general_primary)
+	if (mouse_check_button(mb_left))
+	{
+		show_message_async("Cliked imp");
+	}
+} else { draw_set_color(global.UI_LMbtn_unfocused_bg); hover_import = false};
+draw_roundrect_ext(acbtn_import_x, y+60, acbtn_import_x+50, y+110, 25, 25, false);
+draw_sprite_ext(s_icon_import, 0, acbtn_import_x+27, y+85, 1, 1, 0, global.UI_element_focused, 1-global.fade_alpha);
+if (hover_import){scr_tooltip_up(acbtn_import_x+25, y+138, 40, "Import presences", 1-global.fade_alpha);};
+
+}
 
 surface_reset_target()
 }

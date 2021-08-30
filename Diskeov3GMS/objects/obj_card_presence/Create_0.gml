@@ -3,6 +3,8 @@ txt = choose("");
 hover_load = false;
 hover_share = false;
 hover_delete = false;
+hover_openf = false;
+hover_import = false;
 
 //PresenceInfo
 pres_info_name = "<Empty>";
@@ -28,7 +30,4 @@ asset_sprite_this = sprite_index;
 if (c_count > 3)
 {
 	instance_destroy();
-} else {
-	//CreateActionButtons
-	//mybtn_load = instance_create_layer(x, y, "LY_ScrollArea_actions", oButton_pres_load);
 }
