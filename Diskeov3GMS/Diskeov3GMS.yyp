@@ -63,7 +63,7 @@
     {"id":{"name":"o_overlayctrl_1","path":"objects/o_overlayctrl_1/o_overlayctrl_1.yy",},"order":21,},
     {"id":{"name":"s_wdg_max","path":"sprites/s_wdg_max/s_wdg_max.yy",},"order":6,},
     {"id":{"name":"f_Whitney_Bold_BTN","path":"fonts/f_Whitney_Bold_BTN/f_Whitney_Bold_BTN.yy",},"order":11,},
-    {"id":{"name":"ExecuteShellExt","path":"extensions/ExecuteShellExt/ExecuteShellExt.yy",},"order":13,},
+    {"id":{"name":"ExecuteShell","path":"extensions/ExecuteShell/ExecuteShell.yy",},"order":13,},
     {"id":{"name":"scr_tooltip_up","path":"scripts/scr_tooltip_up/scr_tooltip_up.yy",},"order":1,},
     {"id":{"name":"__tte_ext_input_check_surface","path":"scripts/__tte_ext_input_check_surface/__tte_ext_input_check_surface.yy",},"order":3,},
     {"id":{"name":"obj_DiscordWebhookMAIN","path":"objects/obj_DiscordWebhookMAIN/obj_DiscordWebhookMAIN.yy",},"order":0,},
