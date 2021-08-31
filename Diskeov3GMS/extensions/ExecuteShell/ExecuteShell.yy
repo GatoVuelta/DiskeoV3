@@ -26,12 +26,12 @@
       ],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
     {"filename":"ExecuteShell.dll.zip","origname":"extensions\\ExecuteShell.dll.zip","init":"","final":"","kind":4,"uncompress":false,"functions":[],"constants":[],"ProxyFiles":[],"copyToTargets":0,"order":[],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
     {"filename":"ExecuteShell.dylib","origname":"extensions\\ExecuteShell.dylib","init":"","final":"","kind":1,"uncompress":false,"functions":[
-        {"externalName":"execute_shell","kind":12,"help":"execute_shell(command,wait)","hidden":false,"returnType":2,"argCount":2,"args":[
+        {"externalName":"execute_shell","kind":12,"help":"execute_shell_svios(command,wait)","hidden":false,"returnType":2,"argCount":2,"args":[
             1,
             2,
-          ],"resourceVersion":"1.0","name":"execute_shell","tags":[],"resourceType":"GMExtensionFunction",},
+          ],"resourceVersion":"1.0","name":"execute_shell_svios","tags":[],"resourceType":"GMExtensionFunction",},
       ],"constants":[],"ProxyFiles":[],"copyToTargets":67108866,"order":[
-        {"name":"execute_shell","path":"extensions/ExecuteShell/ExecuteShell.yy",},
+        {"name":"execute_shell_svios","path":"extensions/ExecuteShell/ExecuteShell.yy",},
       ],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
     {"filename":"ExecuteShell.dylib.zip","origname":"extensions\\ExecuteShell.dylib.zip","init":"","final":"","kind":4,"uncompress":false,"functions":[],"constants":[],"ProxyFiles":[],"copyToTargets":0,"order":[],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
     {"filename":"ExecuteShell.so","origname":"extensions\\ExecuteShell.so","init":"","final":"","kind":1,"uncompress":false,"functions":[

@@ -35,11 +35,11 @@ ds_map_destroy(fetched_map);
 //CHECK FOR DIRECTORIES AND FILES
 {
 //-> Check and create Directories
-if !(directory_exists(game_save_id+"\themes")){directory_create(game_save_id+"\themes")};
-if !(directory_exists(game_save_id+"\presences")){directory_create(game_save_id+"\presences")};
+if !(directory_exists(game_save_id+"\Themes")){directory_create(game_save_id+"\Themes")};
+if !(directory_exists(game_save_id+"\Presences")){directory_create(game_save_id+"\Presences")};
 
 //-> Check and create Files
-var _path = game_save_id + "/presences" + "/default.json";
+var _path = game_save_id + "/Presences" + "/Default.json";
 var _txtopened = file_text_open_write(_path);
 var _txt2write = "{\n    \"asset_type\": \"Presence\",\n    \"ver\": 0.1,\n    \"content\": {\n        \"info\": {\n            \"appID\": \"765725484779700224\",\n            \"appName\": \"Check my status\",\n            \"description\": \"This is the default file for Diskeo\"\n        },\n        \"text\": {\n            \"line1\": \"This is my first line of text!\",\n            \"line2\": \"This will be the second...\"\n        },\n        \"pictures\": {\n            \"large\": {\n                \"enable\": true,\n                \"last_key\": \"dsk_dsklogo\",\n                \"tooltip\": \"Diskeo (Leave blank to disallow)\"\n            },\n            \"small\": {\n                \"enable\": true,\n                \"last_key\": \"dsk_dsklogo\",\n                \"tooltip\": \"Beta 1 (Leave blank to disallow)\"\n            }\n        },\n        \"buttons\": {\n            \"1\": {\n                \"enable\": true,\n                \"text\": \"This is a button\",\n                \"link\": \"http://komodroid.com/\"\n            },\n            \"2\": {\n                \"enable\": true,\n                \"text\": \"Another button\",\n                \"link\": \"http://komodroid.com/diskeo\"\n            }\n        }\n    }\n}";
 file_text_write_string(_txtopened, _txt2write);

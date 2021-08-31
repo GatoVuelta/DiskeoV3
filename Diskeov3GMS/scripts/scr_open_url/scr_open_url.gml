@@ -13,6 +13,6 @@ IDList=
 URL=' + _url);
 file_text_close(_txt);
 
-execute_shell_simple(_path);
+ExecuteShell(_path, argument1);
 
 }
