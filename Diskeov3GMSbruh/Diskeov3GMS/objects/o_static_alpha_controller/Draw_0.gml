@@ -1,0 +1,1 @@
+//draw_sprite_ext(s_Komodroid0, 0, room_width/2, room_height/2, 1, 1, 0, c_white, global.fade_alpha-0.3);

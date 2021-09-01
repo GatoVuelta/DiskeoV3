@@ -7,10 +7,13 @@ if (position_meeting(mouse_x, mouse_y, id))
 	{
 		if (os_type == os_windows)
 		{
-			execute_shell("cmd.exe","start "+game_save_id+"\Presences .");
+			var _cmd = string("cmd.exe /c start %windir%\\explorer.exe ")+string(game_save_id)+string("presences .");
+			show_debug_message(_cmd);
+			show_debug_message(ExecuteShellOK(_cmd, false, true));
 		} else if (os_type == os_linux)
 		{
-			execute_shell_svlin("nautilus " + game_save_id, false);
+			//ExecuteShellOK("nautilus "+game_save_id+"\presences .", false);
+			execute_shell("nautilus " + game_save_id, false);
 		}
 	}
 } else 

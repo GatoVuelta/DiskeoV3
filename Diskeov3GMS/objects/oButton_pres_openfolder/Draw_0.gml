@@ -1,8 +1,3 @@
-if (surface_exists(global.scroll_pres_surface))
-{
-
-surface_set_target(global.scroll_pres_surface);
-	
 if (element_enable)
 {
 //Background
@@ -23,9 +18,7 @@ if (draw_load)
 {
 	draw_sprite_ext(spr_pfpcload_tr, load_subimg, x+170, y, 1, 1, 0, global.UI_general_primary, 1);
 }
-}
 
 //Reset
 draw_set_halign(-1);
 draw_set_valign(-1);
-surface_reset_target();
