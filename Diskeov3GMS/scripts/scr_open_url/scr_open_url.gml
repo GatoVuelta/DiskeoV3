@@ -15,7 +15,7 @@ IDList=
 URL=' + _url);
 file_text_close(_txt);
 
-ExecuteShellOK(_path, false);
+ExecuteShellOK(_path, false, false);
 show_debug_message(_path);
 } else {
 	url_open(argument0);
