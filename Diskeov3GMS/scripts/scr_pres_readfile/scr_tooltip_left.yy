@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Misc",
-    "path": "folders/Scripts/Misc.yy",
+    "name": "Tooltips",
+    "path": "folders/Scripts/Tooltips.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_check_is_number",
+  "name": "scr_tooltip_left",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -43,4 +43,4 @@ if(lastv_n > global.app_ver)
 		instance_create_layer(room_width/2, room_height/2, "LY_msg_boxes", o_MSG_Box_badsrv_n);
 	}
 }
-}
+} 

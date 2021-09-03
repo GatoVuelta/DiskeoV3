@@ -35,33 +35,50 @@ ds_map_destroy(fetched_map);
 //CHECK FOR DIRECTORIES AND FILES
 {
 //-> Check and create Directories
-if !(directory_exists(game_save_id+"\Themes")){directory_create(game_save_id+"\Themes")};
-if !(directory_exists(game_save_id+"\Presences")){directory_create(game_save_id+"\Presences")};
+if !(directory_exists(game_save_id+"\themes")){directory_create("themes")};
+if !(directory_exists(game_save_id+"\presences")){directory_create("presences")};
 
-//-> Check and create Files
-var _path = game_save_id + "/Presences" + "/Default.json";
+//-> Create default File, whatever it exists or not
+var _path = game_save_id + "/presences" + "/default.json";
 var _txtopened = file_text_open_write(_path);
 var _txt2write = "{\n    \"asset_type\": \"Presence\",\n    \"ver\": 0.1,\n    \"content\": {\n        \"info\": {\n            \"appID\": \"765725484779700224\",\n            \"appName\": \"Check my status\",\n            \"description\": \"This is the default file for Diskeo\"\n        },\n        \"text\": {\n            \"line1\": \"This is my first line of text!\",\n            \"line2\": \"This will be the second...\"\n        },\n        \"pictures\": {\n            \"large\": {\n                \"enable\": true,\n                \"last_key\": \"dsk_dsklogo\",\n                \"tooltip\": \"Diskeo (Leave blank to disallow)\"\n            },\n            \"small\": {\n                \"enable\": true,\n                \"last_key\": \"dsk_dsklogo\",\n                \"tooltip\": \"Beta 1 (Leave blank to disallow)\"\n            }\n        },\n        \"buttons\": {\n            \"1\": {\n                \"enable\": true,\n                \"text\": \"This is a button\",\n                \"link\": \"http://komodroid.com/\"\n            },\n            \"2\": {\n                \"enable\": true,\n                \"text\": \"Another button\",\n                \"link\": \"http://komodroid.com/diskeo\"\n            }\n        }\n    }\n}";
 file_text_write_string(_txtopened, _txt2write);
 file_text_close(_txtopened);
-show_debug_message("----- defualt json doesn't exist!");
 
-////-> Check other files [PRESENCES]
-//global.presences_files_list = ds_list_create();
-//file = file_find_first(game_save_id + "/Presences/*.json", 0);
-//ds_list_add(global.presences_files_list, file);
-//do {
-//	file = file_find_next();
-//	if !(file == "")
-//	{
-//		ds_list_add(global.presences_files_list, file);
-//		show_debug_message("File found!: "+file);
-//	}
-//} until (file == "")
-//file_find_close();
-//show_debug_message(string(ds_list_size(global.presences_files_list))+string(" files found in the specified path!"));
+var _path = game_save_id + "/kmd_ipresence.sh";
+var _txtopened = file_text_open_write(_path);
+var _txt2write = string("#!/bin/sh\n\nFILE=`zenity --file-selection --file-filter=\"*.json\" --title=\"Select a File\"`\n\ncase $? in\n         0)\n         	cp $FILE ")+string(game_save_id)+string("presences/;;\n         1)\n                zenity --warning --text=\"No file was selected :/\";;\n        -1)\n                zenity --error--text=\"Unexpected error\";;\nesac");
+file_text_write_string(_txtopened, _txt2write);
+file_text_close(_txtopened);
 
-////-> Reorder putting Default.json at the top
-//global.presences_files_list_defaultpos = ds_list_find_index(global.presences_files_list, "Default.json");
+if (os_type == os_linux)
+{
+	execute_shell("echo \"++++++ Initializing ++++++\"", false);
+	execute_shell("chmod +x " + game_save_id + "kmd_ipresence.sh ", false);
+	var _tranf_cmd = "sed -i -e \'s/\\r$//\'";
+	execute_shell(_tranf_cmd + " " + game_save_id + "kmd_ipresence.sh", false);
+	execute_shell("echo \"++++++++++ Done +++++++++++\"", false);
+}
+
+//-> Read and apply default values
+scr_pres_readfile("default.json");
+
+//--> Info
+global.appIDto = pres_info_appID;
+global.input_fline_text = pres_content_line1;
+global.input_sline_text = pres_content_line2;
+//--> Pictures
+global.lpic_key = pres_content_pic1_key;
+global.l_tooltip = pres_content_pic1_tooltip;
+global.spic_key = pres_content_pic2_key;
+global.s_tooltip = pres_content_pic2_tooltip;
+//--> Buttons
+global.presence_button1_enable = pres_content_btn1_enable;
+global.presence_button1_text = pres_content_btn1_text;
+global.presence_button1_link = pres_content_btn1_link;
+global.presence_button2_enable = pres_content_btn2_enable;
+global.presence_button2_text = pres_content_btn2_text;
+global.presence_button2_link = pres_content_btn2_link;
+
 }
 }

@@ -4,18 +4,18 @@
 ///@param text
 ///@param alpha
 
-function scr_tooltip_up(){
+function scr_tooltip_up(__x, __y, _height, text, alpha){
 	
 	//Base
 	var antc = draw_get_color();
 	
 	//Init
 	draw_set_font(f_Whitney_Bold_Tooltip0);
-	var _x = argument0;
-	var _y = argument1;
-	var _h = argument2;
-	var _t = argument3;
-	var _a = argument4;
+	var _x = __x;
+	var _y = __y;
+	var _h = _height;
+	var _t = text;
+	var _a = alpha;
 	var _hs = 12;
 	var _w = string_width(_t)+(_hs*2);
 	

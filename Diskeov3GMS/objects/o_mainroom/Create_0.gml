@@ -17,6 +17,7 @@ lastv_m = "false";
 
 //!<DEBUG!>!
 global.debugmode0 = true;
+loaded_picsid = false;
 
 //Get latest version
 if !(global.debugmode0)
@@ -55,30 +56,34 @@ global.last_heading_tab = 0;
 global.card_icount = 0;
 global.card_pres_icount = 0;
 
+//<-Section disabled due to automatic file loading (scr_loaddata)->//
+{
 //Inputs-Outputs
-global.input_fline_text = "Line 1 (Leave blank to disallow)";
-global.input_sline_text = "Line 2 (Leave blank to disallow)";
+//global.input_fline_text = "Line 1 (Leave blank to disallow)";
+//global.input_sline_text = "Line 2 (Leave blank to disallow)";
 global.heading_dw_text = "Check my status";
-global.s_tooltip = "Alpha9 (Leave blank to disallow)"
-global.l_tooltip = "Diskeo (Leave blank to disallow)"
+//global.s_tooltip = "Alpha9 (Leave blank to disallow)"
+//global.l_tooltip = "Diskeo (Leave blank to disallow)"
 
 //StatusPictures
-global.lastused_spic_key = "dsk_dsklogo";
-global.spic_key = "dsk_dsklogo";
+//global.lastused_spic_key = "dsk_dsklogo";
+//global.spic_key = "dsk_dsklogo";
 global.spic_id = "853048028062547999";
 
-global.lastused_lpic_key = "dsk_dsklogo";
-global.lpic_key = "dsk_dsklogo";
+//global.lastused_lpic_key = "dsk_dsklogo";
+//global.lpic_key = "dsk_dsklogo";
 global.lpic_id = "853048028062547999";
 
 //Preview
-global.presence_button1_enable = true;
-global.presence_button1_text = "Button1";
-global.presence_button1_link = "http://komodroid.com/";
+//global.presence_button1_enable = true;
+//global.presence_button1_text = "Button1";
+//global.presence_button1_link = "http://komodroid.com/";
 
-global.presence_button2_enable = true;
-global.presence_button2_text = "Button2";
-global.presence_button2_link = "http://komodroid.com/";
+//global.presence_button2_enable = true;
+//global.presence_button2_text = "Button2";
+//global.presence_button2_link = "http://komodroid.com/";
+}
+//<-------------------------------------------------------------->//
 
 global.presence_button_selected = 1;
 
@@ -113,6 +118,7 @@ global.lastused_clientsecret = "vBCWL1WEP4f-x_nJhXn-Pr1bWaBD_xH4";
 //AssetsReader
 global.asset_read_count = 0;
 global.asset_read_count_pres = 0;
+
 
 if (global.debugmode0)
 {

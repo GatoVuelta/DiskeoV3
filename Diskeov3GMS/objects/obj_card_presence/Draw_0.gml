@@ -108,7 +108,7 @@ if (point_in_rectangle(mx_pos, my_pos, acbtn_share_x, y-18, acbtn_share_x+40, y+
 	draw_set_color(global.UI_general_primary)
 	hover_share = true;
 	//Click
-	if (mouse_check_button(mb_left))
+	if (mouse_check_button_pressed(mb_left))
 	{
 		show_message_async("Cliked share!");
 	}
@@ -129,7 +129,7 @@ if (point_in_rectangle(mx_pos, my_pos, acbtn_delete_x, y-18, acbtn_delete_x+40, 
 {
 	hover_delete = true;
 	draw_set_color(global.UI_windragger_element_focus_indicator_alt)
-	if (mouse_check_button(mb_left))
+	if (mouse_check_button_pressed(mb_left))
 	{
 		show_message_async("Cliked delete!");
 	}
@@ -165,9 +165,18 @@ if (point_in_rectangle(mx_pos, my_pos, acbtn_openf_x, y+60, acbtn_openf_x+50, y+
 {
 	hover_openf = true;
 	draw_set_color(global.UI_general_primary)
-	if (mouse_check_button(mb_left))
+	if (mouse_check_button_pressed(mb_left))
 	{
-		show_message_async("Cliked of");
+		if (os_type == os_windows)
+		{
+			var _cmd = string("cmd.exe /c start %windir%\\explorer.exe ")+string(game_save_id)+string("presences .");
+			show_debug_message(_cmd);
+			show_debug_message(ExecuteShellOK(_cmd, false, true));
+		} else if (os_type == os_linux)
+		{
+			//ExecuteShellOK("nautilus "+game_save_id+"\presences .", false);
+			execute_shell("nautilus " + game_save_id + "\presences", false);
+		}
 	}
 } else { draw_set_color(global.UI_LMbtn_unfocused_bg); hover_openf = false};
 draw_roundrect_ext(acbtn_openf_x, y+60, acbtn_openf_x+50, y+110, 25, 25, false);
@@ -178,9 +187,25 @@ if (point_in_rectangle(mx_pos, my_pos, acbtn_import_x, y+60, acbtn_import_x+50, 
 {
 	hover_import = true;
 	draw_set_color(global.UI_general_primary)
-	if (mouse_check_button(mb_left))
+	if (mouse_check_button_pressed(mb_left))
 	{
-		show_message_async("Cliked imp");
+		if (os_type == os_windows)
+		{
+		var file_got = get_open_filename("Diskeo Presence File (.json)|*.json","");
+		if (file_got != "")
+		{
+			//File selected
+			show_message(file_got);
+		} else {
+			//No file selected
+			show_message("Please select a file :(");
+		}
+		} else if (os_type == os_linux)
+		{
+			//execute_shell("nautilus " + program_directory + "/assets", false);
+			execute_shell(game_save_id + "kmd_ipresence.sh", true);
+			room_restart();
+		}
 	}
 } else { draw_set_color(global.UI_LMbtn_unfocused_bg); hover_import = false};
 draw_roundrect_ext(acbtn_import_x, y+60, acbtn_import_x+50, y+110, 25, 25, false);
