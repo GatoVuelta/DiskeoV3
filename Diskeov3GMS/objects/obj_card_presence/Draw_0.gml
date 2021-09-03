@@ -195,7 +195,10 @@ if (point_in_rectangle(mx_pos, my_pos, acbtn_import_x, y+60, acbtn_import_x+50, 
 		if (file_got != "")
 		{
 			//File selected
-			show_message(file_got);
+			var file_name = filename_name(file_got);
+			file_copy(file_got, game_save_id + "presences\\" + file_name);
+			show_message("Imported successfully");
+			room_restart();
 		} else {
 			//No file selected
 			show_message("Please select a file :(");

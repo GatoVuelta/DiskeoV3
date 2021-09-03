@@ -47,7 +47,7 @@ file_text_close(_txtopened);
 
 var _path = game_save_id + "/kmd_ipresence.sh";
 var _txtopened = file_text_open_write(_path);
-var _txt2write = string("#!/bin/sh\n\nFILE=`zenity --file-selection --file-filter=\"*.json\" --title=\"Select a File\"`\n\ncase $? in\n         0)\n         	cp $FILE ")+string(game_save_id)+string("presences/;;\n         1)\n                zenity --warning --text=\"No file was selected :/\";;\n        -1)\n                zenity --error--text=\"Unexpected error\";;\nesac");
+var _txt2write = string("#!/bin/sh\n\nFILE=`zenity --file-selection --file-filter=\"*.json\" --title=\"Select a File\"`\n\ncase $? in\n         0)\n         	cp $FILE ")+string(game_save_id)+string("presences/\nzenity --info --text=\"The specified file was imported successfully\";;\n         1)\n                zenity --warning --text=\"No file was selected :/\";;\n        -1)\n                zenity --error--text=\"Unexpected error\";;\nesac");
 file_text_write_string(_txtopened, _txt2write);
 file_text_close(_txtopened);
 
