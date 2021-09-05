@@ -110,12 +110,23 @@ if (point_in_rectangle(mx_pos, my_pos, acbtn_share_x, y-18, acbtn_share_x+40, y+
 	//Click
 	if (mouse_check_button_pressed(mb_left))
 	{
-		show_message_async("Cliked share!");
+		if (os_type == os_windows)
+		{
+			var _cmd = string("cmd.exe /c start %windir%\\explorer.exe /select, ")+string(game_save_id)+string("presences\\")+string(file_to_open);
+			show_debug_message(_cmd);
+			show_debug_message(ExecuteShellOK(_cmd, false, true));
+		} else if (os_type == os_linux)
+		{
+			//ExecuteShellOK("nautilus "+game_save_id+"\presences .", false);
+			var _sharecmd = string("nautilus " + game_save_id + "presences/" + file_to_open);
+			execute_shell(_sharecmd, false);
+			show_debug_message(_sharecmd)
+		}
 	}
 } else { draw_set_color(global.UI_LMbtn_unfocused_bg); hover_share = false};
 draw_roundrect_ext(acbtn_share_x, y-20, acbtn_share_x+40, y+20, 25, 25, false);
 draw_sprite_ext(s_icon_share, 0, acbtn_share_x+21, y, 1, 1, 0, global.UI_element_focused, 1-global.fade_alpha);
-if (hover_share){scr_tooltip_up(acbtn_share_x+21, y+37, 30, "Share", 1-global.fade_alpha);};
+if (hover_share){scr_tooltip_up(acbtn_share_x+21, y+37, 30, "Show file for sharing", 1-global.fade_alpha);};
 } else {
 	//DisabledInvalid
 	draw_set_color(global.UI_general_terciary)
@@ -125,18 +136,41 @@ if (hover_share){scr_tooltip_up(acbtn_share_x+21, y+37, 30, "Share", 1-global.fa
 	draw_set_alpha(1-global.fade_alpha);
 }
 //-->Delete
+if (file_to_open != "default.json")
+{
 if (point_in_rectangle(mx_pos, my_pos, acbtn_delete_x, y-18, acbtn_delete_x+40, y+18))
 {
 	hover_delete = true;
 	draw_set_color(global.UI_windragger_element_focus_indicator_alt)
 	if (mouse_check_button_pressed(mb_left))
 	{
-		show_message_async("Cliked delete!");
+		if (file_delete(game_save_id + "/presences/" + file_to_open))
+		{
+			if (os_type == os_windows)
+			{
+				show_message("File deleted successfully.");
+			} else if (os_type == os_linux)
+			{
+				execute_shell("zenity --info --text \"The specified file was deleted successfully\"", false);				
+			}
+			room_restart();
+		} else {
+			show_message("There was an error deleting such file.\nPlease refresh this page or manually delete it by opening the folder and finiding the file.");
+		}
 	}
 } else { draw_set_color(global.UI_LMbtn_unfocused_bg); hover_delete = false};
 draw_roundrect_ext(acbtn_delete_x, y-20, acbtn_delete_x+40, y+20, 25, 25, false);
 draw_sprite_ext(s_icon_delete, 0, acbtn_delete_x+21, y, 1, 1, 0, global.UI_element_focused, 1-global.fade_alpha);
 if (hover_delete){scr_tooltip_up(acbtn_delete_x+21, y+37, 30, "Delete", 1-global.fade_alpha);};
+}
+else {
+	//DisabledInvalid
+	draw_set_color(global.UI_general_terciary)
+	draw_set_alpha(0.8-global.fade_alpha);
+	draw_roundrect_ext(acbtn_delete_x, y-20, acbtn_delete_x+40, y+20, 25, 25, false);
+	draw_sprite_ext(s_icon_delete, 0, acbtn_delete_x+21, y, 1, 1, 0, global.UI_element_focused, 0.3-global.fade_alpha);
+	draw_set_alpha(1-global.fade_alpha);
+}
 
 //Hover
 if (position_meeting(mx_pos, my_pos, id)) && !(selected)
