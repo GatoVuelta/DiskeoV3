@@ -16,14 +16,7 @@ if (global.last_heading_tab == 1)
 	forceclick = false;
 }
 
-//Beta
-soon_availability = true;
-soon_text = "Coming soon";
-//beta = true;
-
-//tte_ext_input_set_on_changed(example_on_changed);
-
-tab_text = "Custom AppID";
+tab_text = "Title (custom AppID)";
 
 //Speed
 fin_speed = 25;

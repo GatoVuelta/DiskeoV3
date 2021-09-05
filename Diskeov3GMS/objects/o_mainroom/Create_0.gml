@@ -50,7 +50,7 @@ global.scroll_surface_y = 0;
 global.scroll_pres_surface_x = 0;
 global.scroll_pres_surface_y = 0;
 
-global.last_heading_tab = 0;
+global.last_heading_tab = 1;
 
 //CardProps
 global.card_icount = 0;

@@ -30,41 +30,6 @@ if (fade_out)
 	} else fade_out = false;
 }
 
-//Click action
-if ((element_enable) &&
-(mouse_check_button_pressed(mb_left)) &&
-(position_meeting(mouse_x, mouse_y, id)) &&
-!(position_meeting(mouse_x, mouse_y, oDW_tab0))) or forceclick
-{
-focus = true;
-oDW_tab0.focus = false;
-
-global.last_heading_tab = 1;
-
-forceclick = false;
-
-if (instance_exists(o_dw_heading))
-{
-	//DeleteOLD
-	instance_destroy(o_dw_heading);
-	if (instance_exists(obj_dropdown))
-	{
-		instance_destroy(obj_dropdown_item);
-		instance_destroy(obj_dropdown);
-	}
-}
-//CreateTXT
-	global.overlay = false;
-	instance_create_layer(145, 218, "LY_TextboxBG", oInputCustomHeading);
-
-var objid = oDW_tab0;
-
-var dw_layer = layer_get_id("LY_dw_tabs_down");
-var up_layer = layer_get_id("LY_dw_tabs_up");
-
-objid.layer = dw_layer;
-id.layer = up_layer;
-}
 
 //Enable
 if !(global.overlay_init)

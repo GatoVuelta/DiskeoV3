@@ -10,11 +10,10 @@ if ((position_meeting(mouse_x, mouse_y, id) or global.forceclick))
 if (mouse_check_button_pressed(mb_left) or global.forceclick) && !(global.experiment_nodejs)
 {
 
-scr_check_heading();
-
 if !(global.lastusedappID == global.appIDto)
 {
 	//show_message_async("You recently selected a new Heading or profile AppID.\nDiscord can take 3-5 seconds to finish the old presence and start the new one");
+	np_clearpresence();
 	__np_shutdown();
 	np_initdiscord(global.appIDto, true, np_steam_app_id_empty);
 	draw_load = true;

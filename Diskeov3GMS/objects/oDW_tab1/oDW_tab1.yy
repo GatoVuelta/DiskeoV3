@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_dw_tab1",
-    "path": "sprites/s_dw_tab1/s_dw_tab1.yy",
+    "name": "s_tab0_corner",
+    "path": "sprites/s_tab0_corner/s_tab0_corner.yy",
   },
   "solid": false,
   "visible": true,
