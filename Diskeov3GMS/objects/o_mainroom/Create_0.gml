@@ -16,7 +16,7 @@ lastv_n = global.app_ver;
 lastv_m = "false";
 
 //!<DEBUG!>!
-global.debugmode0 = true;
+global.debugmode0 = false;
 loaded_picsid = false;
 
 //Get latest version

@@ -17,6 +17,10 @@ if (focus)
 //Icon
 draw_sprite_ext(s_LMC_i5, 0, x, y-x_threshold, 1, 1, 0, global.UI_element_focused, 1-init_alpha);
 
+//Active indicator
+scr_activeroom_indicator();
+
+
 } else 
 {
 	//Background
