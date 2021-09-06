@@ -24,6 +24,7 @@
             {"properties":[],"isDnd":false,"objectId":{"name":"oButtonPalette","path":"objects/oButtonPalette/oButtonPalette.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":60.0,"y":514.0,"resourceVersion":"1.0","name":"inst_330AD760","tags":[],"resourceType":"GMRInstance",},
             {"properties":[],"isDnd":false,"objectId":{"name":"oButtonBNTS","path":"objects/oButtonBNTS/oButtonBNTS.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":59.0,"y":265.0,"resourceVersion":"1.0","name":"inst_6311F33","tags":[],"resourceType":"GMRInstance",},
             {"properties":[],"isDnd":false,"objectId":{"name":"oButtonTIME","path":"objects/oButtonTIME/oButtonTIME.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":59.0,"y":330.0,"resourceVersion":"1.0","name":"inst_1BB10AC8","tags":[],"resourceType":"GMRInstance",},
+            {"properties":[],"isDnd":false,"objectId":{"name":"oButton_pres_savefile","path":"objects/oButton_pres_savefile/oButton_pres_savefile.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":996.0,"y":599.0,"resourceVersion":"1.0","name":"inst_15994927","tags":[],"resourceType":"GMRInstance",},
           ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Buttons0","tags":[],"resourceType":"GMRInstanceLayer",},
         {"instances":[
             {"properties":[],"isDnd":false,"objectId":{"name":"o_helperUI","path":"objects/o_helperUI/o_helperUI.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.37931049,"scaleY":17.1666679,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":59.0,"y":325.5,"resourceVersion":"1.0","name":"inst_DB9D566","tags":[],"resourceType":"GMRInstance",},
@@ -128,6 +129,7 @@
     {"name":"inst_2B92DA63","path":"rooms/rm_btn_st/rm_btn_st.yy",},
     {"name":"inst_6086CFBA","path":"rooms/rm_btn_st/rm_btn_st.yy",},
     {"name":"inst_EC8EB1B","path":"rooms/rm_btn_st/rm_btn_st.yy",},
+    {"name":"inst_15994927","path":"rooms/rm_btn_st/rm_btn_st.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

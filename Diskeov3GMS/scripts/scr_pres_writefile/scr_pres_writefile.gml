@@ -1,7 +1,34 @@
-///@function scr_pres_readfile(filename);
-///@param filenam
+///@function scr_pres_writefile(filename);
+///@param ver
+///@param appID
+///@param appName
+///@param desc
 
-function scr_pres_readfile(filename){
+///@param line1
+///@param line2
+
+///@param piclenab
+///@param picllstk
+///@param picltltp
+
+///@param picsenab
+///@param picslstk
+///@param picstltp
+
+///@param btn1enab
+///@param btn1txt
+///@param btn1lnk
+
+///@param btn2enab
+///@param btn2txt
+///@param btn2lnk
+
+function scr_pres_writefile(ver,appID,appName,desc,
+line1,line2,
+piclenab,pic1lstk,pic1tltp,
+//pic2enab,pic2lstk,pic2tltp,
+//btn1enab,btn1txt,btn1lnk,
+btn2enab,btn2txt,btn2lnk){
 		
 		//Porting variables
 		file_to_open = filename;
