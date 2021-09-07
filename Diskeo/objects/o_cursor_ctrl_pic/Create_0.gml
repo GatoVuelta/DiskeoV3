@@ -1,0 +1,1 @@
+nearest_card = -1;

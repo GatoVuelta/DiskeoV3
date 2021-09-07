@@ -1,0 +1,1 @@
+global.card_pres_icount = 0;
