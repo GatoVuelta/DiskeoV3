@@ -1,10 +1,10 @@
 {
   "option_windows_display_name": "Diskeo",
   "option_windows_executable_name": "Diskeo.exe",
-  "option_windows_version": "0.0.9.0",
+  "option_windows_version": "0.1.0.0",
   "option_windows_company_info": "Komodroid Limited",
   "option_windows_product_info": "Diskeo",
-  "option_windows_copyright_info": "2021 Komodroid Developers",
+  "option_windows_copyright_info": "2021 Komodroid Developers (http://komodroid.com/)",
   "option_windows_description_info": "Diskeo -  The Discord status customizer",
   "option_windows_display_cursor": true,
   "option_windows_icon": "${options_dir}\\windows\\icons\\icon.ico",

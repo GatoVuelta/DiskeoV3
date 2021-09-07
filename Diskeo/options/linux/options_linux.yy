@@ -1,10 +1,10 @@
 {
   "option_linux_display_name": "Diskeo",
-  "option_linux_version": "0.0.8",
+  "option_linux_version": "0.1.0",
   "option_linux_maintainer_email": "komodroid@outlook.com",
   "option_linux_homepage": "http://komodroid.tk/",
   "option_linux_short_desc": "The brand-new Discord status customizer",
-  "option_linux_long_desc": "Hello there!\r\nYou are testing an early release for this app, please report any bugs and raise up your suggestions by joining our Discord Server!:\r\nhttps://discord.gg/4M4h3NZqRw",
+  "option_linux_long_desc": "Hello there!....\r\nYou are testing an early release for this app, please report any bugs and raise up your suggestions by joining our Discord Server!:\r\nhttps://discord.gg/4M4h3NZqRw",
   "option_linux_splash_screen": "${base_options_dir}\\linux\\splash\\splash.png",
   "option_linux_display_splash": false,
   "option_linux_icon": "${options_dir}\\linux\\icons\\64.png",

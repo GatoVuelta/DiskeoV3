@@ -24,7 +24,7 @@ if (position_meeting(mouse_x, mouse_y, id))
 			var _path = game_save_id + "/presences/" + _name + ".json";
 			var _txtopened = file_text_open_write(_path);
 			var _txt2write = string("{\n    ")+string("\u0022")+string("asset_type")+string("\u0022")+string(": ")+string("\u0022")+string("Presence")+string("\u0022")+string(",\n    ")+string("\u0022")+string("ver")+string("\u0022")+string(": 0.1,\n    ")+string("\u0022")+string("content")+string("\u0022")+string(": {\n        ")+string("\u0022")+string("info")+string("\u0022")+string(": {\n") + string("            \u0022") + 
-			string("AppID") + string("\u0022") + string(":") + string("\u0022") +
+			string("appID") + string("\u0022") + string(":") + string("\u0022") +
 			string(global.appIDto) + 
 			string("")+string("\u0022")+string(",\n            ")+string("\u0022")+string("appName")+string("\u0022")+string(": ")+string("\u0022")+string("") + 
 			string(_name) + 
